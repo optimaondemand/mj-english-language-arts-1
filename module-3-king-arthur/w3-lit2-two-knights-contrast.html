@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 3.14</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .ladder-row { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+    .ladder-step { background:#EEF1F8; border:1px solid #C5DCE5; border-left:4px solid #2196D0; border-radius:6px; padding:10px 14px; font-size:15px; color:#1a2340; line-height:1.5; flex:1; }
+    .ladder-num { min-width:28px; height:28px; border-radius:50%; background:#0E1C42; color:#fff; font-size:13px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">King Arthur and His Knights</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.14 &middot; Week 3</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">King Arthur</div>
+        <div style="font-size: 12px; color: #666;">Beaumains takes the quest</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Knighthood, Virtue, and the Cost of the Code</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.14</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Road That Tests the Knight</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 3</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A quest is never just a trip. It is a test wearing a journey's clothes.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">A damsel comes to court begging a champion for a besieged lady, and Beaumains claims the quest. She is furious to be sent a kitchen boy and scorns him at every step. Today you watch the <strong>quest</strong> work as a test of virtue: each fight on the road is a chance for Beaumains to prove who he is. You'll also notice the <strong>conflict</strong> between the two travelers, the struggle that drives the scene forward.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the <strong>quest</strong> works as a test of virtue, not just a series of fights.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the <strong>conflict</strong> between Beaumains and the scornful damsel and how it changes.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">&ldquo;Sir Gareth, or The Knight of the Kitchen,&rdquo; the quest section (the damsel and the combats on the road). <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When someone keeps doubting you, what changes their mind fastest? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="That's the damsel's standard exactly. She refuses to believe words and waits for results. Watch how many fights it takes before she budges.">&#9876;&#65039; Results: let the work speak</button>
+            <button data-response="A fair point, and a hard one on the road. Beaumains rarely explains himself. He just keeps fighting and stays courteous. Notice which one actually moves her.">&#128172; A good explanation of why they're wrong</button>
+            <button data-response="Steadiness is its own argument. Beaumains never loses his temper at the damsel, even after dozens of insults. See whether patience wins where anger never could.">&#9203; Time and steadiness</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>quest</strong> in these tales is a road of trials, and every trial is really a test of virtue. When the
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="A damsel is a young unmarried woman, often noble, in medieval romance.">damsel</span> arrives asking for a champion and Arthur gives her Beaumains, she is insulted: she has come for a knight and been handed a kitchen boy. That insult becomes the <strong>conflict</strong> that carries the journey, the struggle between two people that keeps the scene moving. As they ride, she scorns Beaumains over and over, and he answers each combat with courage and each insult with courtesy. Green builds the fights so they grow harder, which is no accident: a story raises the stakes step by step so each victory means more than the last. By the end, the damsel's scorn has turned to respect, and that change is the real proof of his worth. Watch the pattern. Insult, then danger, then a courteous, capable answer, then a small thaw in how she treats him.</p>
+
+        <!-- inline visual: rising-action ladder -->
+        <div style="background:#F4F6FA; border:1px solid #D0D9E8; border-radius:8px; padding:16px 18px; margin-top:8px;">
+            <div style="font-size:11px; color:#1B6A94; margin-bottom:12px;">&#128202; HOW THE ROAD RAISES THE STAKES</div>
+            <div class="ladder-row"><div class="ladder-num">1</div><div class="ladder-step">The damsel scorns Beaumains as a "kitchen knave" and rides off, sure he will fail.</div></div>
+            <div class="ladder-row"><div class="ladder-num">2</div><div class="ladder-step">An early enemy challenges him; he wins, but she still refuses to credit him.</div></div>
+            <div class="ladder-row"><div class="ladder-num">3</div><div class="ladder-step">The foes grow tougher; his courtesy never breaks, even as her scorn does.</div></div>
+            <div class="ladder-row"><div class="ladder-num">4</div><div class="ladder-step">She begins to respect him; the journey has tested and revealed his worth.</div></div>
+        </div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read the <strong>quest section</strong>: Beaumains claims the adventure, the damsel scorns him, and they meet a series of enemies on the road. As you read, track how the damsel's attitude shifts from one combat to the next. Note the turning point in your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>King Arthur and His Knights of the Round Table</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: scale/spectrum (Engine 3) -->
+    <div class="optima-widget ow-scale">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; TRACK THE CHANGE</div>
+        <div class="widget-question">As the quest goes on, where does the damsel's view of Beaumains land at each stage? Pick the best answer in each row.</div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. At the start she is pure scorn: she will not even ride beside a kitchen boy and is sure he will run." data-hint="Think about the very first leg of the journey, before he has won anything.">
+            <div class="widget-row-prompt">1. When the quest begins, the damsel's view of Beaumains is&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">Total scorn</button>
+                <button data-choice="1">Cautious hope</button>
+                <button data-choice="2">Full respect</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. After he wins fights but she keeps doubting, she is caught in the middle: impressed by deeds, unwilling to admit it." data-hint="He has proven himself in combat, yet she has not changed her words yet. That is the in-between stage.">
+            <div class="widget-row-prompt">2. After several combats he wins, but she still mocks him, her view is&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">Total scorn</button>
+                <button data-choice="1">Grudging, starting to shift</button>
+                <button data-choice="2">Full respect</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Exactly. By the end his steady courage and courtesy have won her over, and her scorn turns to respect, the quest's real victory." data-hint="Think about the end of the road, after he has answered every test.">
+            <div class="widget-row-prompt">3. By the end of the road, her view of Beaumains is&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">Full respect</button>
+                <button data-choice="1">Grudging, starting to shift</button>
+                <button data-choice="2">Total scorn, unchanged</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Record the moment the damsel's scorn begins to turn, and which of Beaumains's actions caused it. Tomorrow you'll learn his real name and weigh what his quest meant.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The damsel changed her mind, but Beaumains never changed who he was. Carry one question into tomorrow: <em>did the quest make him worthy, or only let everyone finally see worth that was there all along?</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.14 &middot; The Road That Tests the Knight</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

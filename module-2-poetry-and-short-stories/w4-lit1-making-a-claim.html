@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 2.17</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Poetry and Short Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.17 &middot; Week 4</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Stating a Clear Claim</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Is a Story Really Saying?</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.17</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Say What You Think: Making a Clear Claim</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 4</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">An argument starts with one clear sentence saying exactly what you believe.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This week you write a letter to an author you disagree with. The whole letter rests on one thing done well: a clear <strong>claim</strong>. Today you learn what makes a claim sharp instead of fuzzy, and you write the claim for your own letter.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell a clear <strong>claim</strong> from a fact or a topic.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> write one clear claim that answers an author's message.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal, with your theme notes on all three texts (Custard, Do Not Go Gentle, The Golden Touch)</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your project file (the "Dear Author" Draft1 you started in Week 3)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Which of these sounds most like a real argument someone could disagree with? (No wrong answer. Just notice.)</div>
+        <div class="widget-options">
+            <button data-response="That's a fact, not a claim. Nobody can argue that Midas is in the story. A claim is something a thoughtful person could disagree with.">"The Golden Touch" has a king named Midas.</button>
+            <button data-response="That's a topic, not a claim yet. It names what you'll talk about but doesn't say what you think. A claim takes a position.">I want to write about greed in the story.</button>
+            <button data-response="Yes. This takes a position someone could push back on. That is what makes it a claim.">Hawthorne is wrong that having less always makes you happier.</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>claim</strong> is a sentence that states what you believe and that a thoughtful person could disagree with. That last part matters. "The story is about gold" is a topic, not a claim, because no one can argue with it. "Hawthorne is wrong that having less always makes you happier" is a claim, because a reader could push back. A strong claim does three things. It takes a clear position, so the reader knows exactly where you stand. It is specific, naming the author and the idea you are answering rather than waving at the whole story. And it is honest, meaning it says what you actually think, not what sounds impressive. For this letter your claim is your counter-claim. It answers the author's message. So you first need the author's message stated fairly, then your sentence saying where you disagree. For example: "You teach, Mr. Hawthorne, that riches lead away from happiness, but I think wealth can do real good when it is shared." Notice the shape. It names the author's idea, then turns with a word like <em>but</em> to state your own. Write your claim that clearly today and the rest of the letter has a spine to hang on.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">A claim takes a <strong>position</strong>. <em>Position</em> here means the stand you take, where you place yourself in a debate. Start with this sentence: <em>"My position is that the author's claim is only partly true."</em> Rewrite it three ways: swap a synonym for <strong>position</strong> (such as <em>stand</em> or <em>view</em>), stretch it with more detail about which part is true, or keep its shape but state a position about a different topic you care about. Add one line: which rewrite states your stand most clearly?</div>
+        </div>
+    </div>
+
+    <!-- Inline visual: topic vs claim ladder -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128202; FROM TOPIC TO CLAIM</div>
+        <div style="display:flex; flex-direction:column; gap:10px;">
+            <div style="background:#F4F6FA; border:1px solid #D0D9E8; border-radius:8px; padding:12px 16px;"><span style="font-size:13px; color:#6b7a99;">TOPIC (too broad)</span><br><span style="font-size:16px; color:#1a2340;">greed in "The Golden Touch"</span></div>
+            <div style="text-align:center; font-size:20px; color:#c7922c;">&#8595;</div>
+            <div style="background:#EEF1F8; border:1px solid #D0D9E8; border-radius:8px; padding:12px 16px;"><span style="font-size:13px; color:#6b7a99;">QUESTION (sharper)</span><br><span style="font-size:16px; color:#1a2340;">Is having less really the path to happiness?</span></div>
+            <div style="text-align:center; font-size:20px; color:#c7922c;">&#8595;</div>
+            <div style="background:#FDF3E3; border:1px solid #e8d5b0; border-radius:8px; padding:12px 16px;"><span style="font-size:13px; color:#9a6a14;">CLAIM (a position you can defend)</span><br><span style="font-size:16px; color:#1a2340;">"Hawthorne is right that greed can ruin a life, but wrong that wealth itself is the problem."</span></div>
+        </div>
+    </div>
+
+    <!-- READING / SOURCE -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; WORK FROM YOUR TEXT</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Open your Reading Journal to your theme notes for the author you chose in Week 3. Reread the author's message in your own words, then in your project file write one sentence: the author's claim, stated fairly. Right under it, write your counter-claim. These two sentences are the opening of your letter.</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; WHAT IS A CLAIM?</div>
+        <div class="widget-question">Choose the best answer for each. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="3" data-fb="Yes. This takes a position a reader could disagree with, names the author's idea, and turns to your own. That is a claim." data-hint="A claim takes a position someone could argue with. Which one does that?">
+            <div class="widget-row-prompt">1. Which sentence is a claim?</div>
+            <div class="widget-options">
+                <button data-choice="0">The poem has fifteen stanzas.</button>
+                <button data-choice="1">I will write about Custard the dragon.</button>
+                <button data-choice="2">Nash wrote the poem in 1936.</button>
+                <button data-choice="3">Nash is wrong that the brave never need to feel fear.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Right. A topic just names what you'll discuss; it takes no position, so it is not yet a claim." data-hint="Which one only names a subject without saying what you think?">
+            <div class="widget-row-prompt">2. Which of these is a topic, not a claim?</div>
+            <div class="widget-options">
+                <button data-choice="0">Thomas is wrong to say we must always fight death.</button>
+                <button data-choice="1">Hawthorne overstates the danger of wealth.</button>
+                <button data-choice="2">The theme of "The Golden Touch."</button>
+                <button data-choice="3">Custard proves bravery is shown by action.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Exactly. A good counter-claim names the author's idea fairly, then turns with a word like 'but' to your own position." data-hint="Which option both names the author's view and states yours?">
+            <div class="widget-row-prompt">3. What does a strong counter-claim do?</div>
+            <div class="widget-options">
+                <button data-choice="0">Lists every event in the story</button>
+                <button data-choice="1">Names the author's idea fairly, then states your own position</button>
+                <button data-choice="2">Says the author is silly without reasons</button>
+                <button data-choice="3">Repeats the author's message word for word</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your project file</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write the author's claim (stated fairly) and your counter-claim as the opening of your letter. Tomorrow you learn how to make your answer fair and strong.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">A fuzzy claim makes a fuzzy letter. Read your claim out loud. If a friend could not tell exactly what you believe, sharpen it before tomorrow.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.17 &middot; Say What You Think: Making a Clear Claim</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

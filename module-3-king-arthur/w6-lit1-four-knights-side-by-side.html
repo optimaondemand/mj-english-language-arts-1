@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 3.31</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .vocab-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .vocab-table th, .vocab-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; vertical-align:top; }
+    .vocab-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">King Arthur and His Knights</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.31 &middot; Week 6</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">King Arthur</div>
+        <div style="font-size: 12px; color: #666;">No new reading &middot; the whole book</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Knighthood, Virtue, and the Cost of the Code</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.31</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Four Knights, Side by Side</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 6 &middot; Project Week</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A good comparison starts long before you write. It starts with sorting what you already know.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">No new chapters this week. Today you gather the evidence for your essay by laying four knights side by side: <strong>Gawain, Launcelot, Gareth, and Percivale</strong>. The craft work for the week is <strong>comparison and contrast</strong>: seeing where two knights are alike and, more usefully, where they differ. Each difference is a place your argument can stand.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the defining virtue and the key episode for each of the four knights.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> choose two knights to compare and name one real difference between them.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal notes from Weeks 2&ndash;5, and your own copy of <em>King Arthur and His Knights of the Round Table</em> to check evidence. <span style="color: #666;">(No new chapters this week.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your essay draft (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Which two of the four knights are you most drawn to compare? (No wrong answer. This helps you pick your pair.)</div>
+        <div class="widget-options">
+            <button data-response="Gawain and Gareth make a sharp pair: one is tested in courtesy and honesty, the other earns honor through humble service. The contrast is clear and the evidence is easy to find.">&#129405; Gawain and Gareth</button>
+            <button data-response="Launcelot and Percivale is a strong pair: the greatest knight in arms, undone by a divided heart, against the pure and innocent one. Their difference is exactly Green's big idea.">&#9876;&#65039; Launcelot and Percivale</button>
+            <button data-response="Launcelot and Gawain works well, especially after this week: once friends, then enemies. Their fall lets you argue about loyalty and what breaks it.">&#128081; Launcelot and Gawain</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH (one substantive paragraph) -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;"><strong>Comparison and contrast</strong> is the engine of your essay. To compare two knights well, you do not just describe each one in turn. You hold them up to the <em>same</em> question and see how their answers differ. The question this module asks is: <em>what makes a good knight?</em> Green gives each of his four knights a distinct answer. Gawain is the most courteous knight, brave enough to take the Green Knight's deadly game, yet he has one honest failing when he hides the magic girdle out of fear. Launcelot is the greatest knight in arms, generous and gentle, but his divided heart lets him only glimpse the Grail and finally breaks the fellowship. Gareth is noble by birth yet earns his honor by humble service in the kitchen, proving worth comes from deeds, not rank. Percivale is unworldly and innocent, one of the few pure enough to draw near the Grail. Notice that none of them is simply "the best." Each is good in a different way, and each has limits. That is what makes them worth comparing: the differences are real, and the text gives you specific moments to prove them. Today, sort what you know, pick your two, and find the difference that will become your claim.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Write one sentence comparing your two knights that uses <strong>whereas</strong> or <strong>unlike</strong> (for example, "Whereas Gareth earns honor by service, Launcelot is born to it but loses it"). Then rewrite it once more, swapping in a different comparison word. Add one line: which version makes the contrast sharper, and why?</div>
+        </div>
+    </div>
+
+    <!-- VISUAL: four knights table -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128202; THE FOUR KNIGHTS AT A GLANCE</div>
+        <table class="vocab-table">
+            <tr><th>Knight</th><th>What he is known for</th><th>His limit or flaw</th><th>Key episode</th></tr>
+            <tr><td><strong>Gawain</strong></td><td>Courtesy and honor; courage to take a deadly bargain</td><td>One honest failing: hides the magic girdle out of fear</td><td>The Green Knight (Week 2)</td></tr>
+            <tr><td><strong>Gareth</strong></td><td>Humility and service; worth earned, not inherited</td><td>His rank is hidden, so he is misjudged for a year</td><td>The kitchen and the quest (Week 3)</td></tr>
+            <tr><td><strong>Percivale</strong></td><td>Innocence and pure devotion; near-success on the Grail</td><td>Unworldly; can be single-minded to a fault</td><td>The Grail Quest (Week 4)</td></tr>
+            <tr><td><strong>Launcelot</strong></td><td>The greatest knight in arms; generous and gentle</td><td>A divided heart; only glimpses the Grail; breaks the fellowship</td><td>The Grail and the fall (Weeks 4&ndash;5)</td></tr>
+        </table>
+        <div style="font-size: 14px; color: #666; margin-top: 12px; line-height: 1.5;">Use your own copy of the book to confirm each episode before you quote it. Verify every detail against the text.</div>
+    </div>
+
+    <!-- READING (project week: no new reading) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NO NEW READING &middot; GO BACK TO THE EVIDENCE</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">This is project week, so there are no new chapters. Instead, reread the key episodes for your two chosen knights in <strong>your own copy</strong> of the book, and gather the exact moments you will quote.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>King Arthur and His Knights of the Round Table</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; MATCH THE KNIGHT</div>
+        <div class="widget-question">For each description, choose the knight who fits best. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="3" data-fb="Yes. Gareth, noble by birth, asks only for food and serves a year in the kitchen, earning honor by deeds rather than rank." data-hint="Which knight hides his noble birth and serves humbly to prove his worth?">
+            <div class="widget-row-prompt">1. Noble by birth, but earns his honor through humble service and patience.</div>
+            <div class="widget-options">
+                <button data-choice="0">Launcelot</button>
+                <button data-choice="1">Percivale</button>
+                <button data-choice="2">Gawain</button>
+                <button data-choice="3">Gareth</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. Launcelot is the greatest in arms and generous, but his divided heart lets him only glimpse the Grail and finally breaks the fellowship." data-hint="Which knight is the best fighter, yet whose love for the queen undoes him?">
+            <div class="widget-row-prompt">2. The greatest knight in arms, undone by a divided heart.</div>
+            <div class="widget-options">
+                <button data-choice="0">Launcelot</button>
+                <button data-choice="1">Gareth</button>
+                <button data-choice="2">Percivale</button>
+                <button data-choice="3">Gawain</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Exactly. Gawain is the most courteous knight, but he hides the magic girdle out of fear, his one honest failing." data-hint="Which knight is tested in courtesy and honesty, and slips just once over a green girdle?">
+            <div class="widget-row-prompt">3. The most courteous knight, with one honest failing under pressure.</div>
+            <div class="widget-options">
+                <button data-choice="0">Percivale</button>
+                <button data-choice="1">Gareth</button>
+                <button data-choice="2">Gawain</button>
+                <button data-choice="3">Launcelot</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. Percivale is unworldly and innocent, among the very purest knights, and one of the few permitted to draw near the Grail." data-hint="Which knight is the innocent, pure one who comes close to the Grail?">
+            <div class="widget-row-prompt">4. Unworldly and innocent, pure enough to draw near the Grail.</div>
+            <div class="widget-options">
+                <button data-choice="0">Launcelot</button>
+                <button data-choice="1">Percivale</button>
+                <button data-choice="2">Gareth</button>
+                <button data-choice="3">Gawain</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lock in your two knights</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In your Reading Journal, name your two knights and one real difference between them. That difference is the seed of your essay's claim. Tomorrow you sharpen the claim itself.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have all four knights laid out and your pair chosen. Tomorrow you turn the difference between them into a claim sharp enough to argue, and fair enough to be honest.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.31 &middot; Four Knights, Side by Side</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 2.08</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Poetry and Short Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.08 &middot; Week 2</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Do Not Go Gentle into That Good Night</div>
+        <div style="font-size: 12px; color: #666;">Re-read &amp; annotate</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Is a Story Really Saying?</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.08</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Lines That Return: The Shape of a Villanelle</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 2</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">When a line comes back, it comes back changed.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This poem has a strict, beautiful shape called a villanelle, built on two lines that keep returning. Today you'll learn how that shape works and mark the returning lines right on the poem.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how a villanelle is built and find its two returning lines.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what the repetition adds to the poem's strong feeling.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP</div>
+        <div class="widget-question">Think of a time you repeated yourself because you really meant it ("No, no, no!" or "I knew it, I knew it!"). What did the repeating do? (No wrong answer.)</div>
+        <div class="widget-options">
+            <button data-response="Right. Repeating makes a feeling stronger and more urgent. This poem uses the same trick on purpose.">&#128293; It made the feeling stronger</button>
+            <button data-response="Yes. Saying it again makes sure no one can miss it. Watch how Thomas hammers his two key lines home.">&#128226; It made sure I was heard</button>
+            <button data-response="True. Repetition can sound like a heartbeat or a chant. That steady return is the engine of a villanelle.">&#129505; It sounded like a heartbeat</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING paragraph -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>villanelle</strong> is a 19-line poem with a strict, musical shape: five three-line stanzas (called <em>tercets</em>) and one four-line stanza (a <em>quatrain</em>) at the end. What makes it special is that two whole lines, called <strong>refrains</strong>, keep returning. In this poem, line 1 ("Do not go gentle into that good night") comes back as the last line of several stanzas, and line 3 ("Rage, rage against the dying of the light") does the same. At the very end, both return together, side by side. The clever part is that a returning line is never <em>only</em> a repeat: each time it comes back, the lines around it have changed, so it lands with new weight. <strong>Repetition</strong> (using a word or line more than once for effect) is the poem's main tool, and here it builds urgency, like someone pleading and refusing to stop. Today you'll mark the two refrains every time they appear, so you can see the design that carries the feeling.</p>
+
+        <!-- FLIP CARD (Engine 5) — refrain -->
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; A WORD TO KEEP</div>
+            <div class="ow-flip" tabindex="0">
+                <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">refrain (tap to see what it means)</div>
+                <div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A <strong>refrain</strong> is a line (or lines) that repeats at set points in a poem or song, like the chorus you sing again and again. In a villanelle, two refrains return throughout and then meet at the end. Each return lands a little differently because of the lines around it.</div>
+            </div>
+        </div>
+
+        <!-- INLINE VISUAL: villanelle structure ladder -->
+        <div style="background:#FDF3E3;border:1px solid #e8d5b0;border-left:4px solid #C7922C;border-radius:8px;padding:16px 22px;margin-top:8px;">
+            <div style="font-size:11px;color:#C7922C;margin-bottom:10px;">&#128202; THE SHAPE OF THIS VILLANELLE (19 LINES)</div>
+            <div style="font-size:15px;color:#1a2340;line-height:1.9;">
+                <div>Stanza 1 (tercet): introduces <strong>Refrain A</strong> (line 1) and <strong>Refrain B</strong> (line 3)</div>
+                <div>Stanza 2 (tercet): ends with <strong>Refrain A</strong></div>
+                <div>Stanza 3 (tercet): ends with <strong>Refrain B</strong></div>
+                <div>Stanza 4 (tercet): ends with <strong>Refrain A</strong></div>
+                <div>Stanza 5 (tercet): ends with <strong>Refrain B</strong></div>
+                <div>Stanza 6 (quatrain): ends with <strong>Refrain A</strong> then <strong>Refrain B</strong>, together</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- READING / annotate -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW ANNOTATE THE POEM</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Open <strong>your own copy</strong> of the poem and find the two refrains. Highlight every appearance of line 1 in one color and every appearance of line 3 in another. Then highlight the rhyming end-words so you can see the pattern. <span style="color:#666;">[Teacher: optional lawful link, publisher or anthology page only; do NOT link a hosted file.]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; THE SHAPE OF THE POEM</div>
+        <div class="widget-question">Choose the best answer for each. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. A villanelle has 19 lines: five tercets and one closing quatrain." data-hint="Count the stanzas: five three-line groups plus one four-line group. How many lines is that?">
+            <div class="widget-row-prompt">1. How many lines does a villanelle have?</div>
+            <div class="widget-options">
+                <button data-choice="0">14</button>
+                <button data-choice="1">19</button>
+                <button data-choice="2">4</button>
+                <button data-choice="3">100</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Right. A refrain is a line that returns at set points, like a chorus. This poem has two." data-hint="What do we call a whole line that keeps coming back, like the chorus of a song?">
+            <div class="widget-row-prompt">2. The two whole lines that keep returning in the poem are called&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">stanzas</button>
+                <button data-choice="1">nouns</button>
+                <button data-choice="2">similes</button>
+                <button data-choice="3">refrains</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Exactly. The repeated lines build urgency, like a plea that refuses to stop. That is what the form is for." data-hint="Think about how repeating a fierce line again and again makes the feeling grow, not shrink.">
+            <div class="widget-row-prompt">3. What does all this repetition mainly do to the poem?</div>
+            <div class="widget-options">
+                <button data-choice="0">It builds urgency, like a plea that won't stop</button>
+                <button data-choice="1">It makes the poem funny</button>
+                <button data-choice="2">It tells a longer story</button>
+                <button data-choice="3">It hides the poem's meaning</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Save your annotated poem</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Keep your marked-up copy of the poem with both refrains highlighted. Tomorrow you'll ask what the poem's vivid, non-literal language actually means, and what the poem is really saying about facing death.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Now you can see the machine under the poem: two lines, returning and gathering force. Tomorrow's question: what do "that good night" and "the dying of the light" actually mean, and is the poem right about how we should face them?</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.08 &middot; Lines That Return</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

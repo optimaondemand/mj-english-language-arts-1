@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 3.19</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">King Arthur and His Knights</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.19 &middot; Week 4</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">King Arthur</div>
+        <div style="font-size: 12px; color: #666;">How the Holy Grail came to Camelot</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Knighthood, Virtue, and the Cost of the Code</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.19</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">A Light Enters the Hall</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 4</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A chair no one may sit in. A cup no one may see clearly. The story is telling you something.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">An empty seat at the Round Table, the <strong>Siege Perilous</strong>, has waited for one destined knight. Sir Galahad takes it and lives. Then the Holy Grail enters the hall in a blaze of light. Today you learn to read a <strong>symbol</strong>: an object that stands for an idea larger than itself.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what a <strong>symbol</strong> is and what the Siege Perilous and the Grail stand for.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> point to one detail that marks Galahad as the chosen knight.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">&ldquo;How the Holy Grail came to Camelot&rdquo; (the Siege Perilous and the Grail's appearance). <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Think of an object that means more than itself to you (a ring, a photo, a trophy). Why does it matter? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="That's exactly how a symbol works. The thing is small, but it stands for a person, a memory, or a promise. The Grail works the same way in the story.">&#128141; It stands for a person or a memory</button>
+            <button data-response="A goal you reached is a perfect symbol: the object holds the meaning of all the effort behind it. Watch how the Grail stands for the highest goal a knight could reach.">&#127942; It reminds me of something I earned</button>
+            <button data-response="Even a thing whose meaning is hard to put into words can carry a lot. The Grail is described as too bright to look at directly, so its meaning is felt more than seen.">&#10024; It's hard to explain, but it just does</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>symbol</strong> is an object that stands for an idea larger than itself. This chapter is built from symbols. The
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="The Siege Perilous is the dangerous empty seat at the Round Table reserved for the one destined Grail-knight.">Siege Perilous</span> is an empty seat that kills anyone unworthy who sits in it; when Sir Galahad sits and lives, the seat has named him the chosen knight. Then, at the
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Pentecost is a Christian feast; in the story it is the holy day when the Grail appears.">Pentecost</span> feast, the
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="A holy man living alone in prayer; the hermit guides Galahad to the Siege Perilous.">hermit</span> leads Galahad in, and the Holy Grail enters covered in white cloth, so full of light "that none might behold it." Notice that the Grail is something you cannot look at directly. That is the point: it stands for a goodness too pure for ordinary eyes. A story uses symbols to make an inner idea (worthiness, purity, the highest goal) into something you can see on the page. As you read, do not just track what happens. Ask what each strange object <em>means</em>.</p>
+
+        <!-- FLIP CARD (Engine 5) -->
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; A TERM TO KEEP</div>
+            <div class="ow-flip" tabindex="0">
+                <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">symbol (tap to see what it means)</div>
+                <div class="ow-flip-back" style="font-size:16px;line-height:1.55;">A <strong>symbol</strong> is a concrete thing (an object, place, or image) that stands for an idea bigger than itself. The Grail is a cup, but it stands for the highest spiritual goal; the Siege Perilous is a chair, but it stands for being chosen and worthy. Test it: if an object keeps drawing attention and seems to mean more than it is, it is probably a symbol.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>"How the Holy Grail came to Camelot"</strong>: Galahad takes the Siege Perilous, and the Grail enters the hall. As you read, pick the one detail that most clearly marks Galahad as the chosen knight. Note it in your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>King Arthur and His Knights of the Round Table</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; READING THE SYMBOLS</div>
+        <div class="widget-question">For each detail, choose what the symbol is mainly showing you. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Only the destined, worthy knight can sit in the Siege Perilous and live, so Galahad surviving it marks him as the chosen one." data-hint="The seat kills the unworthy. So what does it mean that Galahad sits and lives?">
+            <div class="widget-row-prompt">1. Galahad sits in the Siege Perilous, the seat that kills the unworthy, and lives.</div>
+            <div class="widget-options">
+                <button data-choice="0">That the seat is broken</button>
+                <button data-choice="1">That Galahad is lucky</button>
+                <button data-choice="2">That Galahad is the chosen, worthy knight</button>
+                <button data-choice="3">That the other knights were afraid</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. The Grail's light is so pure 'none might behold it.' The brightness stands for a goodness too pure for ordinary eyes." data-hint="Why would the story make the holy object impossible to look at directly?">
+            <div class="widget-row-prompt">2. The Grail enters covered in white cloth, so full of light "that none might behold it."</div>
+            <div class="widget-options">
+                <button data-choice="0">Its purity is too great for ordinary eyes to look at</button>
+                <button data-choice="1">The candles in the hall were too bright</button>
+                <button data-choice="2">The knights had poor eyesight</button>
+                <button data-choice="3">It was nighttime</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Exactly. After the vision the knights vow to seek the Grail. The moment launches the whole Quest and begins to scatter the fellowship." data-hint="What do the knights decide to do right after they see the Grail?">
+            <div class="widget-row-prompt">3. After the Grail vanishes, the knights make a vow. What is it?</div>
+            <div class="widget-options">
+                <button data-choice="0">To never leave Camelot again</button>
+                <button data-choice="1">To crown Galahad king</button>
+                <button data-choice="2">To stop fighting forever</button>
+                <button data-choice="3">To go out and seek the Holy Grail</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Record one symbol from this chapter and what you think it stands for. Tomorrow you'll see why some knights find the Grail and others cannot.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The Grail set every knight a new test, one that strength cannot pass. Carry this question forward: <em>if the best fighter cannot win this quest, what kind of greatness does it actually measure?</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.19 &middot; A Light Enters the Hall</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

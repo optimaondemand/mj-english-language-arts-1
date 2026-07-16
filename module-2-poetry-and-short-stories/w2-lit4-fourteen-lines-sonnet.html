@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 2.09a</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .poem-text { font-size: 17px; line-height: 1.9; color: #1a2340; font-style: italic; }
+    .poem-text .ln { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Poetry and Short Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.09a &middot; Week 2</div>
+        <div style="font-size: 12px; color: #666;">Poetic Forms</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Sonnet 18 (Shakespeare)</div>
+        <div style="font-size: 12px; color: #666;">Read &amp; annotate</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Is a Story Really Saying?</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.09a</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Fourteen Lines: The Shape of a Sonnet</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 2</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A different strict shape, built to turn.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Yesterday's poem returned to the same two lines again and again. Today's poem never repeats a line &mdash; instead it builds an idea for eight lines, then turns and answers itself. This shape is called a <strong>sonnet</strong>, and it is one of the most famous in the English language.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how a sonnet is built: 14 lines, three four-line groups and a closing couplet, with a turn near the end.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> compare how a sonnet's shape builds meaning differently than a villanelle's shape does.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP</div>
+        <div class="widget-question">Yesterday's poem built its power by repeating two lines over and over. What do you think a strict-shaped poem could do INSTEAD of repeating, to still feel powerful by the end? (No wrong answer.)</div>
+        <div class="widget-options">
+            <button data-response="Good instinct. A poem can spend most of its lines building one idea, then flip or answer it at the very end. That's exactly what today's poem does.">&#128260; Change direction at the end</button>
+            <button data-response="Right idea. Instead of a returning line, a poem can save its strongest, most surprising statement for last.">&#128161; Save the best line for last</button>
+            <button data-response="That works too. A poem can build a small logical argument &mdash; step by step &mdash; instead of a musical repeat.">&#129513; Build an argument piece by piece</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING paragraph -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>sonnet</strong> is a 14-line poem with its own strict shape. The kind you'll read today, sometimes called a Shakespearean sonnet, is built from three four-line groups (called <em>quatrains</em>) followed by a two-line ending (a <em>couplet</em>). The first twelve lines spend their time building one idea &mdash; often by turning it over from a few different angles &mdash; and then, close to the end, the poem <strong>turns</strong>: it answers, corrects, or completes the idea it just spent so long building. That turn usually lands right at the closing couplet, which is often the poem's sharpest, most memorable statement. Unlike the villanelle you read yesterday, a sonnet never repeats a whole line. Its power comes from patient building and a decisive turn, not from return and repetition. Today's sonnet is by William Shakespeare, and it asks a question in its very first line: can a poem actually make something last forever?</p>
+
+        <!-- FLIP CARD (Engine 5) — volta -->
+        <div class="optima-widget">
+            <div class="widget-kicker">&#9889; TAP TO REVEAL &middot; A WORD TO KEEP</div>
+            <div class="ow-flip" tabindex="0">
+                <div class="ow-flip-front" style="font-size:18px;color:#0E1C42;">turn (tap to see what a poet calls this)</div>
+                <div class="ow-flip-back" style="font-size:16px;line-height:1.55;">Poets have a name for the moment a sonnet changes direction: the <strong>volta</strong> (an Italian word simply meaning "turn"). In today's sonnet, the volta arrives at line 9, where the poem stops describing summer's flaws and starts making its real claim.</div>
+            </div>
+        </div>
+
+        <!-- INLINE VISUAL: sonnet structure ladder -->
+        <div style="background:#FDF3E3;border:1px solid #e8d5b0;border-left:4px solid #C7922C;border-radius:8px;padding:16px 22px;margin-top:8px;">
+            <div style="font-size:11px;color:#C7922C;margin-bottom:10px;">&#128202; THE SHAPE OF THIS SONNET (14 LINES)</div>
+            <div style="font-size:15px;color:#1a2340;line-height:1.9;">
+                <div>Quatrain 1 (lines 1&ndash;4): asks the question &mdash; can I compare you to a summer's day?</div>
+                <div>Quatrain 2 (lines 5&ndash;8): summer's flaws &mdash; too hot, too short, always fading</div>
+                <div>Quatrain 3 (lines 9&ndash;12): <strong>the turn</strong> &mdash; but your beauty, kept in this poem, will not fade</div>
+                <div>Couplet (lines 13&ndash;14): the closing claim &mdash; as long as people read this poem, you live</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- READING / annotate (public domain — embedded per copyright policy) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; READ THE SONNET</div>
+        <div style="font-size: 15px; color: #666; margin-bottom: 14px;">This poem is old enough that it belongs to everyone (public domain), so it's printed right here.</div>
+        <details style="background:#F8FAFC; border:1px solid #D0D9E8; border-radius:8px; padding:16px 20px; margin-bottom:14px;">
+            <summary style="cursor:pointer; font-size:16px; color:#0e1c42;">Sonnet 18 &mdash; William Shakespeare (tap to read)</summary>
+            <div class="poem-text" style="margin-top:14px;">
+                <span class="ln">Shall I compare thee to a summer's day?</span>
+                <span class="ln">Thou art more lovely and more temperate:</span>
+                <span class="ln">Rough winds do shake the darling buds of May,</span>
+                <span class="ln">And summer's lease hath all too short a date:</span>
+                <span class="ln">Sometime too hot the eye of heaven shines,</span>
+                <span class="ln">And often is his gold complexion dimm'd;</span>
+                <span class="ln">And every fair from fair sometime declines,</span>
+                <span class="ln">By chance, or nature's changing course, untrimm'd:</span>
+                <span class="ln">But thy eternal summer shall not fade,</span>
+                <span class="ln">Nor lose possession of that fair thou ow'st;</span>
+                <span class="ln">Nor shall death brag thou wander'st in his shade,</span>
+                <span class="ln">When in eternal lines to time thou grow'st;</span>
+                <span class="ln">So long as men can breathe, or eyes can see,</span>
+                <span class="ln">So long lives this, and this gives life to thee.</span>
+            </div>
+        </details>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Read it once for the sound. Then read it again and mark: bracket the three quatrains and the closing couplet, and underline the line where you think the turn happens.</div>
+    </div>
+
+    <!-- NOTICE THE PATTERN: cross-era comparison -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; NOTICE THE PATTERN</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Two poems in this module were written decades apart, but look at what they're both really about. In <em>"The Tale of Custard the Dragon"</em> (written in 1936), a dragon everyone thinks is a coward turns out to be the only one brave enough to fight when a real pirate attacks. In <em>"Do Not Go Gentle into That Good Night"</em> (written in 1951), a son begs his dying father to keep fighting instead of giving up quietly. Different decades, different subjects &mdash; a comic dragon poem and a serious poem about death &mdash; but both poems are asking the same question: <strong>what does courage look like when you're afraid?</strong> Keep that question in mind. You'll meet it again before this module ends.</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; THE SHAPE OF THE POEM</div>
+        <div class="widget-question">Choose the best answer for each. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Right. A sonnet has 14 lines: three quatrains and one closing couplet." data-hint="Count the quatrains (4 lines each) and add the closing couplet (2 lines). How many lines total?">
+            <div class="widget-row-prompt">1. How many lines does a Shakespearean sonnet have?</div>
+            <div class="widget-options">
+                <button data-choice="0">19</button>
+                <button data-choice="1">10</button>
+                <button data-choice="2">14</button>
+                <button data-choice="3">20</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Exactly. The volta is the moment the poem changes direction, usually right before the closing couplet." data-hint="What do poets call the moment a sonnet changes direction?">
+            <div class="widget-row-prompt">2. The moment a sonnet "turns" and answers the idea it just built is called the&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">refrain</button>
+                <button data-choice="1">volta</button>
+                <button data-choice="2">stanza</button>
+                <button data-choice="3">couplet</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Correct. A villanelle builds its power through returning refrains; a sonnet builds its power through patient argument and a sharp turn near the end." data-hint="Think about what you learned yesterday: how does a villanelle build its power, compared to how this sonnet just did?">
+            <div class="widget-row-prompt">3. What is the biggest difference between how a villanelle and a sonnet build their power?</div>
+            <div class="widget-options">
+                <button data-choice="0">A sonnet is longer than a villanelle</button>
+                <button data-choice="1">A villanelle rhymes and a sonnet doesn't</button>
+                <button data-choice="2">A sonnet has no ending</button>
+                <button data-choice="3">A villanelle repeats lines; a sonnet builds an idea and then turns</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Keep your marked-up sonnet</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Hold on to your bracketed, turn-marked copy of Sonnet 18. You now know two very different ways a strict poetic shape can build meaning &mdash; through return, and through a turn.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Two poems, two shapes, two ways of building power: return and repeat, or build and turn. Both are choices a poet makes on purpose &mdash; and now you can name what each one is doing.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.09a &middot; Fourteen Lines: The Shape of a Sonnet</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

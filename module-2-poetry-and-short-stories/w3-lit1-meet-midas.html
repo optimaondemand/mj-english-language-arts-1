@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 2.12</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .story-embed { background:#FCFBF7; border:1px solid #e8d5b0; border-radius:8px; padding:0 22px; margin:0; }
+    .story-embed summary { cursor:pointer; padding:16px 0; font-size:17px; color:#0e1c42; }
+    .story-embed p { font-size:16px; color:#1a2340; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Poetry and Short Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.12 &middot; Week 3</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Golden Touch</div>
+        <div style="font-size: 12px; color: #666;">Hawthorne (full story below)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Is a Story Really Saying?</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.12</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Meet King Midas: A Wish and Its Price</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 3</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A story builds its meaning one event at a time. Today you read the whole thing.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You meet King Midas, a man who loves gold more than anything, and the stranger who grants his wish. The series of events a story tells, in the order it tells them, is the <strong>plot</strong>. Read for the plot today: what Midas wants, what he gets, and what it costs him.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what <strong>plot</strong> is: the events of a story in order.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> put the main events of "The Golden Touch" in the order they happen.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">"The Golden Touch" by Nathaniel Hawthorne. <span style="color: #666;">(The full story is printed on this page, in the drop-down below.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc you set up earlier, kept in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">If a stranger offered to grant you one wish, how careful would you be before answering? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="Midas does not hesitate at all. Watch how fast he wishes, and how slowly he learns what the wish really costs.">&#9889; I'd answer fast, I know what I want</button>
+            <button data-response="A fair instinct. Hold onto it: the story asks twice whether Midas is sure, and he brushes the question aside both times.">&#129488; I'd think a while first</button>
+            <button data-response="Good caution. The stranger in this story warns Midas twice. Notice who listens to a warning and who does not.">&#9203; I'd ask what could go wrong first</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">The <strong>plot</strong> is the chain of events a story tells, in the order it tells them. A good plot is not a random pile of things that happen. Each event leads to the next, and the order itself carries meaning. "The Golden Touch" is built as a clear chain. First Hawthorne shows you Midas alone in his treasure room, loving gold more than his daughter, his roses, or music. Then a smiling stranger appears and asks what would satisfy him. Midas wishes that everything he touches will turn to gold. The wish is granted, and at first it delights him: his bedsheets, a bedpost, his clothes all turn to gold. But Hawthorne lets the gift sour slowly. The book Midas touches becomes unreadable. His spectacles turn useless. At breakfast his food hardens into metal before he can eat. Notice that order. The losses get bigger one step at a time, so by the time the worst happens you feel it building. Reading for plot means watching that chain link by link, and asking at each step: what does this event set up next?</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">As you read, find the sentence where the linen bedcover first turns to gold. Hawthorne says it was <strong>transmuted</strong> to gold. <em>Transmuted</em> means changed from one substance into another. Copy that sentence into the "Week-by-Week Notes" section of your Reading Journal, then rewrite it one of three ways: swap in a word that means almost the same thing (a <strong>synonym</strong>), stretch the sentence with more detail, or keep its shape but write about something changing in your own day. Add one line: what changed, and why.</div>
+        </div>
+    </div>
+
+    <!-- READING with embedded PD story -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 14px;">"The Golden Touch" was written by Nathaniel Hawthorne and published in 1852, in a book called <em>A Wonder-Book for Girls and Boys</em>. It is in the public domain, so the whole story is printed for you below. Click to open it and read it all the way through. As you read, keep a list in your Reading Journal of the main events in order.</div>
+        <details class="story-embed">
+            <summary><strong>&#9656; Read the story: "The Golden Touch" by Nathaniel Hawthorne</strong></summary>
+            <p>Once upon a time, there lived a very rich man, and a king besides, whose name was Midas; and he had a little daughter, whom nobody but myself ever heard of, and whose name I either never knew, or have entirely forgotten. So, because I love odd names for little girls, I choose to call her Marygold.</p>
+            <p>This King Midas was fonder of gold than of anything else in the world. He valued his royal crown chiefly because it was composed of that precious metal. If he loved anything better, or half so well, it was the one little maiden who played so merrily around her father's footstool. But the more Midas loved his daughter, the more did he desire and seek for wealth. He thought, foolish man! that the best thing he could possibly do for this dear child would be to bequeath her the immensest pile of yellow, glistening coin that had ever been heaped together since the world was made. Thus he gave all his thoughts and all his time to this one purpose.</p>
+            <p>If ever he happened to gaze for an instant at the gold-tinted clouds of sunset, he wished that they were real gold, and that they could be squeezed safely into his strong box. When little Marygold ran to meet him, with a bunch of buttercups and dandelions, he used to say, "Poh, poh, child! If these flowers were as golden as they look, they would be worth the plucking!"</p>
+            <p>And yet, in his earlier days, before he was so entirely possessed of this insane desire for riches, King Midas had shown a great taste for flowers. He had planted a garden, in which grew the biggest and beautifullest and sweetest roses that any mortal ever saw or smelt. These roses were still growing in the garden, as large, as lovely, and as fragrant, as when Midas used to pass whole hours in gazing at them, and inhaling their perfume. But now, if he looked at them at all, it was only to calculate how much the garden would be worth if each of the innumerable rose-petals were a thin plate of gold. And though he once was fond of music, the only music for poor Midas, now, was the chink of one coin against another.</p>
+            <p>At length Midas had got to be so exceedingly unreasonable, that he could scarcely bear to see or touch any object that was not gold. He made it his custom, therefore, to pass a large portion of every day in a dark and dreary apartment, under ground, at the basement of his palace. It was here that he kept his wealth. To this dismal hole, for it was little better than a dungeon, Midas betook himself, whenever he wanted to be particularly happy. Here, after carefully locking the door, he would take a bag of gold coin, or a gold cup as big as a washbowl, or a heavy golden bar, or a peck-measure of gold-dust, and bring them into the one bright and narrow sunbeam that fell from the dungeon-like window. He valued the sunbeam for no other reason but that his treasure would not shine without its help. And then would he reckon over the coins in the bag; toss up the bar, and catch it as it came down; sift the gold-dust through his fingers; look at the funny image of his own face, as reflected in the burnished circumference of the cup; and whisper to himself, "O Midas, rich King Midas, what a happy man art thou!"</p>
+            <p>Midas called himself a happy man, but felt that he was not yet quite so happy as he might be. The very tiptop of enjoyment would never be reached, unless the whole world were to become his treasure-room, and be filled with yellow metal which should be all his own.</p>
+            <p>Midas was enjoying himself in his treasure-room, one day, as usual, when he perceived a shadow fall over the heaps of gold; and, looking suddenly up, what should he behold but the figure of a stranger, standing in the bright and narrow sunbeam! It was a young man, with a cheerful and ruddy face. Whether it was that the imagination of King Midas threw a yellow tinge over everything, or whatever the cause might be, he could not help fancying that the smile with which the stranger regarded him had a kind of golden radiance in it. As Midas knew that he had carefully turned the key in the lock, and that no mortal strength could possibly break into his treasure-room, he, of course, concluded that his visitor must be something more than mortal.</p>
+            <p>The stranger gazed about the room; and when his lustrous smile had glistened upon all the golden objects that were there, he turned again to Midas. "You are a wealthy man, friend Midas!" he observed. "I doubt whether any other four walls, on earth, contain so much gold as you have contrived to pile up in this room."</p>
+            <p>"I have done pretty well, pretty well," answered Midas, in a discontented tone. "But, after all, it is but a trifle, when you consider that it has taken me my whole life to get it together. If one could live a thousand years, he might have time to grow rich!"</p>
+            <p>"What!" exclaimed the stranger. "Then you are not satisfied?" Midas shook his head. "And pray what would satisfy you?" asked the stranger.</p>
+            <p>Midas paused and meditated. He felt a presentiment that this stranger had come with both the power and the purpose of gratifying his utmost wishes. So he thought, and thought, and thought, and heaped up one golden mountain upon another, in his imagination, without being able to imagine them big enough. At last, a bright idea occurred to King Midas. Raising his head, he looked the lustrous stranger in the face. "Well, Midas," observed his visitor, "I see that you have at length hit upon something that will satisfy you. Tell me your wish."</p>
+            <p>"It is only this," replied Midas. "I am weary of collecting my treasures with so much trouble, and beholding the heap so diminutive, after I have done my best. I wish everything that I touch to be changed to gold!"</p>
+            <p>The stranger's smile grew so very broad, that it seemed to fill the room like an outburst of the sun. "The Golden Touch!" exclaimed he. "You certainly deserve credit, friend Midas, for striking out so brilliant a conception. But are you quite sure that this will satisfy you?"</p>
+            <p>"How could it fail?" said Midas. "And will you never regret the possession of it?" "What could induce me?" asked Midas. "I ask nothing else, to render me perfectly happy."</p>
+            <p>"Be it as you wish, then," replied the stranger, waving his hand in token of farewell. "To-morrow, at sunrise, you will find yourself gifted with the Golden Touch." The figure of the stranger then became exceedingly bright, and Midas involuntarily closed his eyes. On opening them again, he beheld only one yellow sunbeam in the room, and, all around him, the glistening of the precious metal which he had spent his life in hoarding up.</p>
+            <p>Day had hardly peeped over the hills, when King Midas was broad awake, and, stretching his arms out of bed, began to touch the objects that were within reach. He was anxious to prove whether the Golden Touch had really come. So he laid his finger on a chair by the bedside, and on various other things, but was grievously disappointed to perceive that they remained of exactly the same substance as before. He lay in a very disconsolate mood, regretting the downfall of his hopes, until the earliest sunbeam shone through the window. Looking more closely, what was his astonishment and delight, when he found that the linen fabric of the bed had been transmuted to what seemed a woven texture of the purest and brightest gold! The Golden Touch had come to him with the first sunbeam!</p>
+            <p>Midas started up, in a kind of joyful frenzy, and ran about the room, grasping at everything that happened to be in his way. He seized one of the bed-posts, and it became immediately a fluted golden pillar. He pulled aside a window-curtain, and the tassel grew heavy in his hand, a mass of gold. He took up a book from the table; but, on running his fingers through the leaves, behold! it was a bundle of thin golden plates, in which all the wisdom of the book had grown illegible. He hurriedly put on his clothes, and was enraptured to see himself in a magnificent suit of gold cloth. He drew out his handkerchief, which little Marygold had hemmed for him. That was likewise gold, with the dear child's neat stitches running all along the border, in gold thread! Somehow or other, this last transformation did not quite please King Midas.</p>
+            <p>Midas now took his spectacles from his pocket, and put them on his nose, in order that he might see more distinctly what he was about. But, to his great perplexity, he discovered that he could not possibly see through them; for, on taking them off, the transparent crystals turned out to be plates of yellow metal, and, of course, were worthless as spectacles, though valuable as gold. "It is no great matter, nevertheless," said he to himself, very philosophically. "The Golden Touch is worth the sacrifice of a pair of spectacles, at least. Little Marygold will soon be old enough to read to me."</p>
+            <p>Midas went down stairs, and smiled, on observing that the balustrade of the staircase became a bar of burnished gold as his hand passed over it. He lifted the door-latch (it was brass only a moment ago, but golden when his fingers quitted it), and emerged into the garden. Here he found a great number of beautiful roses in full bloom. Very delicious was their fragrance in the morning breeze. But Midas knew a way to make them far more precious, according to his way of thinking, than roses had ever been before. So he went from bush to bush, and exercised his magic touch most indefatigably, until every individual flower and bud was changed to gold. By the time this work was completed, King Midas was summoned to breakfast.</p>
+            <p>The breakfast consisted of hot cakes, some nice little brook trout, roasted potatoes, fresh boiled eggs, and coffee, for King Midas himself, and a bowl of bread and milk for his daughter Marygold. Little Marygold had not yet made her appearance. Her father ordered her to be called, and, seating himself at table, awaited the child's coming. It was not a great while before he heard her coming along the passageway crying bitterly. This surprised him, because Marygold was one of the cheerfullest little people, and hardly shed a thimbleful of tears in a twelvemonth.</p>
+            <p>When Midas heard her sobs, he determined to put little Marygold into better spirits; so, leaning across the table, he touched his daughter's bowl (which was a China one, with pretty figures all around it), and transmuted it to gleaming gold. Meanwhile, Marygold slowly and disconsolately opened the door, and showed herself with her apron at her eyes, still sobbing as if her heart would break. "How now, my little lady!" cried Midas. "Pray what is the matter with you, this bright morning?"</p>
+            <p>Marygold held out her hand, in which was one of the roses which Midas had so recently transmuted. "Ah, dear father!" answered the child, "it is not beautiful, but the ugliest flower that ever grew! As soon as I was dressed I ran into the garden to gather some roses for you. But, oh dear me! All the beautiful roses, that smelled so sweetly and had so many lovely blushes, are blighted and spoilt! They are grown quite yellow, as you see this one, and have no longer any fragrance! What can have been the matter with them?"</p>
+            <p>"Poh, my dear little girl, pray don't cry about it!" said Midas, who was ashamed to confess that he himself had wrought the change which so greatly afflicted her. "Sit down and eat your bread and milk." The child now sat down to table, but was so occupied with her grief for the blighted roses that she did not even notice the wonderful transmutation of her China bowl.</p>
+            <p>Midas, meanwhile, had poured out a cup of coffee, and, as a matter of course, the coffee-pot was gold when he set it down. Amid these thoughts, he lifted a spoonful of coffee to his lips, and, sipping it, was astonished to perceive that, the instant his lips touched the liquid, it became molten gold, and, the next moment, hardened into a lump! "Ha!" exclaimed Midas, rather aghast.</p>
+            <p>He took one of the nice little trouts on his plate, and, by way of experiment, touched its tail with his finger. To his horror, it was immediately transmuted from an admirably fried brook-trout into a metallic gold-fish. He took one of the smoking-hot cakes, and had scarcely broken it, when it assumed the yellow hue of metal. Almost in despair, he helped himself to a boiled egg, which immediately underwent a similar change. "Well, this is a quandary!" thought he, leaning back in his chair, and looking quite enviously at little Marygold, who was now eating her bread and milk with great satisfaction. "Such a costly breakfast before me, and nothing that can be eaten!"</p>
+            <p>Hoping that he might avoid this inconvenience, King Midas next snatched a hot potato, and attempted to cram it into his mouth. But the Golden Touch was too nimble for him. He found his mouth full, not of mealy potato, but of solid metal, which so burnt his tongue that he roared aloud, and, jumping up from the table, began to dance and stamp about the room, both with pain and affright. "Father, dear father!" cried little Marygold, "pray what is the matter? Have you burnt your mouth?" "Ah, dear child," groaned Midas, dolefully, "I don't know what is to become of your poor father!"</p>
+            <p>These reflections so troubled wise King Midas, that he began to doubt whether, after all, riches are the one desirable thing in the world. But this was only a passing thought. So fascinated was Midas with the glitter of the yellow metal, that he would still have refused to give up the Golden Touch for so paltry a consideration as a breakfast.</p>
+            <p>Our pretty Marygold could endure it no longer. She sat, a moment, gazing at her father, and then, with a sweet and sorrowful impulse to comfort him, she started from her chair, and, running to Midas, threw her arms affectionately about his knees. He bent down and kissed her. He felt that his little daughter's love was worth a thousand times more than he had gained by the Golden Touch. "My precious, precious Marygold!" cried he.</p>
+            <p>But Marygold made no answer. Alas, what had he done? The moment the lips of Midas touched Marygold's forehead, a change had taken place. Her sweet, rosy face assumed a glittering yellow color, with yellow tear-drops congealing on her cheeks. Her beautiful brown ringlets took the same tint. Her soft and tender little form grew hard and inflexible within her father's encircling arms. Oh, terrible misfortune! The victim of his insatiable desire for wealth, little Marygold was a human child no longer, but a golden statue!</p>
+            <p>And now, at last, when it was too late, he felt how infinitely a warm and tender heart, that loved him, exceeded in value all the wealth that could be piled up betwixt the earth and sky! While he was in this tumult of despair, he suddenly beheld a stranger standing near the door. Midas recognized the same figure which had appeared to him, the day before, in the treasure-room.</p>
+            <p>"Well, friend Midas," said the stranger, "pray how do you succeed with the Golden Touch?" Midas shook his head. "I am very miserable," said he. "Very miserable, indeed!" exclaimed the stranger. "And how happens that? Have I not faithfully kept my promise with you?" "Gold is not everything," answered Midas. "And I have lost all that my heart really cared for."</p>
+            <p>"Ah! So you have made a discovery, since yesterday?" observed the stranger. "Let us see, then. Which of these two things do you think is really worth the most, the gift of the Golden Touch, or one cup of clear cold water?" "O blessed water!" exclaimed Midas. "It will never moisten my parched throat again!" "The Golden Touch," continued the stranger, "or a crust of bread?" "A piece of bread," answered Midas, "is worth all the gold on earth!" "The Golden Touch," asked the stranger, "or your own little Marygold, warm, soft, and loving as she was an hour ago?" "Oh, my child, my dear child!" cried poor Midas, wringing his hands. "I would not have given that one small dimple in her chin for the power of changing this whole big earth into a solid lump of gold!"</p>
+            <p>"You are wiser than you were, King Midas!" said the stranger, looking seriously at him. "Your own heart, I perceive, has not been entirely changed from flesh to gold. You appear to be still capable of understanding that the commonest things, such as lie within everybody's grasp, are more valuable than the riches which so many mortals sigh and struggle after. Tell me, now, do you sincerely desire to rid yourself of this Golden Touch?" "It is hateful to me!" replied Midas.</p>
+            <p>"Go, then," said the stranger, "and plunge into the river that glides past the bottom of your garden. Take likewise a vase of the same water, and sprinkle it over any object that you may desire to change back again from gold into its former substance. If you do this in earnestness and sincerity, it may possibly repair the mischief which your avarice has occasioned." King Midas bowed low; and when he lifted his head, the lustrous stranger had vanished.</p>
+            <p>Midas lost no time in snatching up a great earthen pitcher (but, alas! it was no longer earthen after he touched it), and hastening to the river-side. On reaching the river's brink, he plunged headlong in. "Poof! poof!" snorted King Midas, as his head emerged out of the water. "Well, this is really a refreshing bath, and I think it must have quite washed away the Golden Touch. And now for filling my pitcher!" As he dipped the pitcher into the water, it gladdened his very heart to see it change from gold into the same good, honest earthen vessel which it had been before he touched it. Perceiving a violet on the bank, Midas touched it with his finger, and was overjoyed to find that the delicate flower retained its purple hue. The curse of the Golden Touch had really been removed from him.</p>
+            <p>King Midas hastened back to the palace. The first thing he did was to sprinkle the water by handfuls over the golden figure of little Marygold. No sooner did it fall on her than the rosy color came back to the dear child's cheek, and she began to sneeze and sputter, and was astonished to find herself dripping wet. "Pray do not, dear father!" cried she. "See how you have wet my nice frock!" For Marygold did not know that she had been a little golden statue. Her father then led little Marygold into the garden, where he sprinkled all the remainder of the water over the rose-bushes, and above five thousand roses recovered their beautiful bloom.</p>
+            <p>There were two circumstances which, as long as he lived, used to put King Midas in mind of the Golden Touch. One was, that the sands of the river sparkled like gold; the other, that little Marygold's hair had now a golden tinge, which he had never observed in it before. When King Midas had grown quite an old man, and used to trot Marygold's children on his knee, he was fond of telling them this marvellous story. And then would he stroke their glossy ringlets, and tell them that their hair, likewise, had a rich shade of gold. "And to tell you the truth, my precious little folks," quoth King Midas, "ever since that morning, I have hated the very sight of all other gold, save this!"</p>
+        </details>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select sequence (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; FOLLOW THE PLOT</div>
+        <div class="widget-question">For each pair of events, choose the one that happens FIRST in the story. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. The stranger appears and grants the wish before any object ever turns to gold. The gift arrives the next morning at sunrise." data-hint="Nothing turns to gold until the wish is granted. Which event makes the gold possible?">
+            <div class="widget-row-prompt">1. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">The bedsheets turn to gold</button>
+                <button data-choice="1">The stranger grants the wish</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Yes. Midas turns the roses to gold in the garden, then goes in to breakfast and finds his food turning to metal." data-hint="One of these happens in the garden, the other at the table. Which comes first in his morning?">
+            <div class="widget-row-prompt">2. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">Midas turns the garden roses to gold</button>
+                <button data-choice="1">Midas's breakfast turns to gold</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Correct. Marygold is turned to gold first; that loss is what finally changes Midas. Only afterward does the stranger return and send him to the river." data-hint="The river fixes what went wrong. So which had to break first?">
+            <div class="widget-row-prompt">3. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">Midas bathes in the river</button>
+                <button data-choice="1">Marygold turns to gold</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, list the main events of "The Golden Touch" in order, and add your word-work sentence. You'll build on these notes in the next two lessons.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have the whole plot now. Hold one question for tomorrow: <em>at what exact moment does this happy gift become a curse?</em> The answer is the turning point of the story, and that is what you will study next.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.12 &middot; Meet King Midas: A Wish and Its Price</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite â€” try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 3.26</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">King Arthur and His Knights</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.26 &middot; Week 5</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">King Arthur</div>
+        <div style="font-size: 12px; color: #666;">"The Last Battle"</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Knighthood, Virtue, and the Cost of the Code</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.26</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Last Battle and the Return of Excalibur</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 5</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">An object can carry a whole meaning, if a writer has been patient with it.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today you read the last battle, where Arthur kills Mordred and is mortally wounded, and the strange, quiet scene that follows it. Watch one object: <strong>Excalibur</strong>. The sword that made Arthur a king must now be given back. The craft term for an object that stands for something larger is a <strong>symbol</strong>. Today you learn to tell when a sword is just a sword, and when it means far more.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what makes an object a <strong>symbol</strong> and what Excalibur stands for at the end.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Bedivere's two failures and one obedience matter to the scene.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>King Arthur and His Knights of the Round Table</em>, "The Last Battle" (Book Four, the final chapter). <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Think of one object you own that means more than what it is worth. Why is it hard to give up? (No wrong answer.)</div>
+        <div class="widget-options">
+            <button data-response="That is exactly a symbol: the thing stands for the memory. Watch Bedivere struggle to give up Excalibur because of what it stands for.">&#127993; It reminds me of a person or a moment</button>
+            <button data-response="A fair, honest answer. Notice that Bedivere also hesitates partly over the sword's jewels, before the deeper meaning wins out.">&#128176; It's worth a lot, plainly</button>
+            <button data-response="Letting go can feel like losing the thing it represents. That is the quiet tension of today's final scene. Hold that feeling as you read.">&#129496; Letting it go feels like losing something bigger</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH (one substantive paragraph) -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>symbol</strong> is an object that carries a meaning beyond itself. A sword is just a weapon until a writer fills it with meaning. Green has been patient with Excalibur for the whole book: it was the gift from the Lady of the Lake that <em>equipped</em> Arthur to be king. So when the dying Arthur orders Sir
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Sir Bedivere, the last of Arthur's knights left alive after the final battle.">Bedivere</span> to throw the sword into the lake, he is really asking him to accept that the reign is over. Notice the pattern in how Bedivere obeys. <strong>Twice</strong> he hides the sword and lies, unwilling to lose its jewels and its glory; <strong>only the third time</strong> does he truly obey. A repeated action like this, with a change on the final turn, is how older stories build meaning and suspense, and you saw the same three-beat shape with Gawain and the green girdle. When Bedivere finally throws Excalibur, a hand "clothed in shining white samite" rises from the water,
+        <span style="border-bottom: 1.5px dotted #C7922C; cursor: help; color: #0E1C42;" title="Waved or swung a weapon in the air, usually to show power.">brandishes</span> the sword three times, and draws it under. The Lady of the Lake is taking back her gift. The sword leaving the world <em>is</em> the kingship leaving the world. That is a symbol doing its full work. Today, practice telling the difference between an object that just sits in a scene and one the writer has loaded with meaning.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Find the sentence where the hand <strong>brandishes</strong> Excalibur, or a sentence using <strong>mortally</strong> (wounded). Copy it into your Reading Journal, then rewrite it one of three ways: swap a near-synonym, stretch it with more detail, or keep its shape but write about an object being returned to its owner. Add one line: what changed, and why.</div>
+        </div>
+    </div>
+
+    <!-- VISUAL: the rule of three -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128202; BEDIVERE AND EXCALIBUR &middot; TWO FAILURES, THEN OBEDIENCE</div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 200px; background: #2b1a1a; border-radius: 8px; padding: 16px 18px;">
+                <div style="font-size: 14px; color: #ffb4a8; margin-bottom: 8px; letter-spacing: 0.5px;">FIRST TIME</div>
+                <div style="font-size: 16px; color: #ffe9e5; line-height: 1.7;">Bedivere hides the sword and lies. He cannot bear to waste such jewels.</div>
+            </div>
+            <div style="flex: 1; min-width: 200px; background: #2b231a; border-radius: 8px; padding: 16px 18px;">
+                <div style="font-size: 14px; color: #ffe0a8; margin-bottom: 8px; letter-spacing: 0.5px;">SECOND TIME</div>
+                <div style="font-size: 16px; color: #fff3e0; line-height: 1.7;">He hides it and lies again. The pull of the sword's worth is still too strong.</div>
+            </div>
+            <div style="flex: 1; min-width: 200px; background: #142a3a; border-radius: 8px; padding: 16px 18px;">
+                <div style="font-size: 14px; color: #9fe3ff; margin-bottom: 8px; letter-spacing: 0.5px;">THIRD TIME</div>
+                <div style="font-size: 16px; color: #e3f5ff; line-height: 1.7;">He obeys. The hand in white samite rises, brandishes the sword three times, and takes it under.</div>
+            </div>
+        </div>
+        <div style="font-size: 14px; color: #666; margin-top: 12px; line-height: 1.5;">In your journal, name what each failure shows about how hard it is to let the old kingdom go.</div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>"The Last Battle."</strong> Watch Excalibur closely: who holds it, who gives it up, and what happens to it in the end. Note in the "Week-by-Week Notes" section of your Reading Journal one thing the sword stands for.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>King Arthur and His Knights of the Round Table</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; SYMBOL OR JUST A THING?</div>
+        <div class="widget-question">For each detail, choose the best reading. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. Excalibur is a loaded symbol: the gift that made Arthur king. Returning it means the reign itself is ending." data-hint="Green spent the whole book on this sword. Is it really only a weapon by now?">
+            <div class="widget-row-prompt">1. Arthur orders Bedivere to throw Excalibur into the lake.</div>
+            <div class="widget-options">
+                <button data-choice="0">Just a weapon being thrown away to keep it from enemies</button>
+                <button data-choice="1">A symbol: giving back the sword means the kingship is over</button>
+                <button data-choice="2">A sign that Arthur has recovered from his wound</button>
+                <button data-choice="3">Proof that Bedivere is the new king</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. Bedivere lies twice because he cannot bear to lose the jewels and glory. His failure shows how hard it is to let the old world go." data-hint="Why does a loyal knight hide the sword instead of obeying? What is tempting him?">
+            <div class="widget-row-prompt">2. Bedivere hides the sword and lies the first two times Arthur sends him.</div>
+            <div class="widget-options">
+                <button data-choice="0">He cannot bear to waste the precious sword, showing how hard letting go is</button>
+                <button data-choice="1">He has forgotten which sword Arthur means</button>
+                <button data-choice="2">He is too weak from his own wounds to lift it</button>
+                <button data-choice="3">He wants to give the sword to Mordred</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Exactly. A hand in white samite rises, brandishes the sword three times, and draws it under: the Lady of the Lake reclaiming the gift she once gave." data-hint="A hand in white samite once offered Arthur this sword. Who is taking it back?">
+            <div class="widget-row-prompt">3. When Bedivere finally obeys, a hand "clothed in shining white samite" rises from the water.</div>
+            <div class="widget-options">
+                <button data-choice="0">Mordred, returning to fight again</button>
+                <button data-choice="1">Merlin, come to save the king</button>
+                <button data-choice="2">The Lady of the Lake, taking back the gift she gave</button>
+                <button data-choice="3">A random soldier from the battle</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write one sentence on what Excalibur stands for by the end, and one on why Bedivere's third try matters. You will reach for these ideas in this week's writing.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The battle is over and the sword is gone, but the legend is not finished. Tomorrow a black-veiled barge carries the wounded king away, and you read how a story can outlive the man at its center.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.26 &middot; The Last Battle and the Return of Excalibur</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 2.18</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .preview-banner { background: #fff3cd; border-bottom: 2px solid #c7922c; padding: 10px 24px; font-size: 13px; color: #6b4f1d; }
+    .preview-banner strong { color: #0e1c42; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="preview-banner"><strong>Local preview only.</strong> Delete this banner before deploying. Widgets run on the GitHub-hosted page, not in a Canvas RCE paste.</div>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Poetry and Short Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.18 &middot; Week 4</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Fair Fight: Answer with Evidence</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Is a Story Really Saying?</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.18</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Fair Fight: State the Other Side, Then Answer It</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 4</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The strongest way to disagree is to state the other side at its best, then answer it.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today you learn the move that makes your letter convincing. You give the author's view its <strong>strongest, fairest</strong> form, then answer it with <strong>evidence</strong> from the text. A weak letter knocks down a view nobody holds. A strong one beats the best version.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state the strongest, fairest version of a <strong>counter-argument</strong> before I answer it.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> answer that view with specific <strong>evidence</strong> from the text.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your project file, with the claim and counter-claim you wrote yesterday</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal and your own copy or notes on the chosen text, for finding evidence</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When someone argues with you, which feels harder to answer? (No wrong answer. Just think about it.)</div>
+        <div class="widget-options">
+            <button data-response="Right. The strong version is harder, which is exactly why answering it makes your own case stronger.">When they make their best, fairest point</button>
+            <button data-response="True, a silly version is easy to beat, but beating it proves nothing. Today you'll aim at the strong version instead.">When they say something easy to knock down</button>
+            <button data-response="Good honesty. Evidence is what settles it. Today you'll back your answer with proof from the text.">When they have proof and I don't</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>counter-argument</strong> is the opposing side, the case against your claim. There is a tempting, lazy way to handle it. You make the author sound foolish and knock down a weak version of their view. The problem is that beating a weak version proves nothing. Anyone watching can see you ducked the real point. The honest and far more convincing move is to state the other side at its <strong>strongest and fairest</strong>, the version the author would actually agree is theirs, and then answer that. So in your letter you write something like: "You would say, Mr. Hawthorne, that Midas only found peace once he stopped chasing gold, and that is a real and powerful point." Then you turn and answer it with <strong>evidence</strong>, which is specific proof from the text: an event, a detail, or a quoted line. You might answer: "But the story also shows that it was the river water, free to everyone, that healed Marygold. Wealth was never the villain. Greed was." Notice the rhythm. State the strong opposing point, then answer it with something specific the text actually says or shows. Vague answers ("I just disagree") do not count. Evidence is what turns an opinion into an argument.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Strong arguments rest on <strong>evidence</strong>. <em>Evidence</em> means the specific facts or details that prove a point. Start with this sentence: <em>"The evidence from the text supports my claim."</em> Rewrite it three ways: swap a synonym for <strong>evidence</strong> (such as <em>proof</em> or <em>support</em>), stretch it by naming the exact moment you mean, or keep its shape but write about evidence for a claim in your own life. Add one line: what is the single best piece of evidence in your text?</div>
+        </div>
+    </div>
+
+    <!-- Inline visual: state-then-answer -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128202; THE MOVE: STATE THE STRONG SIDE, THEN ANSWER IT</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 14px;">
+            <div style="flex: 1; min-width: 200px; background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 14px 16px;">
+                <div style="font-size: 13px; color: #1B6A94; margin-bottom: 6px;">STEP 1: STATE IT FAIRLY</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">"You would say that Midas only found peace once he gave up gold, a fair and powerful point."</div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; min-width: 40px; font-size: 26px; color: #c7922c;">&#10145;&#65039;</div>
+            <div style="flex: 1; min-width: 200px; background: #FDF3E3; border: 1px solid #e8d5b0; border-radius: 8px; padding: 14px 16px;">
+                <div style="font-size: 13px; color: #9a6a14; margin-bottom: 6px;">STEP 2: ANSWER WITH EVIDENCE</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">"But it was free river water, not poverty, that healed Marygold. Greed was the villain, not wealth itself."</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- READING / SOURCE -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; WORK FROM YOUR TEXT</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In your project file, write one sentence giving the author's strongest reply to you, stated fairly. Under it, write your answer using at least one specific moment from the text (early, middle, or late). For "The Golden Touch" you can reopen the full story in the drop-down on Lesson 2.12; for the poems, use your own copy and your Reading Journal notes.</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; FAIR AND STRONG</div>
+        <div class="widget-question">Choose the best answer for each. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Stating the other side at its strongest, then answering it, is the honest and convincing move." data-hint="Which approach takes the opposing view seriously instead of mocking a weak version?">
+            <div class="widget-row-prompt">1. What is the strongest way to handle the other side?</div>
+            <div class="widget-options">
+                <button data-choice="0">Ignore it completely</button>
+                <button data-choice="1">Make the author sound foolish</button>
+                <button data-choice="2">State its best version fairly, then answer it</button>
+                <button data-choice="3">Knock down a weak version of it</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Right. Evidence is specific proof from the text, like a named event or a quoted line." data-hint="Which choice points to something specific the text actually shows?">
+            <div class="widget-row-prompt">2. Which sentence answers a claim with evidence?</div>
+            <div class="widget-options">
+                <button data-choice="0">I just feel the author is wrong.</button>
+                <button data-choice="1">Everyone knows greed is bad.</button>
+                <button data-choice="2">That idea is silly.</button>
+                <button data-choice="3">The river water, free to all, is what healed Marygold.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Exactly. Beating a weak, distorted version proves nothing; answering the strong version is what convinces a reader." data-hint="Why is it weak to knock down a distorted version of the other side?">
+            <div class="widget-row-prompt">3. Why should you answer the strongest version of the other side?</div>
+            <div class="widget-options">
+                <button data-choice="0">Because it is the easiest to beat</button>
+                <button data-choice="1">Because beating the weak version proves nothing</button>
+                <button data-choice="2">Because it makes your letter longer</button>
+                <button data-choice="3">Because the author asked you to</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your project file</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write the author's strongest reply (fairly stated) and your evidence-backed answer. Tomorrow you learn to quote that evidence correctly.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Test your fairness. If the author read your version of their view, would they say "yes, that is what I meant"? If so, your answer will land much harder.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.18 &middot; The Fair Fight: State the Other Side, Then Answer It</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
