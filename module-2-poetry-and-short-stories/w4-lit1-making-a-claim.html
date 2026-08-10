@@ -31,6 +31,9 @@
     .ow-flip .ow-flip-back { display: none; color: #1a2340; }
     .ow-flip.flipped .ow-flip-front { display: none; }
     .ow-flip.flipped .ow-flip-back { display: block; }
+    .ow-reveal details { background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px; padding:12px 16px; margin-bottom:10px; }
+    .ow-reveal summary { cursor:pointer; font-size:15px; color:#0E1C42; line-height:1.5; }
+    .ow-reveal .reveal-body { margin-top:10px; font-size:15px; color:#1a2340; line-height:1.6; border-top:1px solid #EEF1F8; padding-top:10px; }
 </style>
 </head>
 <body>
@@ -146,6 +149,41 @@
         </div>
     </div>
 
+    <!-- EVIDENCE TYPES -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; EVIDENCE ISN'T ALL THE SAME KIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A claim is only as strong as what backs it up, and writers reach for different kinds of evidence. A <strong>fact</strong> is something that can be checked and is true whether or not anyone believes it, like the fact that "The Tale of Custard the Dragon" has fifteen four-line stanzas. An <strong>example</strong> is one specific moment that shows a claim in action, like the moment Custard alone attacks the pirate while the "brave" pets hide or flee. <strong>Testimony</strong> is what a person says about their own experience or belief, such as a character's own words about how they felt. A <strong>number or statistic</strong> reports an amount, like how many times the line about "a nice safe cage" repeats. A fact and a statistic are close cousins, both checkable, while testimony is only someone's word, worth less on its own than a fact, but still useful for feelings a fact cannot capture. When you argue with an author, name the kind of evidence you are using and pick evidence that actually proves your point, not just evidence that is easy to find.</p>
+    </div>
+
+    <!-- INTENDED AUDIENCE -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; WHO WAS THIS WRITTEN FOR?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">Every author pictures somebody reading their words. Noticing who that somebody is changes how you read. Ask two questions: who does the author seem to be picturing, and how can you tell? Hawthorne answers this for you directly. He calls his readers "my dear little folks" and stops to explain things a child might not already know, so his <strong>intended audience</strong> is young readers and the grown-ups reading along with them. Nash's poem is built the same way: silly invented words like "realio, trulio," bouncy rhymes, and a talking dragon all signal a child audience too, even though the poem's idea (real courage looks different from loud bragging) is worth an adult's attention as well. Thomas's poem reads differently. It never explains itself the way Hawthorne does, it uses difficult words like "meteors" and "forked no lightning" without defining them, and its final lines turn to speak to one specific person, his dying father, so its audience is closer to an adult who already knows grief firsthand. When you write your own letter this week, decide who you are picturing on the other end, and let that choice shape your words, the same way theirs shaped their poem or story.</p>
+    </div>
+
+    <!-- EVIDENCE + AUDIENCE CHECK: commit-then-reveal (Engine 4) -->
+    <div class="optima-widget ow-reveal">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; THINK, THEN REVEAL</div>
+        <div class="widget-question">Decide your answer first (in your head or your journal). Then open the box to compare.</div>
+
+        <details>
+            <summary>1. "Custard has fifteen four-line stanzas." What kind of evidence is this? (Decide, then open.)</summary>
+            <div class="reveal-body">That is a fact you can check by counting the stanzas yourself. You could also call it a number, since it reports a count. Either label is fair; what makes it strong is that it does not depend on anyone's opinion.</div>
+        </details>
+
+        <details>
+            <summary>2. "Custard alone attacks the pirate while Mustard the dog flees." What kind of evidence is this? (Decide, then open.)</summary>
+            <div class="reveal-body">That is an example: one specific moment from the poem that shows a claim in action. If your claim is that real courage is shown by action, this moment is the proof, not just a fact about the poem.</div>
+        </details>
+
+        <details>
+            <summary>3. Nash and Hawthorne both explain themselves and use playful, invented words. Thomas never simplifies his language at all. What does that tell you about their audiences? (Decide, then open.)</summary>
+            <div class="reveal-body">It suggests Nash and Hawthorne are picturing younger readers, or readers new to the idea, while Thomas is picturing an adult reader who already knows grief and does not need the poem's hard words defined.</div>
+        </details>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
     <!-- READING / SOURCE -->
     <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
         <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; WORK FROM YOUR TEXT</div>
@@ -230,6 +268,7 @@
       w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
       w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
       w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('details[open]').forEach(function (d) { d.removeAttribute('open'); });
       return;
     }
     var rBtn = e.target.closest('.ow-reflect .widget-options button');
