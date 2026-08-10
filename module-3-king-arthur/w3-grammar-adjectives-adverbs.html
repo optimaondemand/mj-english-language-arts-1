@@ -31,6 +31,9 @@
     .ow-flip .ow-flip-back { display: none; color: #1a2340; }
     .ow-flip.flipped .ow-flip-front { display: none; }
     .ow-flip.flipped .ow-flip-back { display: block; }
+    .ow-commit details { background:#FFFFFF; border:1px solid #D0D9E8; border-radius:6px; padding:6px 12px; margin-top:10px; }
+    .ow-commit summary { cursor:pointer; color:#1B6A94; font-size:15px; padding:6px 0; }
+    .ow-commit textarea { width:100%; box-sizing:border-box; border:1px solid #D0D9E8; border-radius:6px; padding:10px; font-family:inherit; font-size:15px; margin-bottom:8px; }
 </style>
 </head>
 <body>
@@ -140,6 +143,18 @@
             <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL</div>
             <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Write two sentences comparing Gareth and one other knight, using a <strong>comparative</strong> each time. Then write one <strong>superlative</strong> sentence and ask yourself honestly: can I prove that about <em>every</em> knight in the book? If not, change it to a comparative. That single swap will make your essay easier to defend.</div>
         </div>
+
+        <!-- COMMIT-THEN-REVEAL (Engine 4) -->
+        <div class="optima-widget ow-commit" style="margin-top:8px;">
+            <div class="widget-kicker">&#9889; COMMIT FIRST, THEN COMPARE</div>
+            <div class="widget-question">Decide: is this sentence correct, or does it need a fix? &ldquo;Gareth fought more braver than the other squires.&rdquo; Type your answer (a fix, or &ldquo;already correct&rdquo;) below.</div>
+            <textarea rows="2" placeholder="Type your answer here. No one grades it; you're committing to a claim."></textarea>
+            <details>
+                <summary>Reveal the rule</summary>
+                <div style="font-size:15px; color:#1a2340; line-height:1.6; padding:8px 0;">It needs a fix. &ldquo;More braver&rdquo; doubles up two comparative methods at once (<em>more</em> and <em>-er</em>), and English only ever uses one. The correct sentence is &ldquo;Gareth fought braver than the other squires.&rdquo; Watch for the same trap with superlatives: &ldquo;most bravest&rdquo; should just be &ldquo;bravest.&rdquo;</div>
+            </details>
+            <button class="widget-reset">Reset</button>
+        </div>
     </div>
 
     <!-- Reading tie-in -->
@@ -223,6 +238,8 @@
       w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
       w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
       w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      w.querySelectorAll('.ow-commit textarea').forEach(function (t) { t.value = ''; });
+      w.querySelectorAll('.ow-commit details').forEach(function (d) { d.removeAttribute('open'); });
       return;
     }
     var rBtn = e.target.closest('.ow-reflect .widget-options button');
