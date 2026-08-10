@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -275,7 +275,7 @@
       row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
       var right = sBtn.dataset.choice === correct;
       sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite â€” try again.');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite — try again.');
       var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
       rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
       rf.textContent = text;
