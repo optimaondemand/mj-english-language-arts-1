@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 6.07</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .story-embed { background:#FCFBF7; border:1px solid #e8d5b0; border-radius:8px; padding:0 22px; margin:0; }
+    .story-embed summary { cursor:pointer; padding:16px 0; font-size:17px; color:#0e1c42; }
+    .story-embed p { font-size:16px; color:#1a2340; line-height:1.7; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 6 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Shakespeare Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.07 &middot; Week 2</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Much Ado About Nothing</div>
+        <div style="font-size: 12px; color: #666;">Lamb (full tale below)</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Deception, Love, Wit, and Honor</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.07</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Messina, Claudio, and Hero</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 2</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Sometimes the reader knows the truth while a character does not.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today you read the whole tale of <em>Much Ado About Nothing</em>. Soldiers come home to Messina, and Claudio falls in love with gentle Hero. When the reader knows something a character does not, the craft term is <strong>dramatic irony</strong>. Watch how Lamb uses it: you learn a lie is being staged long before Claudio believes it.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what <strong>dramatic irony</strong> is and find an example in the tale.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> put the main events of the tale in the order they happen.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">"Much Ado About Nothing," retold by Charles and Mary Lamb. <span style="color: #666;">(The full tale is printed on this page, in the drop-down below.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc you set up earlier, kept in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Have you ever watched someone believe something you knew was false? How did it feel? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="That tension is exactly dramatic irony. You will feel it watching Claudio swallow a lie you already know is staged.">&#128556; Frustrating, I wanted to warn them</button>
+            <button data-response="Fair. Lamb keeps you one step ahead of Claudio on purpose, so you feel the danger building before he does.">&#129488; Tense, I saw the trouble coming</button>
+            <button data-response="Hold onto that. Knowing more than the character is what makes the wedding scene in this tale so hard to watch.">&#129300; I'm not sure I have</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div style="background: #FDF3E3; border: 1px solid #e8d5b0; border-left: 4px solid #C7922C; border-radius: 8px; padding: 18px 24px; margin-bottom: 12px;">
+        <div style="font-size: 11px; color: #C7922C; margin-bottom: 12px;">&#127963;&#65039; A LITTLE BACKGROUND FIRST</div>
+        <div style="font-size: 17px; color: #1a2340; line-height: 1.7;">William Shakespeare wrote his comedy <em>Much Ado About Nothing</em> around 1598 A.D. A <strong>comedy</strong>, in the old sense, is a story that ends happily, usually in marriage, after confusion and mistakes are sorted out. This is again the Lambs' prose retelling, written around 1807 A.D. and in the public domain, so the whole tale is printed for you below. The story is set in Messina, a city on the island of Sicily, where soldiers have just returned from a war.</div>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;"><strong>Dramatic irony</strong> happens when the reader knows something a character does not. Lamb builds the tale of <em>Much Ado About Nothing</em> on it. Claudio, a young lord, loves the gentle Hero, and a wedding is quickly arranged. But the prince's jealous half-brother, Don John, plots to ruin it. He has his man Borachio arrange for Hero's servant Margaret to dress in Hero's clothes and talk at the window at night, so that Claudio, watching from below, will think the woman is Hero being unfaithful. Here is the key: Lamb tells <em>you</em>, the reader, the whole plan before it is carried out. So when Claudio is fooled, you already know he is wrong. That gap between what you know and what Claudio believes is dramatic irony, and it makes the coming wedding scene painful to read. As you read, also watch how Lamb shows each person through what they say and do, which is <strong>characterization</strong>: Hero is quiet and modest, Claudio is quick to believe the worst, and Don John causes harm "only for the malicious pleasure" of it.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">As you read, find the sentence about the "war of <strong>raillery</strong>" between Beatrice and Benedick. <em>Raillery</em> means good-humored teasing or joking. Copy that sentence into the "Week-by-Week Notes" section of your Reading Journal, then rewrite it one of three ways: swap in a word that means almost the same thing (a <strong>synonym</strong>), stretch it with more detail, or keep its shape but write about teasing between people you know. Add one line: what changed, and why.</div>
+        </div>
+    </div>
+
+    <!-- READING with embedded PD tale -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 14px;">Read the tale below all the way through. It is the Lambs' full retelling of <em>Much Ado About Nothing</em>, and it is in the public domain, so the whole tale is printed for you. Click to open it. As you read, keep a list in your Reading Journal of the main events in order, and mark the moment Don John's plan is explained to you, the reader.</div>
+        <details class="story-embed">
+            <summary><strong>&#9656; Read the tale: "Much Ado About Nothing," retold by Charles and Mary Lamb</strong></summary>
+            <p>There lived in the palace at Messina two ladies, whose names were Hero and Beatrice. Hero was the daughter, and Beatrice the niece, of Leonato, the governor of Messina. Beatrice was of a lively temper, and loved to divert her cousin Hero, who was of a more serious disposition, with her sprightly sallies. Whatever was going forward was sure to make matter of mirth for the light-hearted Beatrice.</p>
+            <p>At the time the history of these ladies commences some young men of high rank in the army, as they were passing through Messina on their return from a war that was just ended, in which they had distinguished themselves by their great bravery, came to visit Leonato. Among these were Don Pedro, the prince of Arragon; and his friend Claudio, who was a lord of Florence; and with them came the wild and witty Benedick, and he was a lord of Padua. These strangers had been at Messina before, and the hospitable governor introduced them to his daughter and his niece as their old friends and acquaintance.</p>
+            <p>Benedick, the moment he entered the room, began a lively conversation with Leonato and the prince. Beatrice, who liked not to be left out of any discourse, interrupted Benedick with saying: 'I wonder that you will still be talking, signior Benedick: nobody marks you.' Benedick was just such another rattle-brain as Beatrice, yet he was not pleased at this free salutation; he thought it did not become a well-bred lady to be so flippant with her tongue; and he remembered, when he was last at Messina, that Beatrice used to select him to make her merry jests upon. And as there is no one who so little likes to be made a jest of as those who are apt to take the same liberty themselves, so it was with Benedick and Beatrice; these two sharp wits never met in former times but a perfect war of raillery was kept up between them, and they always parted mutually displeased with each other.</p>
+            <p>Therefore when Beatrice stopped him in the middle of his discourse with telling him nobody marked what he was saying, Benedick, affecting not to have observed before that she was present, said: 'What, my dear lady Disdain, are you yet living?' And now war broke out afresh between them, and a long jangling argument ensued, during which Beatrice, although she knew he had so well approved his valour in the late war, said that she would eat all he had killed there: and observing the prince take delight in Benedick's conversation, she called him 'the prince's jester.' This sarcasm sunk deeper into the mind of Benedick than all Beatrice had said before. The hint she gave him that he was a coward, by saying she would eat all he had killed, he did not regard, knowing himself to be a brave man; but there is nothing that great wits so much dread as the imputation of buffoonery, because the charge comes sometimes a little too near the truth: therefore Benedick perfectly hated Beatrice when she called him 'the prince's jester.'</p>
+            <p>The modest lady Hero was silent before the noble guests; and while Claudio was attentively observing the improvement which time had made in her beauty, and was contemplating the exquisite graces of her fine figure (for she was an admirable young lady), the prince was highly amused with listening to the humorous dialogue between Benedick and Beatrice; and he said in a whisper to Leonato: 'This is a pleasant-spirited young lady. She were an excellent wife for Benedick.' Leonato replied to this suggestion: 'O, my lord, my lord, if they were but a week married, they would talk themselves mad.' But though Leonato thought they would make a discordant pair, the prince did not give up the idea of matching these two keen wits together.</p>
+            <p>When the prince returned with Claudio from the palace, he found that the marriage he had devised between Benedick and Beatrice was not the only one projected in that good company, for Claudio spoke in such terms of Hero, as made the prince guess at what was passing in his heart; and he liked it well, and he said to Claudio: 'Do you affect Hero?' To this question Claudio replied: 'O my lord, when I was last at Messina, I looked upon her with a soldier's eye, that liked, but had no leisure for loving; but now, in this happy time of peace, thoughts of war have left their places vacant in my mind, and in their room come thronging soft and delicate thoughts, all prompting me how fair young Hero is, reminding me that I liked her before I went to the wars.'</p>
+            <p>Claudio's confession of his love for Hero so wrought upon the prince, that he lost no time in soliciting the consent of Leonato to accept of Claudio for a son-in-law. Leonato agreed to this proposal, and the prince found no great difficulty in persuading the gentle Hero herself to listen to the suit of the noble Claudio, who was a lord of rare endowments, and highly accomplished, and Claudio, assisted by his kind prince, soon prevailed upon Leonato to fix an early day for the celebration of his marriage with Hero.</p>
+            <p>Claudio was to wait but a few days before he was to be married to his fair lady; yet he complained of the interval being tedious, as indeed most young men are impatient when they are waiting for the accomplishment of any event they have set their hearts upon: the prince, therefore, to make the time seem short to him, proposed as a kind of merry pastime that they should invent some artful scheme to make Benedick and Beatrice fall in love with each other. Claudio entered with great satisfaction into this whim of the prince, and Leonato promised them his assistance, and even Hero said she would do any modest office to help her cousin to a good husband.</p>
+            <p>The device the prince invented was, that the gentlemen should make Benedick believe that Beatrice was in love with him, and that Hero should make Beatrice believe that Benedick was in love with her. The prince, Leonato, and Claudio began their operations first: and watching upon an opportunity when Benedick was quietly seated reading in an arbour, the prince and his assistants took their station among the trees behind the arbour, so near that Benedick could not choose but hear all they said; and after some careless talk the prince said: 'Come hither, Leonato. What was it you told me the other day, that your niece Beatrice was in love with signior Benedick? I did never think that lady would have loved any man.' 'No, nor I neither, my lord,' answered Leonato. 'It is most wonderful that she should so dote on Benedick, whom she in all outward behaviour seemed ever to dislike.' Claudio confirmed all this with saying that Hero had told him Beatrice was so in love with Benedick, that she would certainly die of grief, if he could not be brought to love her; which Leonato and Claudio seemed to agree was impossible, he having always been such a railer against all fair ladies, and in particular against Beatrice.</p>
+            <p>The prince affected to hearken to all this with great compassion for Beatrice, and he said: 'It were good that Benedick were told of this.' 'To what end?' said Claudio; 'he would but make sport of it, and torment the poor lady worse.' 'And if he should,' said the prince, 'it were a good deed to hang him; for Beatrice is an excellent sweet lady, and exceeding wise in everything but in loving Benedick.' Then the prince motioned to his companions that they should walk on, and leave Benedick to meditate upon what he had overheard.</p>
+            <p>Benedick had been listening with great eagerness to this conversation; and he said to himself when he heard Beatrice loved him: 'Is it possible? Sits the wind in that corner?' And when they were gone, he began to reason in this manner with himself: 'This can be no trick! they were very serious, and they have the truth from Hero, and seem to pity the lady. Love me! Why it must be requited! I did never think to marry. But when I said I should die a bachelor, I did not think I should live to be married. They say the lady is virtuous and fair. She is so. And wise in everything but loving me. Why, that is no great argument of her folly. But here comes Beatrice. By this day, she is a fair lady. I do spy some marks of love in her.'</p>
+            <p>Beatrice now approached him, and said with her usual tartness: 'Against my will I am sent to bid you come in to dinner.' Benedick, who never felt himself disposed to speak so politely to her before, replied: 'Fair Beatrice, I thank you for your pains'; and when Beatrice, after two or three more rude speeches, left him, Benedick thought he observed a concealed meaning of kindness under the uncivil words she uttered, and he said aloud: 'If I do not take pity on her, I am a villain. If I do not love her, I am a Jew. I will go get her picture.'</p>
+            <p>The gentleman being thus caught in the net they had spread for him, it was now Hero's turn to play her part with Beatrice; and for this purpose she sent for Ursula and Margaret, two gentlewomen who attended upon her, and she said to Margaret: 'Good Margaret, run to the parlour; there you will find my cousin Beatrice talking with the prince and Claudio. Whisper in her ear, that I and Ursula are walking in the orchard, and that our discourse is all of her. Bid her steal into that pleasant arbour, where honeysuckles, ripened by the sun, like ungrateful minions, forbid the sun to enter.' This arbour, into which Hero desired Margaret to entice Beatrice, was the very same pleasant arbour where Benedick had so lately been an attentive listener.</p>
+            <p>'I will make her come, I warrant, presently,' said Margaret. Hero, then taking Ursula with her into the orchard, said to her: 'Now, Ursula, when Beatrice comes, we will walk up and down this alley, and our talk must be only of Benedick, and when I name him, let it be your part to praise him more than ever man did merit. My talk to you must be how Benedick is in love with Beatrice. Now begin; for look where Beatrice like a lapwing runs close by the ground, to hear our conference.'</p>
+            <p>They then began; Hero saying, as if in answer to something which Ursula had said: 'No, truly, Ursula. She is too disdainful; her spirits are as coy as wild birds of the rock.' 'But are you sure,' said Ursula, 'that Benedick loves Beatrice so entirely?' Hero replied: 'So says the prince, and my lord Claudio, and they entreated me to acquaint her with it; but I persuaded them, if they loved Benedick, never to let Beatrice know of it.' 'Certainly,' replied Ursula, 'it were not good she knew his love, lest she made sport of it.' 'Why, to say truth,' said Hero, 'I never yet saw a man, how wise soever, or noble, young, or rarely featured, but she would dispraise him.' 'Sure, sure, such carping is not commendable,' said Ursula.</p>
+            <p>'To be so odd, and from all fashions, as Beatrice is, cannot be commendable,' replied Hero; 'but who dare tell her so? If I should speak, she would mock me into air.' 'O! you wrong your cousin,' said Ursula: 'she cannot be so much without true judgment, as to refuse so rare a gentleman as signior Benedick.' 'He hath an excellent good name,' said Hero: 'indeed, he is the first man in Italy, always excepting my dear Claudio.' And now, Hero giving her attendant a hint that it was time to change the discourse, Ursula said: 'And when are you to be married, madam?' Hero then told her, that she was to be married to Claudio the next day, and desired she would go in with her, and look at some new attire, as she wished to consult with her on what she would wear on the morrow.</p>
+            <p>Beatrice, who had been listening with breathless eagerness to this dialogue, when they went away, exclaimed: 'What fire is in mine ears? Can this be true? Farewell, contempt and scorn, and maiden pride, adieu! Benedick, love on! I will requite you, taming my wild heart to your loving hand.' It must have been a pleasant sight to see these old enemies converted into new and loving friends, and to behold their first meeting after being cheated into mutual liking by the merry artifice of the good-humoured prince.</p>
+            <p>But a sad reverse in the fortunes of Hero must now be thought of. The morrow, which was to have been her wedding-day, brought sorrow on the heart of Hero and her good father Leonato. The prince had a half-brother, who came from the wars along with him to Messina. This brother (his name was Don John) was a melancholy, discontented man, whose spirits seemed to labour in the contriving of villanies. He hated the prince his brother, and he hated Claudio, because he was the prince's friend, and determined to prevent Claudio's marriage with Hero, only for the malicious pleasure of making Claudio and the prince unhappy; for he knew the prince had set his heart upon this marriage, almost as much as Claudio himself; and to effect this wicked purpose, he employed one Borachio, a man as bad as himself, whom he encouraged with the offer of a great reward.</p>
+            <p>This Borachio paid his court to Margaret, Hero's attendant; and Don John, knowing this, prevailed upon him to make Margaret promise to talk with him from her lady's chamber window that night, after Hero was asleep, and also to dress herself in Hero's clothes, the better to deceive Claudio into the belief that it was Hero; for that was the end he meant to compass by this wicked plot. Don John then went to the prince and Claudio, and told them that Hero was an imprudent lady, and that she talked with men from her chamber window at midnight. Now this was the evening before the wedding, and he offered to take them that night, where they should themselves hear Hero discoursing with a man from her window; and they consented to go along with him, and Claudio said: 'If I see anything to-night why I should not marry her, to-morrow in the congregation, where I intended to wed her, there will I shame her.' The prince also said: 'And as I assisted you to obtain her, I will join with you to disgrace her.'</p>
+            <p>When Don John brought them near Hero's chamber that night, they saw Borachio standing under the window, and they saw Margaret looking out of Hero's window, and heard her talking with Borachio: and Margaret being dressed in the same clothes they had seen Hero wear, the prince and Claudio believed it was the lady Hero herself. Nothing could equal the anger of Claudio, when he had made (as he thought) this discovery. All his love for the innocent Hero was at once converted into hatred, and he resolved to expose her in the church, as he had said he would, the next day; and the prince agreed to this, thinking no punishment could be too severe for the naughty lady, who talked with a man from her window the very night before she was going to be married to the noble Claudio.</p>
+            <p>The next day, when they were all met to celebrate the marriage, and Claudio and Hero were standing before the priest, and the priest, or friar, as he was called, was proceeding to pronounce the marriage ceremony, Claudio, in the most passionate language, proclaimed the guilt of the blameless Hero, who, amazed at the strange words he uttered, said meekly: 'Is my lord well, that he does speak so wide?' Leonato, in the utmost horror, said to the prince: 'My lord, why speak not you?' 'What should I speak?' said the prince; 'I stand dishonoured, that have gone about to link my dear friend to an unworthy woman. Leonato, upon my honour, myself, my brother, and this grieved Claudio, did see and hear her last night at midnight talk with a man at her chamber window.'</p>
+            <p>Benedick, in astonishment at what he heard, said: 'This looks not like a nuptial.' 'True, O God!' replied the heart-struck Hero; and then this hapless lady sunk down in a fainting fit, to all appearance dead. The prince and Claudio left the church, without staying to see if Hero would recover, or at all regarding the distress into which they had thrown Leonato. So hard-hearted had their anger made them.</p>
+            <p>Benedick remained, and assisted Beatrice to recover Hero from her swoon, saying: 'How does the lady?' 'Dead, I think,' replied Beatrice in great agony, for she loved her cousin; and knowing her virtuous principles, she believed nothing of what she had heard spoken against her. Not so the poor old father; he believed the story of his child's shame, and it was piteous to hear him lamenting over her, as she lay like one dead before him, wishing she might never more open her eyes.</p>
+            <p>But the ancient friar was a wise man, and full of observation on human nature, and he had attentively marked the lady's countenance when she heard herself accused, and noted a thousand blushing shames to start into her face, and then he saw an angel-like whiteness bear away those blushes, and in her eye he saw a fire that did belie the error that the prince did speak against her maiden truth, and he said to the sorrowing father: 'Call me a fool; trust not my reading, nor my observation; trust not my age, my reverence, nor my calling, if this sweet lady lie not guiltless here under some biting error.'</p>
+            <p>When Hero had recovered from the swoon into which she had fallen, the friar said to her: 'Lady, what man is he you are accused of?' Hero replied: 'They know that do accuse me; I know of none'; then turning to Leonato, she said: 'O my father, if you can prove that any man has ever conversed with me at hours unmeet, or that I yesternight changed words with any creature, refuse me, hate me, torture me to death.' 'There is,' said the friar, 'some strange misunderstanding in the prince and Claudio'; and then he counselled Leonato, that he should report that Hero was dead; and he said that the death-like swoon in which they had left Hero would make this easy of belief; and he also advised him that he should put on mourning, and erect a monument for her, and do all rites that appertain to a burial.</p>
+            <p>'What shall become of this?' said Leonato; 'What will this do?' The friar replied: 'This report of her death shall change slander into pity: that is some good; but that is not all the good I hope for. When Claudio shall hear she died upon hearing his words, the idea of her life shall sweetly creep into his imagination. Then shall he mourn, if ever love had interest in his heart, and wish that he had not so accused her; yea, though he thought his accusation true.' Benedick now said: 'Leonato, let the friar advise you; and though you know how well I love the prince and Claudio, yet on my honour I will not reveal this secret to them.' Leonato, thus persuaded, yielded; and he said sorrowfully: 'I am so grieved, that the smallest twine may lead me.'</p>
+            <p>The kind friar then led Leonato and Hero away to comfort and console them, and Beatrice and Benedick remained alone; and this was the meeting from which their friends, who contrived the merry plot against them, expected so much diversion; those friends who were now overwhelmed with affliction, and from whose minds all thoughts of merriment seemed for ever banished. Benedick was the first who spoke, and he said: 'Lady Beatrice, have you wept all this while?' 'Yea, and I will weep a while longer,' said Beatrice. 'Surely,' said Benedick, 'I do believe your fair cousin is wronged.' 'Ah!' said Beatrice, 'how much might that man deserve of me who would right her!'</p>
+            <p>Benedick then said: 'Is there any way to show such friendship? I do love nothing in the world so well as you: is not that strange?' 'It were as possible,' said Beatrice, 'for me to say I loved nothing in the world so well as you; but believe me not, and yet I lie not. I confess nothing, nor I deny nothing. I am sorry for my cousin.' 'By my sword,' said Benedick, 'you love me, and I protest I love you. Come, bid me do anything for you.' 'Kill Claudio,' said Beatrice. 'Ha! not for the wide world,' said Benedick; for he loved his friend Claudio, and he believed he had been imposed upon. 'Is not Claudio a villain, that has slandered, scorned, and dishonoured my cousin?' said Beatrice: 'O that I were a man!'</p>
+            <p>'Hear me, Beatrice!' said Benedick. But Beatrice would hear nothing in Claudio's defence; and she continued to urge on Benedick to revenge her cousin's wrongs: and she said: 'Talk with a man out of the window; a proper saying! Sweet Hero! she is wronged; she is slandered; she is undone. O that I were a man for Claudio's sake! or that I had any friend, who would be a man for my sake! but valour is melted into courtesies and compliments. I cannot be a man with wishing, therefore I will die a woman with grieving.' 'Tarry, good Beatrice,' said Benedick; 'by this hand I love you.' 'Use it for my love some other way than swearing by it,' said Beatrice. 'Think you on your soul that Claudio has wronged Hero?' asked Benedick. 'Yea,' answered Beatrice; 'as sure as I have a thought, or a soul.' 'Enough,' said Benedick; 'I am engaged; I will challenge him. I will kiss your hand, and so leave you. By this hand, Claudio shall render me a dear account! As you hear from me, so think of me. Go, comfort your cousin.'</p>
+            <p>While Beatrice was thus powerfully pleading with Benedick, and working his gallant temper by the spirit of her angry words, to engage in the cause of Hero, and fight even with his dear friend Claudio, Leonato was challenging the prince and Claudio to answer with their swords the injury they had done his child, who, he affirmed, had died for grief. But they respected his age and his sorrow, and they said: 'Nay, do not quarrel with us, good old man.' And now came Benedick, and he also challenged Claudio to answer with his sword the injury he had done to Hero; and Claudio and the prince said to each other: 'Beatrice has set him on to do this.'</p>
+            <p>Claudio nevertheless must have accepted this challenge of Benedick, had not the justice of Heaven at the moment brought to pass a better proof of the innocence of Hero than the uncertain fortune of a duel. While the prince and Claudio were yet talking of the challenge of Benedick, a magistrate brought Borachio as a prisoner before the prince. Borachio had been overheard talking with one of his companions of the mischief he had been employed by Don John to do. Borachio made a full confession to the prince in Claudio's hearing, that it was Margaret dressed in her lady's clothes that he had talked with from the window, whom they had mistaken for the lady Hero herself; and no doubt continued on the minds of Claudio and the prince of the innocence of Hero. If a suspicion had remained it must have been removed by the flight of Don John, who, finding his villanies were detected, fled from Messina to avoid the just anger of his brother.</p>
+            <p>The heart of Claudio was sorely grieved when he found he had falsely accused Hero, who, he thought, died upon hearing his cruel words; and the memory of his beloved Hero's image came over him, in the rare semblance that he loved it first; and the prince asking him if what he heard did not run like iron through his soul, he answered, that he felt as if he had taken poison while Borachio was speaking. And the repentant Claudio implored forgiveness of the old man Leonato for the injury he had done his child; and promised, that whatever penance Leonato would lay upon him for his fault in believing the false accusation against his betrothed wife, for her dear sake he would endure it.</p>
+            <p>The penance Leonato enjoined him was, to marry the next morning a cousin of Hero's, who, he said, was now his heir, and in person very like Hero. Claudio, regarding the solemn promise he made to Leonato, said, he would marry this unknown lady, even though she were an Ethiop: but his heart was very sorrowful, and he passed that night in tears, and in remorseful grief, at the tomb which Leonato had erected for Hero.</p>
+            <p>When the morning came, the prince accompanied Claudio to the church, where the good friar, and Leonato and his niece, were already assembled, to celebrate a second nuptial; and Leonato presented to Claudio his promised bride; and she wore a mask, that Claudio might not discover her face. And Claudio said to the lady in the mask: 'Give me your hand, before this holy friar; I am your husband, if you will marry me.' 'And when I lived I was your other wife,' said this unknown lady; and, taking off her mask, she proved to be no niece (as was pretended), but Leonato's very daughter, the lady Hero herself.</p>
+            <p>We may be sure that this proved a most agreeable surprise to Claudio, who thought her dead, so that he could scarcely for joy believe his eyes; and the prince, who was equally amazed at what he saw, exclaimed: 'Is not this Hero, Hero that was dead?' Leonato replied: 'She died, my lord, but while her slander lived.' The friar promised them an explanation of this seeming miracle, after the ceremony was ended; and was proceeding to marry them, when he was interrupted by Benedick, who desired to be married at the same time to Beatrice.</p>
+            <p>Beatrice making some demur to this match, and Benedick challenging her with her love for him, which he had learned from Hero, a pleasant explanation took place; and they found they had both been tricked into a belief of love, which had never existed, and had become lovers in truth by the power of a false jest: but the affection, which a merry invention had cheated them into, was grown too powerful to be shaken by a serious explanation; and since Benedick proposed to marry, he was resolved to think nothing to the purpose that the world could say against it; and he merrily kept up the jest, and swore to Beatrice, that he took her but for pity, and because he heard she was dying of love for him; and Beatrice protested, that she yielded but upon great persuasion, and partly to save his life, for she heard he was in a consumption.</p>
+            <p>So these two mad wits were reconciled, and made a match of it, after Claudio and Hero were married; and to complete the history, Don John, the contriver of the villainy, was taken in his flight, and brought back to Messina; and a brave punishment it was to this gloomy, discontented man, to see the joy and feastings which, by the disappointment of his plots, took place in the palace in Messina.</p>
+        </details>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select sequence (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; FOLLOW THE EVENTS</div>
+        <div class="widget-question">For each pair of events, choose the one that happens FIRST in the tale. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. The friends trick Benedick and Beatrice into love early, well before Don John stages his lie about Hero." data-hint="The merry trick comes early; the cruel lie comes later. Which is first?">
+            <div class="widget-row-prompt">1. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">Don John stages the window scene to fool Claudio</button>
+                <button data-choice="1">The friends trick Benedick and Beatrice into love</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Yes. Claudio shames Hero at the altar first; only afterward is Borachio caught and the truth comes out." data-hint="The truth surfaces near the end. Which comes before it?">
+            <div class="widget-row-prompt">2. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">Claudio denounces Hero at the wedding</button>
+                <button data-choice="1">Borachio confesses the plot</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Correct. The friar's plan to report Hero dead comes right after the shaming; the masked second wedding is the very last scene." data-hint="The masked bride is the resolution. Which comes before it?">
+            <div class="widget-row-prompt">3. Which happens first?</div>
+            <div class="widget-options">
+                <button data-choice="0">Hero unmasks at the second wedding</button>
+                <button data-choice="1">The friar advises Leonato to report Hero dead</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, list the main events in order, and write down one moment where you, the reader, knew more than Claudio did. You'll build on these notes in the next two lessons.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have the whole tale now. Hold one question for tomorrow: <em>two tricks are played in this tale, one kind and one cruel. What makes the difference?</em> That is where you go next.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 6 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.07 &middot; Messina, Claudio, and Hero</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

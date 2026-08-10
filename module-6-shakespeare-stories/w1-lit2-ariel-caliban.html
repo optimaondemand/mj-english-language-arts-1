@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 6.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .compare-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .compare-table th, .compare-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; vertical-align:top; }
+    .compare-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 6 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Shakespeare Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.02 &middot; Week 1</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Tempest</div>
+        <div style="font-size: 12px; color: #666;">Ariel &amp; Caliban</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Betrayal, Forgiveness, and Freedom</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Two Servants: Ariel, Caliban, and the Hope of Freedom</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 1</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Put two characters side by side, and each one shows you more.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Prospero has two servants on the island: the airy spirit Ariel and the monster Caliban. When an author sets two characters side by side so their differences stand out, the craft term is <strong>contrast</strong>. Today you study how Lamb uses contrast to teach the tale's idea of freedom: who earns it, who does not, and why.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what <strong>contrast</strong> is and contrast Ariel with Caliban.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Ariel earns his freedom and Caliban does not.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">If two people do the same job, what should decide which one gets a reward? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="Watch Ariel here. He serves willingly and without grumbling, and that is exactly the thing Prospero rewards with freedom.">&#10024; How willingly they do it</button>
+            <button data-response="A fair standard. Notice that Caliban does heavy work too, yet his sour nature, not his effort, is what holds him back.">&#128170; How hard they work</button>
+            <button data-response="Hold that thought. The tale ties freedom less to the work itself and more to the spirit each servant brings to it. Read for that difference.">&#129488; Something else entirely</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING paragraph -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;"><strong>Contrast</strong> means setting two things side by side so their differences come into focus. Lamb gives Prospero two servants, and almost everything about them is opposite. Ariel is a "lively little sprite," light as air, who serves Prospero faithfully and reminds him gently of the freedom he was promised. Caliban is "a strange misshapen thing," heavy and earthbound, set to fetch wood and do the hardest labor, and his bad nature keeps him from learning anything good. Notice that both are servants and both want their own way, yet the tale treats them very differently. Ariel's service is willing, so Prospero promises and finally grants him liberty. Caliban's nature stays sour, so he stays bound. Watch how Lamb uses what each servant says and does, called <strong>characterization</strong>, to show you their natures rather than just telling you. By the end of the tale, the freeing of Ariel becomes one of the last and happiest things Prospero does, which tells you freedom is one of the ideas, or <strong>themes</strong>, the whole tale is built around.</p>
+        <table class="compare-table">
+            <tr><th>&nbsp;</th><th>Ariel</th><th>Caliban</th></tr>
+            <tr><td><strong>What he is</strong></td><td>an airy spirit, a "lively little sprite"</td><td>a monster, "a strange misshapen thing"</td></tr>
+            <tr><td><strong>His service</strong></td><td>willing, faithful, no grumbling</td><td>forced labor; lazy and resentful</td></tr>
+            <tr><td><strong>His nature</strong></td><td>gentle; "nothing mischievous"</td><td>bad nature; will not learn good</td></tr>
+            <tr><td><strong>How it ends</strong></td><td>set free, "to wander uncontrolled in the air"</td><td>stays bound, still serving</td></tr>
+        </table>
+    </div>
+
+    <!-- FLIP CARD visual (Engine 5) -->
+    <div class="optima-widget">
+        <div class="widget-kicker">&#9889; TURN IT OVER &middot; THE KEY WORD</div>
+        <div class="widget-question">Both servants are bound, but only one is promised <em>liberty</em>. Predict what that word means, then flip the card.</div>
+        <div class="ow-flip">
+            <div class="ow-flip-front" style="font-size:17px; color:#0E1C42;"><strong>liberty</strong> (tap to reveal what it means here)</div>
+            <div class="ow-flip-back" style="font-size:16px; line-height:1.6;"><strong>liberty</strong> means freedom: the state of being free to act and go as you choose. Ariel longs for his liberty "to wander uncontrolled in the air, like a wild bird," and earns it by the end.</div>
+        </div>
+    </div>
+
+    <!-- POINT OF VIEW: WHOSE SIDE IS BEING TOLD -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; WHOSE SIDE IS THIS TOLD FROM?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">In Module 5 you learned that a narrator takes a position, called a <strong>point of view</strong>, and that it decides what you are allowed to see. Read the table above again, but this time look at the <em>words</em>. Caliban is "a strange misshapen thing" with a "bad nature" who "will not learn anything good." Those are not neutral facts the way "Caliban fetches wood" is a fact. They are <strong>judgments</strong>, and somebody is making them. Lamb is retelling this tale from a position close to Prospero, the master of the island, so you meet Caliban the way Prospero sees him: as a problem. Nothing in the tale is written from where Caliban stands. This is worth catching, because it happens constantly outside of books. Every account of an argument is told from somewhere. A careful reader asks not only what happened but <strong>who is telling it</strong>, and what the telling makes easy to believe.</p>
+        <div style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 6px; padding: 14px 18px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128202; FACT OR JUDGMENT?</div>
+            <div style="font-size: 16px; color: #1a2340; line-height: 1.7;">&#9654; "Caliban carries the wood." <span style="color:#1A6B3D;"><strong>Fact.</strong> You could film it.</span><br />&#9654; "Caliban has a bad nature." <span style="color:#8A1F16;"><strong>Judgment.</strong> Someone decided that, and that someone is not Caliban.</span></div>
+        </div>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Take one moment where Ariel torments Caliban, and write it in four or five sentences <strong>from Caliban's point of view</strong>, in his own voice. Keep every event the same. Change only who is telling it. Then write one line answering: which words did you have to drop, and why could Caliban not have used them about himself?</div>
+        </div>
+    </div>
+
+    <!-- Reading tie-in (points to embedded tale on lit1) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; FROM THE TALE</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Open the full tale of <em>The Tempest</em> again (it is printed in the drop-down on the first lesson of this week, "The Island, the Storm, and a Father's Story"). Reread two parts: the early section where Ariel torments lazy Caliban, and the late section where Prospero sets Ariel free. In the "Week-by-Week Notes" section of your Reading Journal (the Word doc in your OneDrive ELA6 folder), write one line each describing how Ariel and Caliban serve, then one sentence answering: why does only Ariel go free?</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; CONTRAST THE TWO</div>
+        <div class="widget-question">Answer each row about Ariel and Caliban. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Lamb calls Ariel a 'lively little sprite' with 'nothing mischievous in his nature' apart from teasing Caliban." data-hint="Which of these is the airy spirit who serves willingly?">
+            <div class="widget-row-prompt">1. Which character is the airy spirit who serves Prospero faithfully?</div>
+            <div class="widget-options">
+                <button data-choice="0">Caliban</button>
+                <button data-choice="1">Antonio</button>
+                <button data-choice="2">Ariel</button>
+                <button data-choice="3">Gonzalo</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. Caliban's bad nature keeps him from learning anything good, so he is set to slave's labor and stays bound." data-hint="Which servant has the 'bad nature' that will not learn anything good?">
+            <div class="widget-row-prompt">2. Which character is set to fetch wood and is never freed?</div>
+            <div class="widget-options">
+                <button data-choice="0">Caliban</button>
+                <button data-choice="1">Ariel</button>
+                <button data-choice="2">Ferdinand</button>
+                <button data-choice="3">Miranda</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Exactly. Ariel's service is willing and faithful, so Prospero rewards it; Caliban's nature stays sour, so he stays bound." data-hint="Both work, but the tale rewards one for the spirit of his service. What is the real difference?">
+            <div class="widget-row-prompt">3. Why does Ariel earn freedom but Caliban does not?</div>
+            <div class="widget-options">
+                <button data-choice="0">Ariel is stronger than Caliban</button>
+                <button data-choice="1">Caliban never does any work at all</button>
+                <button data-choice="2">Prospero forgets about Caliban</button>
+                <button data-choice="3">Ariel serves willingly and faithfully; Caliban stays sour</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Note one way Ariel and Caliban are opposite, and your one sentence on why only Ariel goes free. You'll use the idea of freedom again at the end of the tale.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Hold one question for tomorrow: <em>Prospero could destroy the men who betrayed him. Why does he choose forgiveness instead?</em> That choice is the heart of the tale, and it is where you go next.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 6 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.02 &middot; Two Servants: Ariel, Caliban, and the Hope of Freedom</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

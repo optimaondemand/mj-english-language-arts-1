@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 6.31</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .vocab-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .vocab-table th, .vocab-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; vertical-align:top; }
+    .vocab-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 6 &middot; Module 6</div>
+        <div style="font-size: 12px; color: #666;">Shakespeare Stories</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 6.31 &middot; Week 3</div>
+        <div style="font-size: 12px; color: #666;">Literature 1 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The whole year</div>
+        <div style="font-size: 12px; color: #666;">No new reading &middot; year capstone</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">What Lasts: Heroism, Sacrifice, Happiness, Duty</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 6.31</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Choosing a Theme That Lasts</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 3 &middot; Year Capstone</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The best ideas in your reading did not stay in one book. They kept coming back.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This is the last week of the course, and there is no new reading. Instead you look back across the whole year and choose one <strong>theme</strong> that keeps returning: an idea a writer keeps circling, like courage, forgiveness, identity, justice, or what makes a hero. A theme is not a topic word by itself. It is a complete idea the stories make about that word. Today you pick the theme you will trace across three texts in your capstone essay.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell the difference between a topic word and a true <strong>theme</strong> stated as a complete idea.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> choose one theme that returns across at least three texts I read this year.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal from this module (<strong>`LastName_FirstName_ReadingJournal_M6_ELA6`</strong>), plus any earlier journal notes you saved this year. <span style="color: #666;">(No new reading this week.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your own copies of the year's books, to confirm any detail before you use it.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Which idea felt the most alive to you across this year's reading? (No wrong answer. This helps you find your theme.)</div>
+        <div class="widget-options">
+            <button data-response="A strong choice. Courage showed up everywhere: St. George facing the dragon, the knights of the Round Table, Daniel in The Bronze Bow. If it kept pulling you back, it may be your theme.">&#128737;&#65039; Courage</button>
+            <button data-response="A rich choice. Forgiveness runs from Prospero laying down his revenge to Claudio's penance, and back through the year. If it stayed with you, follow it.">&#129309; Forgiveness</button>
+            <button data-response="A demanding choice, and a good one. Identity and who a person really is shows up in Gareth hiding his rank, in Hero shamed and restored, and in Daniel choosing what side he is on. Test whether you can find three clear moments.">&#129485; Who a person really is</button>
+            <button data-response="A worthy choice. What makes a hero is one of the questions the whole year asked, from St. George to Robin Hood to The Bronze Bow. If it stuck with you, it can carry an essay.">&#11088; What makes a hero</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH (one substantive paragraph) -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>theme</strong> is the idea a story makes about a subject, written as a full thought, not a single word. "Courage" is a topic. "Courage means moving toward what frightens you because something matters more than your fear" is a theme, because it is a claim the story is making, and a reader could test it against the book. The reason themes are worth tracing is that strong ones do not stay in one book. The same idea returns, dressed differently each time. You met courage in St. George riding at the dragon, in the knights of King Arthur's Round Table, and in Daniel choosing his side in <em>The Bronze Bow</em>. You met forgiveness when Prospero, who could have destroyed the men who wronged him, chose mercy in <em>The Tempest</em>, and again when Claudio did penance for shaming Hero in <em>Much Ado About Nothing</em>. To choose a theme for your capstone, do not start from a word you like. Start from an idea you noticed more than once, in more than one book. Then state it as a complete sentence. If you can say it in one sentence and point to three different stories where it shows up, you have a theme strong enough to build an essay on.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Write your theme as one full sentence (an idea, not just a word). Then rewrite it once more, swapping in a sharper word for the key term (for example, change "what makes a hero" to "what real heroism costs"). Add one line: which version states the idea more clearly, and why?</div>
+        </div>
+    </div>
+
+    <!-- VISUAL: topic vs theme table -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128202; A TOPIC WORD VERSUS A THEME</div>
+        <table class="vocab-table">
+            <tr><th>Topic word (not enough)</th><th>Theme (a complete idea)</th><th>Where it returned this year</th></tr>
+            <tr><td>Courage</td><td>Courage means moving toward danger because something matters more than fear.</td><td>St. George; King Arthur's knights; <em>The Bronze Bow</em></td></tr>
+            <tr><td>Forgiveness</td><td>Choosing mercy over revenge can free the person who forgives.</td><td><em>The Tempest</em>; <em>Much Ado About Nothing</em>; <em>The Bronze Bow</em></td></tr>
+            <tr><td>Happiness</td><td>People often find happiness only after they let go of what they thought they wanted.</td><td><em>The Golden Touch</em>; <em>Much Ado About Nothing</em>; <em>The Tempest</em></td></tr>
+            <tr><td>Duty</td><td>Doing what you owe to others can cost you, yet it defines who you are.</td><td>St. George; <em>King Arthur</em>; <em>The Bronze Bow</em></td></tr>
+        </table>
+        <div style="font-size: 14px; color: #666; margin-top: 12px; line-height: 1.5;">These are examples to spark your thinking, not the only right answers. Confirm every detail against your own copy of each book before you use it.</div>
+    </div>
+
+    <!-- READING (capstone week: no new reading) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NO NEW READING &middot; LOOK BACK ACROSS THE YEAR</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">This is the final week, so there are no new chapters. Instead, page back through your Reading Journal and skim the books you still have, watching for one idea that shows up again and again. The texts you read this year, by title: <em>St. George and the Dragon</em>, the Module-2 poems and <em>The Golden Touch</em>, <em>King Arthur and His Knights of the Round Table</em>, <em>Robin Hood</em>, <em>The Bronze Bow</em>, and the two Shakespeare tales, <em>The Tempest</em> and <em>Much Ado About Nothing</em>.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Check any quotation or event against <strong>your own copy</strong> of each book. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file. For the public-domain Lamb tales, the Tales from Shakespeare PDF in Canvas Files may be used.]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; TOPIC OR THEME?</div>
+        <div class="widget-question">For each sentence, decide whether it is just a topic word or a true theme stated as a complete idea. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. This states a complete idea about forgiveness that a reader could test against The Tempest and Much Ado. That makes it a theme." data-hint="Does this say something a story argues, or just name a subject?">
+            <div class="widget-row-prompt">1. "Choosing mercy over revenge can set the forgiver free, not just the forgiven."</div>
+            <div class="widget-options">
+                <button data-choice="0">Just a topic word</button>
+                <button data-choice="1">A theme (complete idea)</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. 'Heroes' is only a subject word. It does not say what the stories argue about heroes, so it is not yet a theme." data-hint="Does this make a claim, or just name a subject?">
+            <div class="widget-row-prompt">2. "Heroes."</div>
+            <div class="widget-options">
+                <button data-choice="0">Just a topic word</button>
+                <button data-choice="1">A theme (complete idea)</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Exactly. This is a full claim about identity that returns across Gareth, Hero, and Daniel. You could argue it, so it is a theme." data-hint="Could a reader argue with this sentence using evidence from the books?">
+            <div class="widget-row-prompt">3. "A person's true identity shows most clearly when others misjudge them."</div>
+            <div class="widget-options">
+                <button data-choice="0">Just a topic word</button>
+                <button data-choice="1">A theme (complete idea)</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Correct. 'Justice and the law' names a subject but makes no claim about it, so it is a topic, not yet a theme. Turn it into a full sentence to make it a theme." data-hint="Is there a claim here, or only a pair of subject words?">
+            <div class="widget-row-prompt">4. "Justice and the law."</div>
+            <div class="widget-options">
+                <button data-choice="0">Just a topic word</button>
+                <button data-choice="1">A theme (complete idea)</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Lock in your theme</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In your Reading Journal, write your theme as one complete sentence. Tomorrow you choose the three characters from three different texts who will prove it.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have a theme stated as a full idea, and a hunch about where it returns. Tomorrow you turn that hunch into evidence: three characters, three texts, three real moments.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 6 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 6.31 &middot; Choosing a Theme That Lasts</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
