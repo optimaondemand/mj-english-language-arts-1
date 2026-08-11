@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 5.04 (Grammar)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .grammar-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .grammar-table th, .grammar-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; }
+    .grammar-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q5 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">The Bronze Bow</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.04 &middot; Week 1</div>
+        <div style="font-size: 12px; color: #666;">Grammar &amp; Vocabulary 1 of 2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Proper Nouns &amp; Sentence Types</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Paired quiz</div>
+        <div style="font-size: 16px; color: #0e1c42;">Week 1 Grammar Quiz</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Naming Names and Shaping Sentences</div>
+        <div style="font-size: 16px; color: #666;">Grammar &amp; Vocabulary &middot; Week 1</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A capital letter and an end mark each carry meaning of their own.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">A book full of real-sounding places and people, like Galilee, Capernaum, and Daniel, runs on proper nouns. You'll learn to spot a proper noun and capitalize it, then learn the four sentence types and the end marks they take. A short quiz checks both.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell a <strong>common noun</strong> from a <strong>proper noun</strong> and capitalize proper nouns correctly.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the four <strong>sentence types</strong> and choose the right end mark for each.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP</div>
+        <div class="widget-question">Quick gut check: which of these would you write with a capital letter? "the sea of galilee" (No wrong answer, just check in.)</div>
+        <div class="widget-options">
+            <button data-response="Right instinct. 'Sea of Galilee' is the name of one specific place, so each main word is capitalized. That is what makes it a proper noun.">Sea of Galilee</button>
+            <button data-response="Close. 'Sea' here is part of a place's name, so it is capitalized too: 'Sea of Galilee.' A proper noun names one specific thing.">just galilee</button>
+            <button data-response="Read it again. This is the name of one real place, so it needs capitals: 'Sea of Galilee.' Names of specific places are proper nouns.">none of it</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING paragraph -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>common noun</strong> names any one of a kind: a <em>boy</em>, a <em>village</em>, a <em>sea</em>. A <strong>proper noun</strong> names one specific person, place, or thing, and it is always capitalized: <em>Daniel</em>, <em>Capernaum</em>, the <em>Sea of Galilee</em>. <em>The Bronze Bow</em> is full of proper nouns, because Speare sets her story in a real place and time. Getting the capitals right is part of writing about it clearly. Sentences also come in four types, and each does a different job. A <strong>declarative</strong> sentence makes a statement and ends in a period. An <strong>interrogative</strong> sentence asks a question and ends in a question mark. An <strong>imperative</strong> sentence gives a command or request and usually ends in a period. An <strong>exclamatory</strong> sentence shows strong feeling and ends in an exclamation point. When you write about Daniel this week, mixing these four types keeps your writing from sounding flat, and matching the right end mark keeps it clear.</p>
+        <table class="grammar-table">
+            <tr><th>Sentence type</th><th>Its job</th><th>End mark</th><th>Example</th></tr>
+            <tr><td><strong>Declarative</strong></td><td>makes a statement</td><td>.</td><td>Daniel lives on the mountain.</td></tr>
+            <tr><td><strong>Interrogative</strong></td><td>asks a question</td><td>?</td><td>Why does Daniel hate Rome?</td></tr>
+            <tr><td><strong>Imperative</strong></td><td>gives a command or request</td><td>.</td><td>Read the next chapter.</td></tr>
+            <tr><td><strong>Exclamatory</strong></td><td>shows strong feeling</td><td>!</td><td>The Romans took everything!</td></tr>
+        </table>
+    </div>
+
+    <!-- Reading tie-in -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; FROM THE BOOK</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Reopen <strong>Chapters 1&ndash;3</strong> and find three proper nouns Speare uses, such as a person's name or a place name. <span style="color: #666;">(Read from your own copy of the book.)</span> Write them, correctly capitalized, in the "Week-by-Week Notes" section of your Reading Journal (the Word doc you set up in the Week-1 Reading Journal lesson). Then write one declarative, one interrogative, and one exclamatory sentence about Chapter 1.</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; TRY IT &middot; NAMES AND SENTENCES</div>
+        <div class="widget-question">Answer each row about proper nouns and sentence types. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. 'Capernaum' names one specific town, so it is a proper noun and must be capitalized." data-hint="Which word names one specific place rather than any place of its kind?">
+            <div class="widget-row-prompt">1. Which word is the <strong>proper noun</strong>? "Daniel walked to the busy town of Capernaum."</div>
+            <div class="widget-options">
+                <button data-choice="0">walked</button>
+                <button data-choice="1">town</button>
+                <button data-choice="2">Capernaum</button>
+                <button data-choice="3">busy</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. This sentence asks something, so it is interrogative and ends in a question mark." data-hint="What job is this sentence doing, and what mark should end it?">
+            <div class="widget-row-prompt">2. What type of sentence is this? "Why does Daniel hate the Romans?"</div>
+            <div class="widget-options">
+                <button data-choice="0">Declarative</button>
+                <button data-choice="1">Interrogative</button>
+                <button data-choice="2">Imperative</button>
+                <button data-choice="3">Exclamatory</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Exactly. Strong feeling and an exclamation point make this an exclamatory sentence." data-hint="Which sentence shows strong feeling and ends with an exclamation point?">
+            <div class="widget-row-prompt">3. Which sentence is <strong>exclamatory</strong>?</div>
+            <div class="widget-options">
+                <button data-choice="0">Daniel met Joel on the mountain.</button>
+                <button data-choice="1">Did Daniel meet Joel?</button>
+                <button data-choice="2">Tell me about the mountain.</button>
+                <button data-choice="3">They have taken our freedom!</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Take the Week 1 Grammar Quiz</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short auto-graded quiz in Canvas checks proper nouns, capitalization, and the four sentence types. You may use your notes.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">From now on, capitalize every name of a real person or place, and ask what each sentence is doing before you choose its end mark. Small marks, clear meaning.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 5 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.04 &middot; Proper Nouns &amp; Sentence Types</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 5.28 (Grammar)</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .grammar-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .grammar-table th, .grammar-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; }
+    .grammar-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q5 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">The Bronze Bow</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.28 &middot; Week 5</div>
+        <div style="font-size: 12px; color: #666;">Grammar &amp; Vocabulary 1 of 2</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Focus</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Parallel Structure; Colons &amp; Semicolons</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Paired quiz</div>
+        <div style="font-size: 16px; color: #0e1c42;">Week 5 Grammar Quiz</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.28</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Parallel Structure, Colons, and Semicolons</div>
+        <div style="font-size: 16px; color: #666;">Grammar &amp; Vocabulary &middot; Week 5</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Matched parts and the right mark make a sentence land.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You'll learn to keep items in a list in the same form (parallel structure) and to use a colon and a semicolon correctly. These are the moves that make an essay sentence sound finished. Then a short quiz checks what you've got. You'll use all three in your essay this week.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> fix a list so its parts are <strong>parallel</strong> (in the same form).</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> use a <strong>colon</strong> to introduce and a <strong>semicolon</strong> to join.</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP reflective (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP</div>
+        <div class="widget-question">Quick ear test. Which sounds smoother: "Daniel vowed to hate, to fight, and to kill" or "Daniel vowed to hate, fighting, and that he would kill"? (No wrong answer.)</div>
+        <div class="widget-options">
+            <button data-response="Your ear is right. The first version repeats the same form ('to hate, to fight, to kill'). That matching is called parallel structure, and it is exactly today's lesson.">&#9989; The first one, the parts match</button>
+            <button data-response="Read them again aloud. The second one switches forms partway ('to hate, fighting, that he would kill'), which trips the ear. Matched parts are smoother.">&#129300; The second one</button>
+            <button data-response="A fair instinct to test it. Say both aloud: the first keeps every part in the same form, and that match is what makes it land. We call it parallel structure.">&#128064; Not sure, I'd say them aloud</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING paragraph -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;"><strong>Parallel structure</strong> means the items in a list are all in the same grammatical form. "Daniel vowed to hate them, to fight them, and to kill them" is parallel, because each part starts with "to" plus a verb. "Daniel vowed to hate them, fighting them, and that he would kill them" is not, because the forms do not match, and the sentence stumbles. When you list two or more things, keep them the same shape. A <strong>colon</strong> introduces what follows: a list, an example, or an explanation. The rule is that a full sentence must come before the colon. "Daniel faced three voices: Rosh, Hezron, and Jesus" is correct, because "Daniel faced three voices" could stand alone. A <strong>semicolon</strong> joins two complete sentences that are closely related, where you feel a period is too strong. "Rosh chose the sword; Jesus chose love" uses a semicolon to set the two halves side by side. Use a colon to point forward to something, and a semicolon to link two sentences that belong together. As you write your essay this week, parallel lists and the right mark will make your reasoning sound controlled and clear.</p>
+        <table class="grammar-table">
+            <tr><th>Move</th><th>What it does</th><th>Example</th></tr>
+            <tr><td><strong>Parallel structure</strong></td><td>keeps listed items in the same form</td><td>to hate, to fight, and to kill</td></tr>
+            <tr><td><strong>Colon ( : )</strong></td><td>introduces a list, example, or explanation (full sentence before it)</td><td>Daniel faced three voices: Rosh, Hezron, and Jesus.</td></tr>
+            <tr><td><strong>Semicolon ( ; )</strong></td><td>joins two complete, related sentences</td><td>Rosh chose the sword; Jesus chose love.</td></tr>
+        </table>
+    </div>
+
+    <!-- Reading tie-in -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; FROM THE BOOK</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Think back over <em>The Bronze Bow</em> and write one <strong>parallel list</strong> about Daniel (for example, "Daniel learns to spare, to serve, and to forgive"). Then write one sentence that uses a <strong>colon</strong> to introduce a list, and one that uses a <strong>semicolon</strong> to join two halves. <span style="color: #666;">(Check details against your own copy of the book.)</span> Put all three in the "Week-by-Week Notes" section of your Reading Journal (the Word doc you set up in the Week-1 Reading Journal lesson).</div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; TRY IT &middot; MATCH AND MARK</div>
+        <div class="widget-question">Answer each row about parallel structure, colons, and semicolons. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Yes. Each part is 'to' plus a verb: to hate, to fight, to kill. The matching form is what makes it parallel." data-hint="Which version keeps every listed part in the same form?">
+            <div class="widget-row-prompt">1. Which sentence has correct <strong>parallel structure</strong>?</div>
+            <div class="widget-options">
+                <button data-choice="0">Daniel vowed to hate them, fighting them, and that he would kill them.</button>
+                <button data-choice="1">Daniel vowed to hate them, to fight them, and to kill them.</button>
+                <button data-choice="2">Daniel vowed hating them, to fight, and killing.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Right. A full sentence comes before the colon, and the colon introduces the list of three names." data-hint="A colon needs a full sentence before it. Which one has that?">
+            <div class="widget-row-prompt">2. Which sentence uses a <strong>colon</strong> correctly?</div>
+            <div class="widget-options">
+                <button data-choice="0">Daniel faced: Rosh, Hezron, and Jesus.</button>
+                <button data-choice="1">Three voices were: that Daniel had to choose among.</button>
+                <button data-choice="2">Daniel faced three voices: Rosh, Hezron, and Jesus.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Exactly. A semicolon joins two complete, related sentences. 'Rosh chose the sword' and 'Jesus chose love' can each stand alone." data-hint="A semicolon joins two complete sentences. Which choice has a full sentence on both sides?">
+            <div class="widget-row-prompt">3. Which sentence uses a <strong>semicolon</strong> correctly?</div>
+            <div class="widget-options">
+                <button data-choice="0">Rosh chose the sword; Jesus chose love.</button>
+                <button data-choice="1">Rosh chose the sword; and Jesus, love.</button>
+                <button data-choice="2">Rosh chose; the sword while Jesus chose love.</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Yes. 'Carrying Leah, sparing the miser, leading the rescue' all share the -ing form, so the list is parallel." data-hint="Which list keeps every item in the same -ing form?">
+            <div class="widget-row-prompt">4. Which list is <strong>parallel</strong>?</div>
+            <div class="widget-options">
+                <button data-choice="0">Carrying Leah, to spare the miser, the rescue</button>
+                <button data-choice="1">He carried Leah, spares the miser, leading the rescue</button>
+                <button data-choice="2">Carry Leah, sparing the miser, led the rescue</button>
+                <button data-choice="3">Carrying Leah, sparing the miser, leading the rescue</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Take the Week 5 Grammar Quiz</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short auto-graded quiz in Canvas checks parallel structure, colons, and semicolons. You may use your notes.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">When you list things, keep them in the same form. When you introduce a list, reach for a colon. When you want to link two related sentences, try a semicolon. Your essay will read like it was built on purpose.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 5 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.28 &middot; Parallel Structure, Colons &amp; Semicolons</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 5.26</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; margin-bottom: 10px; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .vocab-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .vocab-table th, .vocab-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; vertical-align:top; }
+    .vocab-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q5 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">The Bronze Bow</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.26 &middot; Week 5</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bronze Bow</div>
+        <div style="font-size: 12px; color: #666;">No new reading &middot; the whole book</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Power of Choice: Love, Hatred, and Freedom</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.26</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Three Ways to Persuade</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 5 &middot; Essay Week</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Every character who tries to win Daniel over is using one of three tools. Learn to name them.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Throughout the book, people try to persuade Daniel: Rosh, Hezron, Joel, and Jesus all make their case. Writers and speakers persuade in three main ways, and they have names: <strong>logos</strong>, <strong>ethos</strong>, and <strong>pathos</strong>. Today you learn the three appeals, spot real examples in the novel, and write a working thesis for your essay.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> define <strong>logos</strong>, <strong>ethos</strong>, and <strong>pathos</strong> and tell them apart.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> find an example of each appeal in <em>The Bronze Bow</em>.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your evidence list from Lesson 5.25, and your own copy of <em>The Bronze Bow</em>. <span style="color: #666;">(No new chapters this week.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When you want to convince someone, what do you reach for first? (No wrong answer. Each one has a name you'll learn today.)</div>
+        <div class="widget-options">
+            <button data-response="That is an appeal to reason, called logos. You give facts and reasons so the other person has to agree. Hezron argues this way in the book.">&#129518; Facts and reasons</button>
+            <button data-response="That is an appeal to feeling, called pathos. You make the other person feel something so strongly that they act. Daniel uses this on Joel.">&#10084;&#65039; A story that touches their feelings</button>
+            <button data-response="That is an appeal to character, called ethos. People believe you because of who you are and what you have done. Rosh trades on his reputation this way.">&#128081; My reputation or who I am</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH (one substantive paragraph) -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">There are three main ways to persuade, and naming them makes your essay sharper. <strong>Logos</strong> is an appeal to reason: facts, logic, and evidence that lead a listener to a conclusion. <strong>Ethos</strong> is an appeal to character: people believe you because of who you are, your reputation, your honesty, or your experience. <strong>Pathos</strong> is an appeal to emotion: you make a listener feel something, pity, fear, or hope, so strongly that they act. Speare fills <em>The Bronze Bow</em> with all three. When Hezron lays out the patient case against the Zealots, warning that resistance will bring "rows of crosses, and burning villages, and heavier taxes," that is logos: a reasoned argument from cause and effect. When Rosh wins followers because he is the fearless, undefeated leader, that is ethos: people follow his reputation. And when Daniel tells Joel the story of his crucified father to win the oath, that is pathos: an appeal straight to the heart. The same three tools are the ones you will use in your own essay. You will reason from the evidence (logos), write as a fair and careful reader the audience can trust (ethos), and let the real weight of Daniel's story carry feeling where it belongs (pathos). Today, learn the three by name, find each one in the book, then write a working thesis about what Daniel's journey means.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Write your working thesis: one sentence saying what Daniel's journey from hatred to love <em>means</em>, not just that he changes. For example, "Speare argues that hatred imprisons the one who carries it, and only love can open what hatred has shut." Then rewrite it once more in your own words, and add one line: which version is sharper, and why?</div>
+        </div>
+    </div>
+
+    <!-- VISUAL: three flip cards for the appeals (Engine 5) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="widget-kicker" style="color:#c7922c;">&#9889; FLIP TO REVEAL &middot; THE THREE APPEALS IN THE BOOK</div>
+        <div style="font-size:15px; color:#666; margin-bottom:12px;">Read each appeal, then click the card to reveal the example from <em>The Bronze Bow</em>.</div>
+        <div class="optima-widget ow-flip" style="background:#FFFFFF; border-left:5px solid #2196D0;">
+            <div class="ow-flip-front">
+                <div style="font-size:18px; color:#0E1C42;"><strong>LOGOS</strong> &middot; an appeal to reason</div>
+                <div style="font-size:14px; color:#666; margin-top:6px;">Facts and logic that lead to a conclusion. Click to see who uses it.</div>
+            </div>
+            <div class="ow-flip-back">
+                <div style="font-size:17px; color:#1a6b3d; line-height:1.6;"><strong>Hezron (Chapter 5).</strong> He argues from cause and effect that fighting Rome will bring only "rows of crosses, and burning villages, and heavier taxes." Rosh also uses cold logos in Chapter 9: a fight "will take men and arms and food. And they have to be paid for."</div>
+            </div>
+        </div>
+        <div class="optima-widget ow-flip" style="background:#FFFFFF; border-left:5px solid #C7922C;">
+            <div class="ow-flip-front">
+                <div style="font-size:18px; color:#0E1C42;"><strong>ETHOS</strong> &middot; an appeal to character</div>
+                <div style="font-size:14px; color:#666; margin-top:6px;">Belief based on who the speaker is. Click to see who uses it.</div>
+            </div>
+            <div class="ow-flip-back">
+                <div style="font-size:17px; color:#1a6b3d; line-height:1.6;"><strong>Rosh (Chapter 2).</strong> Men follow him because of his reputation as the fearless, undefeated leader. The book later takes that reputation apart, when Daniel finally sees "a man he had never really looked at before" (Chapter 18). Simon's quiet, lived credibility is a truer ethos.</div>
+            </div>
+        </div>
+        <div class="optima-widget ow-flip" style="background:#FFFFFF; border-left:5px solid #8e44ad;">
+            <div class="ow-flip-front">
+                <div style="font-size:18px; color:#0E1C42;"><strong>PATHOS</strong> &middot; an appeal to emotion</div>
+                <div style="font-size:14px; color:#666; margin-top:6px;">Persuasion through feeling. Click to see who uses it.</div>
+            </div>
+            <div class="ow-flip-back">
+                <div style="font-size:17px; color:#1a6b3d; line-height:1.6;"><strong>Daniel (Chapter 7).</strong> He tells Joel the story of his crucified father and uncle, and the grief and anger of that story win the oath. The appeal goes straight to the heart, not the head.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHEN AN APPEAL GOES WRONG -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#9888;&#65039; WHEN AN APPEAL GOES WRONG</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">Logos, ethos, and pathos are tools, and tools are not good or bad by themselves. A speaker uses them badly when an appeal <strong>replaces</strong> a reason instead of carrying one. That failure has a name. It is a <strong>fallacy</strong>, a mistake in reasoning, and you have met three already: the <strong>straw man</strong> in Module 2, the <strong>either/or</strong> in Module 3, and the <strong>hasty generalization</strong> in Module 4. Here is the difference that matters. Ethos becomes a fallacy when a speaker expects you to believe something only because of who is saying it. Watch what Speare does with Rosh. Men join him because he is the bold, undefeated leader, and for a long time that reputation stands in for any reason at all. Then Daniel finally sees "a man he had never really looked at before," and the reputation turns out to have been carrying weight it could not hold. Pathos becomes a fallacy the same way, when feeling arrives instead of a reason rather than alongside one. Reread the passageway oath and ask an honest question: does Daniel give Joel reasons to join, or does he give him grief? A third failure is the <strong>ad hominem</strong>, which means attacking the person instead of answering what they said. If someone replies "you are too young to understand" rather than answering your point, they have not answered you at all. None of this makes the appeals off limits. Your essay will use all three. It means you owe your reader a reason underneath the feeling.</p>
+        <div style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 6px; padding: 14px 18px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 10px;">&#128202; THE SAME TOOL, USED TWO WAYS</div>
+            <div style="border-left: 3px solid #2A9D5C; padding-left: 14px; margin-bottom: 10px;">
+                <div style="font-size: 13px; color: #1A6B3D; margin-bottom: 3px;">AN APPEAL (FAIR)</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">"Simon has cared for the sick in this village for years, so his judgment about Daniel is worth weighing." <em>Reputation supports a reason.</em></div>
+            </div>
+            <div style="border-left: 3px solid #C0392B; padding-left: 14px;">
+                <div style="font-size: 13px; color: #8A1F16; margin-bottom: 3px;">A FALLACY (UNFAIR)</div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">"Rosh is undefeated, so he must be right." <em>Reputation replaces the reason entirely.</em></div>
+            </div>
+        </div>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Add <strong>ad hominem</strong> to your Word Bank alongside the three traps you already have. Then find one moment in <em>The Bronze Bow</em> where a character is persuaded by an appeal with no reason under it. Write the moment, name the appeal, and write the question the listener should have asked.</div>
+        </div>
+    </div>
+
+    <!-- READING (essay week: no new reading) -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NO NEW READING &middot; FIND THE APPEALS IN THE TEXT</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">No new chapters this week. Instead, reread the Hezron dinner argument (Chapter 5) and the passageway oath (Chapter 7) in <strong>your own copy</strong> of the book, and mark one clear example of logos, ethos, and pathos to use in your essay.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Bronze Bow</em> by Elizabeth George Speare. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: single-select naming the appeal (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; NAME THE APPEAL</div>
+        <div class="widget-question">For each example from the book, choose the appeal it uses. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Hezron reasons from cause and effect, that resistance will bring crosses and ruin. That is an appeal to reason: logos." data-hint="Is this an appeal to reason, to character, or to feeling?">
+            <div class="widget-row-prompt">1. Hezron warns that fighting Rome will bring only "rows of crosses, and burning villages, and heavier taxes."</div>
+            <div class="widget-options">
+                <button data-choice="0">Ethos</button>
+                <button data-choice="1">Pathos</button>
+                <button data-choice="2">Logos</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. Daniel wins the oath by stirring grief and anger with the story of the crucifixion. That is an appeal to emotion: pathos." data-hint="Does this work on the head or the heart?">
+            <div class="widget-row-prompt">2. Daniel tells Joel the story of his crucified father and uncle, and Joel swears the oath.</div>
+            <div class="widget-options">
+                <button data-choice="0">Logos</button>
+                <button data-choice="1">Pathos</button>
+                <button data-choice="2">Ethos</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Exactly. Men follow Rosh because of his reputation as the fearless, undefeated leader. Persuasion based on who the speaker is is ethos." data-hint="Why do men follow Rosh? Is it his reasons, his reputation, or their feelings?">
+            <div class="widget-row-prompt">3. Men join Rosh's band because he is famous as the bold, undefeated leader no Roman can catch.</div>
+            <div class="widget-options">
+                <button data-choice="0">Ethos</button>
+                <button data-choice="1">Logos</button>
+                <button data-choice="2">Pathos</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Rosh argues that a fight costs men, arms, and food that must be paid for. That is cold reasoning from cause and effect: logos." data-hint="Is Rosh appealing to reason, character, or feeling here?">
+            <div class="widget-row-prompt">4. Rosh argues a fight "will take men and arms and food. And they have to be paid for with money."</div>
+            <div class="widget-options">
+                <button data-choice="0">Pathos</button>
+                <button data-choice="1">Ethos</button>
+                <button data-choice="2">Logos</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. Rosh's record might be worth weighing, but here it stands in place of a reason instead of supporting one. When an appeal replaces the reason, it has become a fallacy." data-hint="Does his record give a reason the raid will work, or is it being used instead of one?">
+            <div class="widget-row-prompt">5. "Rosh is undefeated, so he must be right about the raid." What has gone wrong?</div>
+            <div class="widget-options">
+                <button data-choice="0">Nothing, it is a fair appeal to character</button>
+                <button data-choice="1">His reputation replaced the reason</button>
+                <button data-choice="2">It is an appeal to emotion</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Write your working thesis and mark the appeals</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In your Reading Journal, write your working thesis and note one example each of logos, ethos, and pathos from the book. Tomorrow you weigh the other side of your thesis and answer it.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You can now name the three appeals and find each one in <em>The Bronze Bow</em>. You also have a working thesis. Tomorrow you make it stronger by hearing, and answering, the best case against it.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 5 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.26 &middot; Three Ways to Persuade</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

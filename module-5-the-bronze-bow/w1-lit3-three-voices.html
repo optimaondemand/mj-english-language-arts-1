@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 5.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+    .compare-table { width:100%; border-collapse:collapse; margin-top:8px; }
+    .compare-table th, .compare-table td { border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; color:#1a2340; vertical-align:top; }
+    .compare-table th { background:#EEF1F8; color:#0e1c42; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q5 &middot; Module 5</div>
+        <div style="font-size: 12px; color: #666;">The Bronze Bow</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 5.03 &middot; Week 1</div>
+        <div style="font-size: 12px; color: #666;">Literature 3 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Bronze Bow</div>
+        <div style="font-size: 12px; color: #666;">Chapters 5 &amp; 8</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Power of Choice: Love, Hatred, and Freedom</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 5.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Three Voices and a First Sight of Jesus</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 1</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A character can fight an enemy outside and a battle inside at the same time.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Daniel hears three answers to one question: how should Israel be free? Rosh says fight by force. Rabbi Hezron says wait and keep the Law. A teacher named Jesus says something Daniel does not expect. A struggle a character has with the world is an <strong>external conflict</strong>. A struggle inside the character's own mind is an <strong>internal conflict</strong>. Today you learn to tell them apart in Daniel.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell an <strong>external conflict</strong> from an <strong>internal conflict</strong> in the story.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how Daniel reacts to Jesus the first time he hears him.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>The Bronze Bow</em>, <strong>Chapter 8</strong> (and look back at the dinner argument in Chapter 5). <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When several people give you very different advice about a hard problem, what do you usually do? (No wrong answer.)</div>
+        <div class="widget-options">
+            <button data-response="That is one way. Daniel often does this with Rosh. Watch whether the loudest, boldest voice is also the wisest one.">&#128483;&#65039; Trust the boldest, surest voice</button>
+            <button data-response="Daniel does some of this too. He weighs Hezron, Rosh, and Jesus against his own anger. Notice how slowly his mind changes.">&#9878;&#65039; Weigh them against each other</button>
+            <button data-response="A common feeling. Daniel is genuinely confused by Jesus at first. Hold onto that confusion as a clue to the inner battle starting in him.">&#128533; Feel pulled in different directions</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">Writers build stories on <strong>conflict</strong>, the struggles a character faces. An <strong>external conflict</strong> is a struggle with something outside the character: another person, a group, or the world itself. Daniel's external conflict is with Rome. An <strong>internal conflict</strong> is a struggle inside the character's own mind, between what they feel and what they are starting to question. By the end of these chapters, Daniel has both. In Chapter 5, at Rabbi Hezron's home, Daniel hears the patient case that the Law, not the sword, is Israel's real strength, and his hotheaded reply gets him sent out. Then in Chapter 8, near Bethsaida, Daniel watches a teacher named Jesus heal a boy's crippled hand and many others, and speak of repenting and believing. Daniel had hoped Jesus would be a warrior who would lead a revolt. Instead the words confuse him. That confusion is the start of an internal conflict: the hatred he has chosen begins, very slightly, to be questioned. As you read, separate the two fights. One is against Rome. The other is inside Daniel.</p>
+        <table class="compare-table">
+            <tr><th>Conflict type</th><th>What it is</th><th>In Daniel</th></tr>
+            <tr><td><strong>External</strong></td><td>a struggle with someone or something outside the character</td><td>Daniel against Rome and its soldiers</td></tr>
+            <tr><td><strong>Internal</strong></td><td>a struggle inside the character's own mind</td><td>Daniel's hatred beginning to be questioned by what Jesus says</td></tr>
+        </table>
+    </div>
+
+    <!-- POINT OF VIEW -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128161; WHO IS TELLING YOU ALL THIS?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">Three voices argue in these chapters. Now notice a fourth thing: somebody is deciding which of them you get to hear, and how. That somebody is the <strong>narrator</strong>, and the position the narrator takes is called the <strong>point of view</strong>. Speare uses a <strong>limited</strong> point of view. You are inside Daniel's head and nobody else's. You know what Daniel thinks about Rosh; you never once find out what Rosh thinks about Daniel. The other choice a writer has is an <strong>omniscient</strong> point of view, a word that means all-knowing, where the narrator can move into anyone's thoughts at will. Speare could have written this book that way and chose not to, and the choice does real work. Because Rosh only ever reaches you through Daniel's eyes, you inherit Daniel's admiration in the early chapters without questioning it. Later, when Daniel finally sees "a man he had never really looked at before," you are not being told that Rosh was hollow. You are finding it out at the moment Daniel does. A narrator who knew everything would have spoiled that. Ask this of every book from now on: who is telling me this, and what are they not able to see?</p>
+        <table class="compare-table">
+            <tr><th>Point of view</th><th>What the narrator knows</th><th>What it does to you</th></tr>
+            <tr><td><strong>Limited</strong></td><td>one character's thoughts only</td><td>You are trapped with that character's blind spots, and you discover things when they do</td></tr>
+            <tr><td><strong>Omniscient</strong></td><td>everyone's thoughts</td><td>You see more than any character does, and you may know a mistake is coming before they make it</td></tr>
+        </table>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Add <strong>point of view</strong>, <strong>limited</strong>, and <strong>omniscient</strong> to your Word Bank. Then take the dinner argument in Chapter 5 and write three or four sentences of it from <strong>Hezron's</strong> point of view instead. You will have to invent what Hezron thinks, because the book never tells you. That is exactly the information a limited point of view keeps from you.</div>
+        </div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>Chapter 8</strong>, and look back at the dinner argument in <strong>Chapter 5</strong>. As you read, mark one moment of external conflict and one moment of internal conflict in the "Week-by-Week Notes" section of your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Bronze Bow</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: scale/spectrum (Engine 3) -->
+    <div class="optima-widget ow-scale">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; INSIDE OR OUTSIDE?</div>
+        <div class="widget-question">For each moment, decide whether Daniel's struggle is mostly an external conflict or mostly an internal one. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="0" data-fb="Yes. Refusing a Roman soldier and then fleeing him is a struggle with someone outside Daniel, so it is mostly external." data-hint="Is this a fight with another person, or a fight inside Daniel's own head?">
+            <div class="widget-row-prompt">1. Daniel angrily refuses a Roman soldier and then has to flee from him.</div>
+            <div class="widget-options">
+                <button data-choice="0">Mostly external</button>
+                <button data-choice="1">Mostly internal</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. Jesus's words leave Daniel confused and unsettled. That is a struggle inside his own mind, so it is mostly internal." data-hint="Where does this struggle happen, out in the world or inside Daniel's thoughts?">
+            <div class="widget-row-prompt">2. Jesus's call to repent and believe confuses Daniel, who expected a warrior.</div>
+            <div class="widget-options">
+                <button data-choice="0">Mostly external</button>
+                <button data-choice="1">Mostly internal</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Exactly. Daniel argues out loud with Hezron, but the deeper struggle is that he cannot fully answer Hezron's calm point. That doubt is internal." data-hint="The shouting is outward, but what lingers afterward is in Daniel's mind.">
+            <div class="widget-row-prompt">3. After Hezron's calm case for the Law, Daniel cannot quite shake the point.</div>
+            <div class="widget-options">
+                <button data-choice="0">Mostly external</button>
+                <button data-choice="1">Mostly internal</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Record your one external moment and one internal moment, and one sentence on how Daniel reacts to Jesus. You'll need this for the Workshop Day write.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Daniel's outer war with Rome is loud and clear. The inner war has only just begun. Keep watching the quiet doubts. In this book they will matter more than the battles.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 5 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 5.03 &middot; Three Voices</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
