@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 4.21</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">The Adventures of Robin Hood</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.21 &middot; Week 4</div>
+        <div style="font-size: 12px; color: #666;">Literature 3 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Adventures of Robin Hood</div>
+        <div style="font-size: 12px; color: #666;">Chapter 11</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Hero or Outlaw: Justice and the Law</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.21</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Robin and the Butcher: Winning by Wit</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 4</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A hero's cleverness can matter as much as his strength.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In Chapter 11 Robin trades places with a butcher, walks into Nottingham, sells meat cheaply, fools the Sheriff into a bad bargain, and slips away. He never draws his bow. A character who beats a stronger enemy through cunning and disguise plays the role of the <strong>trickster</strong>. Watch how Green uses this comic chapter to round out Robin's <strong>characterization</strong>.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the <strong>trickster</strong> role rounds out Robin's <strong>characterization</strong>.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> show how fooling the Sheriff weakens the antagonist's power.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>The Adventures of Robin Hood</em>, Chapter 11, "Robin Hood and the Butcher." <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When someone has more power than you, what is the smartest way to get the better of them? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="Sometimes. But Robin tries a different tool this chapter. He uses cleverness and disguise instead of force, and it works better than a fight would.">Meet force with force</button>
+            <button data-response="Exactly Robin's move here. He outthinks the Sheriff instead of out-fighting him. Watch how a disguise and a cheap price do more than a bow could.">Outsmart them, not outfight them</button>
+            <button data-response="A fair instinct. Notice that Robin does walk away in this chapter, but only after he has fooled the Sheriff and made his point. The wit comes first.">Walk away and avoid them</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">So far Robin has won with his bow and his code. Chapter 11 shows a different side of him. He swaps clothes with a butcher, enters Nottingham as an ordinary tradesman, and sells meat so cheaply that he draws a crowd and a curious Sheriff. The Sheriff, smelling a profit, strikes a bargain to buy the stranger's cattle, and Robin leads him a merry chase before slipping away the richer. A character who uses cunning, disguise, and a quick tongue to outwit a stronger opponent is playing the <strong>trickster</strong> role. This rounds out Robin's <strong>characterization</strong>. He is not only brave and just, he is clever, and his wit is a weapon. The comic tone matters too. By making the Sheriff look foolish, Green chips away at the antagonist's power. An enemy you can laugh at is an enemy you fear a little less. Hold this beside the earlier chapters. Each escape and each trick adds to the same argument the whole book is building, that the man the law calls an outlaw is more than a match, in courage and in wit, for the men who are supposed to govern him.</p>
+    </div>
+
+    <!-- FLIP-CARD VISUAL (Engine 5): the trickster pattern -->
+    <div class="optima-widget">
+        <div class="widget-kicker">&#9889; TURN IT OVER &middot; HOW THE TRICK WORKS</div>
+        <div class="widget-question">Tap each card to follow the steps of Robin's trick.</div>
+        <div class="ow-flip" style="margin-bottom:10px;">
+            <div class="ow-flip-front"><strong>Step 1</strong> &middot; the disguise (tap to reveal)</div>
+            <div class="ow-flip-back">Robin trades places with a butcher and enters Nottingham looking like an ordinary tradesman, not a famous outlaw.</div>
+        </div>
+        <div class="ow-flip" style="margin-bottom:10px;">
+            <div class="ow-flip-front"><strong>Step 2</strong> &middot; the bait (tap to reveal)</div>
+            <div class="ow-flip-back">He sells meat far too cheaply, drawing a crowd and the greedy Sheriff, who scents an easy profit.</div>
+        </div>
+        <div class="ow-flip">
+            <div class="ow-flip-front"><strong>Step 3</strong> &middot; the escape (tap to reveal)</div>
+            <div class="ow-flip-back">Robin fools the Sheriff into a bad bargain and slips away, never drawing his bow. Wit, not force, wins the day.</div>
+        </div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>Chapter 11, "Robin Hood and the Butcher."</strong> As you read, mark the moment the Sheriff is fooled. Note it in the "Week-by-Week Notes" section of your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Adventures of Robin Hood</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; WIT AS A WEAPON</div>
+        <div class="widget-question">Answer each row about Chapter 11. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="3" data-fb="Yes. He wins with disguise and cleverness, not his bow. That is the trickster role, and it adds to his characterization." data-hint="What weapon does Robin use against the Sheriff in this chapter?">
+            <div class="widget-row-prompt">1. Robin beats the Sheriff in this chapter mainly by&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">winning an archery match</button>
+                <button data-choice="1">paying a ransom</button>
+                <button data-choice="2">calling for Little John's help</button>
+                <button data-choice="3">disguise and cleverness, not force</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. The Sheriff's own greed leads him into the bad bargain. His weakness, not just Robin's skill, undoes him." data-hint="What flaw in the Sheriff does Robin use against him?">
+            <div class="widget-row-prompt">2. The Sheriff falls for the trick because of his own&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">kindness</button>
+                <button data-choice="1">greed for an easy profit</button>
+                <button data-choice="2">loyalty to the king</button>
+                <button data-choice="3">skill with a bow</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Exactly. Making the antagonist look foolish chips away at his power. An enemy you can laugh at is less frightening." data-hint="What does the comic tone do to the Sheriff's standing?">
+            <div class="widget-row-prompt">3. By making the Sheriff look foolish, the comic chapter mainly&hellip;</div>
+            <div class="widget-options">
+                <button data-choice="0">proves the Sheriff is the true hero</button>
+                <button data-choice="1">shows Robin has lost his code</button>
+                <button data-choice="2">weakens the antagonist's power in the reader's eyes</button>
+                <button data-choice="3">ends the conflict for good</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, list three traits Robin has shown so far (courage, justice, wit, and any others) with one moment for each. You'll use this trait list on this week's Workshop Day and again for the essay.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">You have now seen Robin win by his bow, by his code, and by his wit, all against a corrupt antagonist. This week's writing asks you to step inside that antagonist's head. Keep your trait list close.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.21 &middot; Robin and the Butcher</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

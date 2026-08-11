@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 4.32</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .commit-reveal summary { cursor:pointer; font-size:16px; color:#0E1C42; padding:10px 14px; background:#EEF1F8; border-radius:6px; list-style:none; }
+    .commit-reveal summary::-webkit-details-marker { display:none; }
+    .commit-reveal[open] summary { border-bottom-left-radius:0; border-bottom-right-radius:0; }
+    .commit-reveal .reveal-body { background:#FFFFFF; border:1px solid #D0D9E8; border-top:none; border-radius:0 0 6px 6px; padding:12px 16px; font-size:16px; color:#1a2340; line-height:1.6; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">The Adventures of Robin Hood</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.32 &middot; Week 6</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Adventures of Robin Hood</div>
+        <div style="font-size: 12px; color: #666;">Ch. 16, "George-a-Greene, the Pinner of Wakefield"</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Hero or Outlaw? Justice and the Law</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.32</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Loyalty and the Traitor: Why Robin's Men Stand By Him</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 6</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A writer can sharpen a hero's virtue by setting a traitor beside it.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Today the traitor Worman, who once served Robin and now serves his enemies, nearly hangs two of Robin's men. The band's archers rout the Bishop's party and save them. Then Robin meets and recruits George-a-Greene, the bold pinner of Wakefield. When an author places opposites side by side to make each one clearer, the craft term is <strong>foil</strong>: a character whose contrast lights up another. Worman's betrayal makes the band's loyalty shine.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what a <strong>foil</strong> is and how Worman's betrayal sets off the band's loyalty.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> gather evidence about loyalty and service as heroic traits for the essay.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>The Adventures of Robin Hood</em>, Chapter 16, "George-a-Greene, the Pinner of Wakefield." <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">Before you read: what earns your loyalty to a group or a leader? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="A strong answer. Notice that Robin's men risk their lives to rescue two of their own. Loyalty in this band runs both ways, which is part of why it holds.">&#129309; Knowing they would do the same for me</button>
+            <button data-response="Fair. Robin does treat his men fairly and shares what the band takes. Watch how that fairness pays off when the danger comes.">&#9878;&#65039; Being treated fairly</button>
+            <button data-response="True for many people. In this chapter, see how Worman, who broke his loyalty, becomes the dark mirror that makes the band's faithfulness stand out.">&#128081; Believing in what we are doing</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>foil</strong> is a character set against another so the contrast makes each one clearer. Worman is Robin's foil in miniature. Once Robin's own steward, Worman betrayed him long ago and now serves his enemies. In this chapter Worman nearly hangs two of Robin's men. The band's archers scatter the Bishop's party and rescue their friends. Hold those two things side by side. Worman breaks every bond of loyalty, while Robin's men risk death to keep theirs. The traitor makes the faithfulness shine brighter. Then Robin meets George-a-Greene, the pinner of Wakefield, a town officer who keeps stray animals, and recruits him much as he recruited the others, by recognizing a brave and worthy man. For your essay, this chapter is rich on the hero side. Loyalty and service are two of the qualities a true hero is measured by, and Robin inspires both. Read for one moment that shows the band's loyalty, and notice how the traitor's presence makes that loyalty stand out.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Find one sentence in Chapter 16 that uses <strong>pinner</strong> or <strong>traitor</strong>. Copy it into the "Week-by-Week Notes" section of your Reading Journal, then rewrite it one of three ways: swap in a <strong>synonym</strong>, stretch it with more detail, or keep its shape but write about your own life. Add one line: what changed, and why.</div>
+        </div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>Chapter 16, "George-a-Greene, the Pinner of Wakefield."</strong> As you read, find one moment that shows the band's loyalty and one detail about the traitor Worman. Write both in the "Week-by-Week Notes" section of your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Adventures of Robin Hood</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: commit-then-reveal (Engine 4) -->
+    <div class="optima-widget commit-reveal-group">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; COMMIT, THEN REVEAL</div>
+        <div class="widget-question">Answer each question in your head (or in your journal) first. Then open the box to check your thinking. No peeking until you've committed.</div>
+
+        <details class="commit-reveal" style="margin-bottom:10px;">
+            <summary>1. Why is Worman a "foil" for Robin's loyal men? (Decide, then open.)</summary>
+            <div class="reveal-body">Worman was once Robin's own steward and betrayed him. He now serves the enemy and tries to harm Robin's men. Set beside the band, who risk their lives for each other, Worman's treachery makes their loyalty stand out sharply. That contrast is exactly what a foil does.</div>
+        </details>
+        <details class="commit-reveal" style="margin-bottom:10px;">
+            <summary>2. What does the rescue of the two men show about the band? (Decide, then open.)</summary>
+            <div class="reveal-body">The archers break up the Bishop's party to save two of their own. It shows that loyalty in Robin's band runs both ways: the men follow Robin, and Robin's band will risk danger to bring any member home. Service and loyalty are heroic traits worth noting for your essay.</div>
+        </details>
+        <details class="commit-reveal" style="margin-bottom:10px;">
+            <summary>3. Why does Robin recruit George-a-Greene? (Decide, then open.)</summary>
+            <div class="reveal-body">George is a bold, capable town officer, the pinner of Wakefield. Robin gathers brave and worthy men, the same pattern you tracked last week. He values courage and good character over rank, which is part of what makes men want to join him.</div>
+        </details>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, record your loyalty moment, your note on Worman, and your word-work sentence. Loyalty and service belong in the Hero column of your evidence chart.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Loyalty holds the band together even as the danger grows. Hold one question for the next lesson: <em>when Robin spots his sworn enemy on the road, why does the storm and the night make the threat feel so much heavier?</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.32 &middot; George-a-Greene, the Pinner of Wakefield</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.commit-reveal[open]').forEach(function (d) { d.removeAttribute('open'); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

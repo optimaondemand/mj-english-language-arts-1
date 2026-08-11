@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 4.39</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">The Adventures of Robin Hood</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.39 &middot; Week 7</div>
+        <div style="font-size: 12px; color: #666;">Literature 3 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Adventures of Robin Hood</div>
+        <div style="font-size: 12px; color: #666;">Ch. 21</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Hero or Outlaw? Justice and the Law</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.39</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Pardon: When Law and Justice Finally Agree</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 7</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">The deepest idea a story is built around is its theme.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">King Richard reveals himself and pardons Robin and all his band, restoring the earldom Prince John stole. For the first time the law and justice point the same way. The central idea a story explores, larger than any one event, is its <strong>theme</strong>. Today you name the book's theme and gather it as evidence for your essay.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state the book's <strong>theme</strong> about justice and the law in one sentence.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> use the pardon as evidence for the hero reading of Robin.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>The Adventures of Robin Hood</em>, Chapter 21, "Robin Hood and the Tall Palmer." <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc you set up in Week 1, kept in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: reflective check-in (Engine 1) -->
+    <div class="optima-widget ow-reflect">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; CHECK IN FIRST</div>
+        <div class="widget-question">When a leader officially forgives someone the old law called a criminal, what is the leader really saying? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="A strong reading. By pardoning Robin, Richard says the charge was unjust all along. The king sides with justice over the law his brother twisted. That is the heart of your essay.">&#9878;&#65039; The old law was wrong</button>
+            <button data-response="Possible, but watch the chapter. Richard does not just excuse Robin. He restores the earldom, which says Robin was the wronged party, not the guilty one.">&#129309; That he is being merciful</button>
+            <button data-response="A fair thought. The pardon is partly about the king's power. But Green frames it as recognition: the rightful ruler sees that the outlaw was the just man.">&#128081; That the king has the final word</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">A <strong>theme</strong> is the central idea a whole story explores, bigger than any single scene. Across this book Green has built one idea steadily: the law and justice are not always the same thing. Robin was named an outlaw by a law Prince John bent for his own gain, yet Robin acted more justly than the men who carried the law's authority. In Chapter 21 the disguised King Richard, the rightful ruler, lets Robin capture the Bishop of Hereford, then reveals himself. Robin and his men kneel, and the king pardons Robin and the whole band and gives back the earldom Prince John seized. For the first time, the law and justice agree. This is the legend's great reconciliation, and it is the single strongest piece of evidence for reading Robin as a hero: when true authority finally looks honestly at him, it declares the outlaw just. Use this chapter to put your theme into one sentence.</p>
+        <div style="background: #E8F6FB; border-left: 5px solid #2196D0; border-top: 3px solid #55C8E8; border-radius: 6px; padding: 14px 20px; margin: 14px 0;">
+            <div style="font-size: 11px; color: #1B6A94; margin-bottom: 8px;">&#128161; TRY THIS IN YOUR READING JOURNAL &middot; WORD WORK</div>
+            <div style="font-size: 17px; color: #0E1C42; line-height: 1.6;">Find one sentence in Chapter 21 that uses <strong>palmer</strong> (or write your own using it). Copy it into the "Week-by-Week Notes" section of your Reading Journal, then rewrite it one of three ways: swap in a synonym, stretch it with more detail, or imitate its shape with your own subject. Add one line: what changed, and why.</div>
+        </div>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>Chapter 21</strong>. As you read, find the exact moment the king reveals himself and pardons Robin. Mark it in the "Week-by-Week Notes" section of your Reading Journal. This is likely the strongest quotation for the hero side of your essay.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Adventures of Robin Hood</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; READING CLOSELY</div>
+        <div class="widget-question">For each detail from Chapter 21, choose what it best shows about the book's theme. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Richard pardons Robin and restores his earldom. The rightful king declares that the outlaw was wronged, so the law and justice finally meet." data-hint="What does it mean that the king cancels the outlaw charge?">
+            <div class="widget-row-prompt">1. King Richard pardons Robin and gives back the earldom Prince John took.</div>
+            <div class="widget-options">
+                <button data-choice="0">That Robin must leave England</button>
+                <button data-choice="1">That the king fears Robin</button>
+                <button data-choice="2">That the law and justice finally agree about Robin</button>
+                <button data-choice="3">That Prince John was right</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Right. Kneeling to the king shows that Robin honors true authority. He never rebelled against the rightful ruler, only against the unjust power that replaced him." data-hint="Whom does Robin kneel to, and what does that say about his loyalty?">
+            <div class="widget-row-prompt">2. When the king reveals himself, Robin and his men kneel.</div>
+            <div class="widget-options">
+                <button data-choice="0">That Robin honors rightful authority, not lawlessness</button>
+                <button data-choice="1">That Robin is afraid of being hanged</button>
+                <button data-choice="2">That Robin wants to become king</button>
+                <button data-choice="3">That the band is giving up</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="3" data-fb="Exactly. Green builds the whole book toward this one idea: the law called Robin a criminal, but justice called him right. That gap is the theme." data-hint="Which sentence states an idea the whole book explores, not just one event?">
+            <div class="widget-row-prompt">3. Which sentence best states the book's <strong>theme</strong>?</div>
+            <div class="widget-options">
+                <button data-choice="0">Robin is a very good archer.</button>
+                <button data-choice="1">The forest is a dangerous place.</button>
+                <button data-choice="2">Kings wear disguises sometimes.</button>
+                <button data-choice="3">What the law calls a crime is not always unjust, and what is just is not always legal.</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, write the book's theme in one sentence and copy the pardon moment you marked. You will reach for both in your essay.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Robin is pardoned and his name is cleared. It seems like a happy ending. Hold one question for next week: <em>if the just king dies and the unjust brother takes the throne, what happens to Robin then?</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.39 &middot; The Pardon</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

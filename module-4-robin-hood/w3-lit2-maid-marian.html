@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>6th Grade ELA &mdash; Lesson 4.14</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff;">6TH GRADE ELA</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">The Adventures of Robin Hood</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.14 &middot; Week 3</div>
+        <div style="font-size: 12px; color: #666;">Literature 2 of 3</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Reading</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Adventures of Robin Hood</div>
+        <div style="font-size: 12px; color: #666;">Chapter 7</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Hero or Outlaw: Justice and the Law</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.14</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Marian Joins the Band: A Heroine Who Acts</div>
+        <div style="font-size: 16px; color: #666;">Literature &middot; Week 3</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">A writer can define a character by what she can do, not by what is done to her.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In Chapter 7 Maid Marian comes to Sherwood in disguise and outshoots the foresters at a festival. She is no prize to be rescued. She can fence, handle a quarter-staff, and shoot a longbow. Watch how Green builds her through action. When a writer shows a character through what she does rather than telling you about her, that is <strong>indirect characterization</strong>.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Green uses <strong>indirect characterization</strong> to show Marian's skill and courage.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> point to one action in Chapter 7 that proves Marian belongs in the band by merit.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;"><em>The Adventures of Robin Hood</em>, Chapter 7, "Maid Marian of Sherwood Forest." <span style="color: #666;">(Read from your own copy of the book.)</span></div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your Reading Journal (the Word doc in your OneDrive ELA6 folder)</div>
+        </div>
+    </div>
+
+    <!-- WARM-UP: scale/spectrum (Engine 3) -->
+    <div class="optima-widget ow-reflect ow-scale">
+        <div class="widget-kicker">&#9889; WARM-UP &middot; WHERE DO YOU LAND?</div>
+        <div class="widget-question">In stories you've read, how often is a girl character the one who saves the day? (No wrong answer. Just check in.)</div>
+        <div class="widget-options">
+            <button data-response="Then Marian will feel familiar in one way and fresh in another. Notice that this story is from the 1950s, yet Green gives Marian real skill. Watch what she does, not what she wears.">Almost never</button>
+            <button data-response="A fair read. Marian sits on the active side of that line. She is not waiting to be rescued. She arrives in disguise and beats the men at their own contest.">Sometimes</button>
+            <button data-response="Good. Then test Marian against your best examples. She fences, handles a quarter-staff, and shoots a longbow. Green proves her with actions, not adjectives.">Pretty often</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- TEACHING PARAGRAPH -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; THE LESSON</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.7; margin: 0 0 14px 0;">There are two ways a writer can build a character. <strong>Direct characterization</strong> tells you outright: "Marian was brave." <strong>Indirect characterization</strong> shows you through action, speech, and choices, and lets you draw the conclusion yourself. Chapter 7 leans hard on the indirect kind. Marian arrives at the Gamwell festival disguised as a shepherdess and outshoots the trained foresters. Green also tells you she can fence with a sword, ply the quarter-staff, and shoot the longbow. He does not stop at calling her admirable. He shows her winning. This matters for your reading of the whole book. The band Robin gathers is a community joined by skill and loyalty, not by birth or rank, and Marian earns her place the same way Little John did, by proving herself. As you read, gather Marian's actions like evidence. Each one is a brick in the case that she is a hero in her own right.</p>
+    </div>
+
+    <!-- Inline visual: comparison table direct vs indirect -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128202; TWO WAYS TO BUILD A CHARACTER</div>
+        <table style="width:100%; border-collapse:collapse; margin-top:8px;">
+            <tr><th style="border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; background:#EEF1F8; color:#0e1c42;">Direct (the writer tells)</th><th style="border:1px solid #D0D9E8; padding:8px 12px; text-align:left; font-size:15px; background:#EEF1F8; color:#0e1c42;">Indirect (the writer shows)</th></tr>
+            <tr><td style="border:1px solid #D0D9E8; padding:8px 12px; font-size:15px; color:#1a2340;">"Marian was a skilled archer."</td><td style="border:1px solid #D0D9E8; padding:8px 12px; font-size:15px; color:#1a2340;">Disguised as a shepherdess, Marian outshoots the trained foresters.</td></tr>
+            <tr><td style="border:1px solid #D0D9E8; padding:8px 12px; font-size:15px; color:#1a2340;">"Marian was bold."</td><td style="border:1px solid #D0D9E8; padding:8px 12px; font-size:15px; color:#1a2340;">She walks into a festival watched by her enemies and competes anyway.</td></tr>
+        </table>
+    </div>
+
+    <!-- READING -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; NOW READ</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65; margin-bottom: 12px;">Read <strong>Chapter 7, "Maid Marian of Sherwood Forest."</strong> As you read, collect two actions that show Marian's skill or courage. Note them in the "Week-by-Week Notes" section of your Reading Journal.</div>
+        <div style="font-size: 16px; color: #1a2340; line-height: 1.65;">Read from <strong>your own copy</strong> of <em>The Adventures of Robin Hood</em>. <span style="color: #666;">[Teacher: optional lawful link, publisher or library catalog only; do NOT link a hosted file]</span></div>
+    </div>
+
+    <!-- COMPREHENSION CHECK: evaluative single-select (Engine 2) -->
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#9889; CHECK YOURSELF &middot; SHOWN, NOT TOLD</div>
+        <div class="widget-question">For each detail from Chapter 7, decide whether Green is using <strong>direct</strong> or <strong>indirect</strong> characterization, and what it shows. Pick one and you'll get instant feedback.</div>
+
+        <div class="widget-row" data-correct="1" data-fb="Right. Showing her win is indirect characterization. You see the skill in action and conclude she is gifted, without being told." data-hint="Does Green tell you she is skilled, or show her doing it?">
+            <div class="widget-row-prompt">1. Disguised as the shepherdess "Clorinda," Marian outshoots the foresters.</div>
+            <div class="widget-options">
+                <button data-choice="0">Direct: he simply states she is good</button>
+                <button data-choice="1">Indirect: he shows her winning so you conclude she is skilled</button>
+                <button data-choice="2">It is not characterization at all</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="2" data-fb="Yes. Listing her trained abilities is the direct kind. Green names what she can do outright." data-hint="Is this a list of skills stated outright, or a scene you watch?">
+            <div class="widget-row-prompt">2. Green states that Marian can fence with a sword, ply the quarter-staff, and shoot the longbow.</div>
+            <div class="widget-options">
+                <button data-choice="0">Indirect: you have to infer her skill</button>
+                <button data-choice="1">It tells you nothing about her</button>
+                <button data-choice="2">Direct: he names her skills outright</button>
+            </div>
+        </div>
+
+        <div class="widget-row" data-correct="0" data-fb="Exactly. She joins by proving herself, the same way Little John did. The band is a community of merit, not rank." data-hint="How did Little John and the others earn their place in the band?">
+            <div class="widget-row-prompt">3. Marian earns her place in the band by her own skill and courage.</div>
+            <div class="widget-options">
+                <button data-choice="0">It shows the band is joined by merit, not by birth or rank</button>
+                <button data-choice="1">It shows Marian is helpless</button>
+                <button data-choice="2">It shows Robin dislikes her</button>
+                <button data-choice="3">It shows the foresters are the heroes</button>
+            </div>
+        </div>
+
+        <button class="widget-reset">Reset</button>
+    </div>
+
+    <!-- WHAT YOU'LL DO NEXT -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Add to your Reading Journal</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In the "Week-by-Week Notes" section, record the two actions you found and label each as direct or indirect characterization. You'll use these on this week's Workshop Day.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WRAP-UP -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; BEFORE YOU GO</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The band now has a warrior and a knight's gratitude. Hold one question for the next lesson: <em>what does a jolly fighting friar add to a band of outlaws, and why does Green make him fight Robin before he joins?</em></p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; 6TH GRADE ELA &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.14 &middot; Marian Joins the Band</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<!-- WIDGET RUNTIME -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite, try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>
