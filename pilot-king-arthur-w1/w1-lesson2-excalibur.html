@@ -1930,7 +1930,7 @@ function toggleCheck(item, confetti){
 /* ───── STORY JOURNEY TRACKER (8 weeks) ───── */
 (function renderTracker(){
   var scene = document.getElementById('scene'); if (!scene) return;
-  var icons = ['🏹', '🌳', '🤝', '🎯', '💍', '⛪', '👑', '🪦'];
+  var icons = ['⚔️', '🌳', '🤝', '🎯', '💍', '⛪', '👑', '🛡️'];
   var labels = ['Wk 1', 'Wk 2', 'Wk 3', 'Wk 4', 'Wk 5', 'Wk 6', 'Wk 7', 'Wk 8'];
   var pos = [ {x:6,y:140},{x:18,y:120},{x:30,y:130},{x:42,y:116},{x:54,y:128},{x:66,y:118},{x:78,y:126},{x:90,y:120} ];
   var cur = (CFG.week || 1) - 1;
@@ -2092,7 +2092,7 @@ function fireConfetti(){
   var ctx = canvas.getContext('2d');
   canvas.width = window.innerWidth; canvas.height = window.innerHeight;
   var colors = ['#55C8E8', '#C7922C', '#67308F', '#F78F1E', '#FFE9B8'];
-  var emojis = ['🏹', '📖', '✏️', '🌳', '🪶'];
+  var emojis = ['⚔️', '📖', '✏️', '👑', '🪶'];
   var particles = [];
   for (var i = 0; i < 90; i++) particles.push({ type: 'sq', x: Math.random() * canvas.width, y: -20 - Math.random() * 120, vx: (Math.random() - 0.5) * 6, vy: Math.random() * 3.5 + 2, size: Math.random() * 8 + 4, color: colors[Math.floor(Math.random() * colors.length)], rot: Math.random() * 6.28, vrot: (Math.random() - 0.5) * 0.2 });
   for (var j = 0; j < 25; j++) particles.push({ type: 'em', emoji: emojis[Math.floor(Math.random() * emojis.length)], x: Math.random() * canvas.width, y: -30 - Math.random() * 150, vx: (Math.random() - 0.5) * 5, vy: Math.random() * 3 + 1.5, size: Math.random() * 10 + 22, rot: Math.random() * 6.28, vrot: (Math.random() - 0.5) * 0.12 });
