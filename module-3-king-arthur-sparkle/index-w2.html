@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Arthur Week 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0E1C42; --ink: #0E1C42; --ink2: #3A4A6B; --mute: #6B7895; --line: #E2E8F4; --bg: #F5F7FB; --card: #FFFFFF;
+  --pur: #67308F; --pur-fill: #F1EAF6; --org: #F78F1E; --org-fill: #FEF1DF; --gold: #C7922C; --ok: #2E9E62; --old: #A3312B;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #9FB3E6; --ink: #E8ECF6; --ink2: #B9C3DA; --mute: #8E9AB6; --line: #2A3552; --bg: #0D1426; --card: #141D33;
+    --pur-fill: #2A1D3A; --org-fill: #33240F; --ok: #5BC98C; --old: #F08A84;
+  }
+}
+:root[data-theme="dark"] {
+  --navy: #9FB3E6; --ink: #E8ECF6; --ink2: #B9C3DA; --mute: #8E9AB6; --line: #2A3552; --bg: #0D1426; --card: #141D33;
+  --pur-fill: #2A1D3A; --org-fill: #33240F; --ok: #5BC98C; --old: #F08A84;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', 'Segoe UI', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; padding: 28px 16px 60px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+h1 { font-family: 'Lora', Georgia, serif; font-size: 26px; margin-bottom: 4px; }
+.sub { color: var(--mute); font-size: 14px; font-weight: 700; margin-bottom: 22px; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.stat .n { font-size: 34px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat .l { font-size: 13px; font-weight: 700; color: var(--mute); }
+.stat.now .n { color: var(--old); } .stat.new .n { color: var(--ok); }
+.module { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 26px; }
+.module-head { background: var(--navy); color: #fff; padding: 12px 16px; font-weight: 800; font-size: 15px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .module-head { background: #1E2B4D; } }
+:root[data-theme="dark"] .module-head { background: #1E2B4D; }
+.item { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 12px 16px; border-top: 1px solid var(--line); }
+.item:first-of-type { border-top: none; }
+.item .ic { font-size: 20px; text-align: center; }
+.item a, .item .t { font-weight: 700; color: var(--ink); text-decoration: none; }
+.item a:hover { text-decoration: underline; }
+.item .m { font-size: 13px; color: var(--mute); font-weight: 600; }
+.item .pts { font-size: 13px; font-weight: 800; color: var(--ink2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+h2 { font-family: 'Lora', Georgia, serif; font-size: 20px; margin: 30px 0 10px; scroll-margin-top: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+.card p { margin-bottom: 8px; } .card p:last-child { margin-bottom: 0; }
+.kv { display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; font-size: 14px; }
+.kv dt { font-weight: 800; color: var(--mute); } .kv dd { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .4px; color: var(--mute); }
+td.p { font-weight: 800; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tr.total td { font-weight: 800; border-bottom: none; }
+.tbl-wrap { overflow-x: auto; }
+@media (max-width: 600px) { .compare { grid-template-columns: 1fr; } .kv { grid-template-columns: 1fr; } .item { grid-template-columns: 28px 1fr; } .item .pts { grid-column: 2; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Module 3: King Arthur &middot; Week 2</h1>
+  <div class="sub">6th Grade ELA &middot; Sir Gawain and the Green Knight &middot; integrated week</div>
+
+  <div class="compare">
+    <div class="stat now"><div class="n">14 items</div><div class="l">Week 2 before: 9 pages (3 literature, grammar, vocabulary, extra practice, workshop, 2 VR) and 5 graded items (Quick Write 2, 2 VR submissions, 2 quizzes)</div></div>
+    <div class="stat new"><div class="n">6 items</div><div class="l">Now: 4 lesson pages, 1 PDF upload graded with one rubric, 1 auto-graded quiz (Forum 1 opens this week)</div></div>
+  </div>
+
+  <div class="module">
+    <div class="module-head">Module 3: King Arthur &middot; Week 2</div>
+    <div class="item"><div class="ic">📄</div><div><a href="w2-lesson1-the-promise.html">The Promise</a><div class="m">Page &middot; the start of &ldquo;Sir Gawain and the Green Knight&rdquo; &middot; suspense, Gawain&rsquo;s Year, Quick Write collecting</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w2-lesson2-the-green-lace.html">The Green Lace</a><div class="m">Page &middot; to the end of the chapter &middot; internal conflict, The Exchange Ledger, Quick Write plan</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w2-lesson3-writers-bench.html">The Writer&rsquo;s Bench</a><div class="m">Page &middot; no new reading &middot; verbs and tense (learn, find), all ten words, Quick Write draft</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w2-lesson4-what-the-castle-never-saw.html">What the Castle Never Saw</a><div class="m">Page &middot; review &middot; point of view, Honor in the Margins, Knight Evidence (Gawain), Quick Write revision, Turn In</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📝</div><div><a href="#week2work">Week 2 Work</a><div class="m">Assignment &middot; PDF upload, up to 4 files</div></div><div class="pts">35 pts</div></div>
+    <div class="item"><div class="ic">🚀</div><div><a href="#langcheck">Week 2 Language Check</a><div class="m">Quiz &middot; 10 questions, auto-graded</div></div><div class="pts">20 pts</div></div>
+    <div class="item"><div class="ic">💬</div><div><span class="t">All-Class Forum 1</span><div class="m">Discussion &middot; opens this week, closes at the end of Week 3</div></div><div class="pts">25 pts</div></div>
+  </div>
+
+  <h2 id="week2work">Week 2 Work</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>Type</dt><dd>Assignment + native rubric</dd>
+      <dt>Points</dt><dd>35 (replaces Quick Write 2, 15; VR 3.2A, 10; VR 3.2B, 10)</dd>
+      <dt>Submission</dt><dd>Online: File Uploads, restricted to .pdf; up to 4 files in one submission</dd>
+      <dt>Attempts</dt><dd>Unlimited until due</dd>
+      <dt>Student directions</dt><dd>Upload the Week 2 PDF from the last lesson. If a lesson shows ✗ on its status line, also attach that lesson&rsquo;s own PDF.</dd>
+    </dl>
+  </div>
+  <div class="card tbl-wrap">
+    <table>
+      <tr><th>Criterion</th><th>Full credit</th><th>Pts</th></tr>
+      <tr><td>Chapter thinking</td><td>All six L1 and L2 Chapter Thinking answers are complete sentences with a specific detail from the chapter</td><td class="p">6</td></tr>
+      <tr><td>Gawain's Year and the Ledger</td><td>Calendar: six pages lit, a mood word on each, the typed answer; Ledger: three days filled, the unbalanced line found with a word, the settlement in order, the typed answer</td><td class="p">4</td></tr>
+      <tr><td>Knight Evidence</td><td>Honor in the Margins: all nine moments placed with a word, a verdict with a &quot;because&quot; sentence; Gawain row with &ge; 2 trait + moment entries and his flaw; one sentence comparing Gawain with Arthur; a working claim</td><td class="p">8</td></tr>
+      <tr><td>Quick Write 2: kept and broken</td><td>Names a promise kept and a promise broken, each with a specific moment, and what Gawain did when the truth came out</td><td class="p">6</td></tr>
+      <tr><td>Quick Write 2: reasoning</td><td>Ends with what the story adds to a standard for a good knight, and the reason grows from the moments (not &quot;he was nice&quot;)</td><td class="p">6</td></tr>
+      <tr><td>Verbs and tense in own writing</td><td>Past tense held steady; at least two strong, exact verbs; the before-and-after sentence shows a tense or verb fix</td><td class="p">5</td></tr>
+      <tr class="total"><td>Total</td><td></td><td class="p">35</td></tr>
+    </table>
+  </div>
+
+  <h2 id="langcheck">Week 2 Language Check</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>Type</dt><dd>Classic Quiz, auto-graded</dd>
+      <dt>Points</dt><dd>20 (10 questions &times; 2); replaces the Week 2 Grammar Quiz (10) and Vocabulary Quiz (10)</dd>
+      <dt>Attempts</dt><dd>1 &middot; no time limit &middot; open-note</dd>
+      <dt>Questions</dt><dd>1&ndash;5: verbs, verb tense, steady tense, strong verbs. 6&ndash;10: boon, hospitality, temptation, covetousness and one more of the week&rsquo;s words. Every item is rewritten from &ldquo;Sir Gawain and the Green Knight.&rdquo;</dd>
+    </dl>
+  </div>
+</div>
+</body>
+</html>

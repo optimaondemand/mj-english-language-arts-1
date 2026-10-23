@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Arthur Week 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0E1C42; --ink: #0E1C42; --ink2: #3A4A6B; --mute: #6B7895; --line: #E2E8F4; --bg: #F5F7FB; --card: #FFFFFF;
+  --pur: #67308F; --pur-fill: #F1EAF6; --org: #F78F1E; --org-fill: #FEF1DF; --gold: #C7922C; --ok: #2E9E62; --old: #A3312B;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --navy: #9FB3E6; --ink: #E8ECF6; --ink2: #B9C3DA; --mute: #8E9AB6; --line: #2A3552; --bg: #0D1426; --card: #141D33;
+    --pur-fill: #2A1D3A; --org-fill: #33240F; --ok: #5BC98C; --old: #F08A84;
+  }
+}
+:root[data-theme="dark"] {
+  --navy: #9FB3E6; --ink: #E8ECF6; --ink2: #B9C3DA; --mute: #8E9AB6; --line: #2A3552; --bg: #0D1426; --card: #141D33;
+  --pur-fill: #2A1D3A; --org-fill: #33240F; --ok: #5BC98C; --old: #F08A84;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Nunito', 'Segoe UI', sans-serif; background: var(--bg); color: var(--ink); line-height: 1.55; padding: 28px 16px 60px; }
+.wrap { max-width: 860px; margin: 0 auto; }
+h1 { font-family: 'Lora', Georgia, serif; font-size: 26px; margin-bottom: 4px; }
+.sub { color: var(--mute); font-size: 14px; font-weight: 700; margin-bottom: 22px; }
+.compare { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+.stat .n { font-size: 34px; font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.stat .l { font-size: 13px; font-weight: 700; color: var(--mute); }
+.stat.now .n { color: var(--old); } .stat.new .n { color: var(--ok); }
+.module { background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 26px; }
+.module-head { background: var(--navy); color: #fff; padding: 12px 16px; font-weight: 800; font-size: 15px; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .module-head { background: #1E2B4D; } }
+:root[data-theme="dark"] .module-head { background: #1E2B4D; }
+.item { display: grid; grid-template-columns: 34px 1fr auto; gap: 12px; align-items: center; padding: 12px 16px; border-top: 1px solid var(--line); }
+.item:first-of-type { border-top: none; }
+.item .ic { font-size: 20px; text-align: center; }
+.item a, .item .t { font-weight: 700; color: var(--ink); text-decoration: none; }
+.item a:hover { text-decoration: underline; }
+.item .m { font-size: 13px; color: var(--mute); font-weight: 600; }
+.item .pts { font-size: 13px; font-weight: 800; color: var(--ink2); white-space: nowrap; font-variant-numeric: tabular-nums; }
+h2 { font-family: 'Lora', Georgia, serif; font-size: 20px; margin: 30px 0 10px; scroll-margin-top: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin-bottom: 14px; }
+.card p { margin-bottom: 8px; } .card p:last-child { margin-bottom: 0; }
+.kv { display: grid; grid-template-columns: 150px 1fr; gap: 6px 14px; font-size: 14px; }
+.kv dt { font-weight: 800; color: var(--mute); } .kv dd { color: var(--ink); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .4px; color: var(--mute); }
+td.p { font-weight: 800; white-space: nowrap; font-variant-numeric: tabular-nums; }
+tr.total td { font-weight: 800; border-bottom: none; }
+.tbl-wrap { overflow-x: auto; }
+@media (max-width: 600px) { .compare { grid-template-columns: 1fr; } .kv { grid-template-columns: 1fr; } .item { grid-template-columns: 28px 1fr; } .item .pts { grid-column: 2; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Module 3: King Arthur &middot; Week 3</h1>
+  <div class="sub">6th Grade ELA &middot; Sir Gareth, or the Knight of the Kitchen &middot; integrated week</div>
+
+  <div class="compare">
+    <div class="stat now"><div class="n">14 items</div><div class="l">Week 3 before: 9 pages (3 literature, grammar, vocabulary, extra practice, workshop, 2 VR) and 5 graded items (Quick Write 3, 2 VR submissions, 2 quizzes)</div></div>
+    <div class="stat new"><div class="n">6 items</div><div class="l">Now: 4 lesson pages, 1 PDF upload graded with one rubric, 1 auto-graded quiz (Forum 1 closes this week)</div></div>
+  </div>
+
+  <div class="module">
+    <div class="module-head">Module 3: King Arthur &middot; Week 3</div>
+    <div class="item"><div class="ic">📄</div><div><a href="w3-lesson1-knight-of-the-kitchen.html">The Knight of the Kitchen</a><div class="m">Page &middot; the start of &ldquo;Sir Gareth, or the Knight of the Kitchen&rdquo; &middot; motive, Hard Words, Gentle Answers, Quick Write collecting</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w3-lesson2-linnets-song.html">The Linnet&rsquo;s Song</a><div class="m">Page &middot; to the end of the chapter &middot; dynamic character, The Linnet&rsquo;s Song, Quick Write plan</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w3-lesson3-writers-bench.html">The Writer&rsquo;s Bench</a><div class="m">Page &middot; no new reading &middot; adjectives, adverbs and words that compare, all ten words, Quick Write draft</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📄</div><div><a href="w3-lesson4-born-or-earned.html">Born or Earned?</a><div class="m">Page &middot; review &middot; dramatic irony, Gareth&rsquo;s Shield, Knight Evidence (Gareth), Quick Write revision, Forum 1 prep, Turn In</div></div><div class="pts"></div></div>
+    <div class="item"><div class="ic">📝</div><div><a href="#week3work">Week 3 Work</a><div class="m">Assignment &middot; PDF upload, up to 4 files</div></div><div class="pts">30 pts</div></div>
+    <div class="item"><div class="ic">🚀</div><div><a href="#langcheck">Week 3 Language Check</a><div class="m">Quiz &middot; 10 questions, auto-graded</div></div><div class="pts">20 pts</div></div>
+    <div class="item"><div class="ic">💬</div><div><a href="#forum1">All-Class Forum 1</a><div class="m">Discussion &middot; opened in Week 2, closes at the end of this week</div></div><div class="pts">25 pts</div></div>
+  </div>
+
+  <h2 id="week3work">Week 3 Work</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>Type</dt><dd>Assignment + native rubric</dd>
+      <dt>Points</dt><dd>30 (replaces Quick Write 3, 10; VR 3.3A, 10; VR 3.3B, 10)</dd>
+      <dt>Submission</dt><dd>Online: File Uploads, restricted to .pdf; up to 4 files in one submission</dd>
+      <dt>Attempts</dt><dd>Unlimited until due</dd>
+      <dt>Student directions</dt><dd>Upload the Week 3 PDF from the last lesson. If a lesson shows ✗ on its status line, also attach that lesson&rsquo;s own PDF.</dd>
+    </dl>
+  </div>
+  <div class="card tbl-wrap">
+    <table>
+      <tr><th>Criterion</th><th>Full credit</th><th>Pts</th></tr>
+      <tr><td>Chapter thinking</td><td>All six L1 and L2 Chapter Thinking answers are complete sentences with a specific detail from &quot;Sir Gareth, or the Knight of the Kitchen&quot;</td><td class="p">6</td></tr>
+      <tr><td>Hard Words and the Linnet's Song</td><td>Every hook is lit and the typed answer explains the difference; all six lyrics are in order with a note each, and both turning points are answered</td><td class="p">4</td></tr>
+      <tr><td>Gareth's Shield and Knight Evidence (was VR 3.3A + 3.3B)</td><td>All nine moments pinned, each with a word, both halves used; the two typed answers; Gareth's row has &ge; 2 trait-and-moment entries; two knights starred; a one-sentence claim note</td><td class="p">6</td></tr>
+      <tr><td>Quick Write 3: the comparison</td><td>Names one quality; gives a true moment from each chapter; ends with a claim that uses a comparing word; 6–8 sentences</td><td class="p">5</td></tr>
+      <tr><td>Quick Write 3: reasoning</td><td>Explains what each moment shows, not just what happens (&quot;he was nice&quot;)</td><td class="p">4</td></tr>
+      <tr><td>Describers and comparatives in own writing</td><td>At least two precise adjectives or adverbs; every comparison uses one method (no more braver); the before-and-after sentence shows a sharper describer</td><td class="p">5</td></tr>
+      <tr class="total"><td>Total</td><td></td><td class="p">30</td></tr>
+    </table>
+  </div>
+
+  <h2 id="langcheck">Week 3 Language Check</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>Type</dt><dd>Classic Quiz, auto-graded</dd>
+      <dt>Points</dt><dd>20 (10 questions &times; 2); replaces the Week 3 Grammar Quiz (10) and Vocabulary Quiz (10)</dd>
+      <dt>Attempts</dt><dd>1 &middot; no time limit &middot; open-note</dd>
+      <dt>Questions</dt><dd>1&ndash;5: adjectives, adverbs, -ly adjectives, words that compare, precise adverbs. 6&ndash;10: contemptuously, scullion, ancestry, besieged, homage. Every item is rewritten from &ldquo;Sir Gareth, or the Knight of the Kitchen.&rdquo;</dd>
+    </dl>
+  </div>
+
+  <h2 id="forum1">All-Class Forum 1</h2>
+  <div class="card">
+    <dl class="kv">
+      <dt>Type</dt><dd>Discussion, threaded; students post before they see replies</dd>
+      <dt>Points</dt><dd>25 &middot; one post and two replies</dd>
+      <dt>Question</dt><dd>Did Gawain pass the test?</dd>
+      <dt>Dates</dt><dd>Opens in Week 2; closes at the end of Week 3</dd>
+    </dl>
+  </div>
+</div>
+</body>
+</html>
