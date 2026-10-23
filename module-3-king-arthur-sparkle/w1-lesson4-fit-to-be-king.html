@@ -2352,7 +2352,7 @@ function openPrint(title, heading, body){
     'h2{font-size:17px;margin:26px 0 6px;padding-top:10px;border-top:2px solid #E2E8F4;} h3{font-size:12px;letter-spacing:.6px;text-transform:uppercase;color:#67308F;margin:14px 0 4px;}' +
     '.q{font-size:13px;font-weight:700;margin-top:10px;} .a{font-size:14px;line-height:1.6;white-space:pre-wrap;margin:2px 0 0 0;}' +
     '.missing{color:#A3312B;font-style:italic;} table.st{border-collapse:collapse;font-size:13px;margin:4px 0 8px;} table.st td{padding:3px 10px 3px 0;}' +
-    '</style></head><body><h1>' + esc(heading) + '</h1><div class="sub">' + (nm ? esc(nm) + ' · ' : '') + 'Optima Academy Online · 6th Grade ELA · Module 3 · Week ' + CFG.week + '</div>' + body + '</body></html>';
+    '</style></head><body><h1>' + esc(heading) + '</h1><div class="sub">' + (nm ? esc(nm) + ' · ' : '') + 'Optima Academy Online · 6th Grade ELA · Module 3 · Week ' + CFG.week + '</div>' + body + '<\/body><\/html>';
   var win = window.open('', '_blank');
   if (!win) { var n = document.getElementById('gatheredCopied'); if (n) { n.textContent = 'The PDF window was blocked. Allow pop-ups for this page, or use Copy.'; n.style.color = '#A3312B'; n.classList.add('show'); } return; }
   win.document.write(html); win.document.close();
