@@ -571,6 +571,17 @@ table.tbl td strong { color: var(--ink); }
 .lesson-banner-cap { position: absolute; left: 22px; right: 22px; bottom: 10px; z-index: 1; color: #F3EBD8; font-family: 'Lora', Georgia, serif; font-size: 16px; text-shadow: 0 1px 4px rgba(0,0,0,.6); }
 .lesson-banner-cap small { display: block; font-family: 'Nunito', sans-serif; font-size: 11px; opacity: .9; }
 @media (max-width: 560px) { .lesson-banner { height: 120px; } }
+/* Poetry Corner, clean layout (her ruling 2026-10-28): no boxes, no badge, title on top, crisp mark-up task. */
+.pc-clean .poem-card, .pc-clean .poem-card.solved { background: none; border: 0; box-shadow: none; padding: 0; margin-bottom: 18px; }
+.pc-clean .poem-title { font-size: 24px; line-height: 1.25; }
+.pc-clean .poem-author, .pc-clean .poem-credit { margin: 2px 0 10px; }
+.pc-clean .poet-reader { display: block; background: none; border: 0; border-radius: 0; padding: 0; margin: 0 0 18px; }
+.pc-clean .poet-ai { font-size: 12px; color: var(--mute); white-space: nowrap; }
+.pc-clean .hl-prompt { background: none; border: 0; border-radius: 0; padding: 0; margin: 0 0 14px; }
+.pc-clean .hl-tool { display: block; font-size: 13px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.pc-clean .hl-do { display: block; font-size: 19px; font-weight: 800; line-height: 1.35; color: var(--ink); }
+.pc-clean .poem-gloss { border-top: 0; padding-top: 0; margin-top: 14px; }
+.pc-clean .your-turn { background: none; border: 0; border-radius: 0; padding: 0; margin: 22px 0 6px; }
 </style>
 
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -1140,13 +1151,13 @@ body.greenwood .tab-panel { background-image: linear-gradient(180deg, rgba(107,1
           <button class="rr-pr" type="button" data-pr="1">What the passage shows about a character that was not clear before it.</button>
           <button class="rr-pr" type="button" data-pr="2">One word the author chose here, and what a different word would lose.</button>
           <button class="rr-pr" type="button" data-pr="3">What changed in the reading when it was said aloud instead of read silently.</button>
-          <button class="rr-pr" type="button" data-pr="4">How the passage bears on the module question.</button>
+          <button class="rr-pr" type="button" data-pr="4">How the passage bears on the story as a whole.</button>
         </div>
         <div class="rr-prnote" id="aNote" role="status" aria-live="polite">Tap two prompts to answer.</div>
         <div class="rr-pn" data-pr="1" hidden><div class="textbox-prompt">Notes: what the passage shows about a character.</div><textarea class="journal-box" id="an-1" data-label="Angle A notes: what the passage shows about a character" placeholder="Notes for your card..." oninput="autoSave(this)"></textarea></div>
         <div class="rr-pn" data-pr="2" hidden><div class="textbox-prompt">Notes: one word the author chose.</div><textarea class="journal-box" id="an-2" data-label="Angle A notes: one word the author chose" placeholder="Notes for your card..." oninput="autoSave(this)"></textarea></div>
         <div class="rr-pn" data-pr="3" hidden><div class="textbox-prompt">Notes: what changed when it was said aloud.</div><textarea class="journal-box" id="an-3" data-label="Angle A notes: what changed when said aloud" placeholder="Notes for your card..." oninput="autoSave(this)"></textarea></div>
-        <div class="rr-pn" data-pr="4" hidden><div class="textbox-prompt">Notes: how the passage bears on the module question.</div><textarea class="journal-box" id="an-4" data-label="Angle A notes: the module question" placeholder="Notes for your card..." oninput="autoSave(this)"></textarea></div>
+        <div class="rr-pn" data-pr="4" hidden><div class="textbox-prompt">Notes: how the passage bears on the story as a whole.</div><textarea class="journal-box" id="an-4" data-label="Angle A notes: the story as a whole" placeholder="Notes for your card..." oninput="autoSave(this)"></textarea></div>
       </div>
 
       <div class="rr-ang" id="ang-B" hidden>
@@ -1834,7 +1845,7 @@ function renderStatus(){
     var cls = !st.found || st.done === 0 ? 'none' : (st.done >= st.total ? 'full' : 'part');
     if (!st.found) missing = true;
     var icon = cls === 'full' ? '✓' : (cls === 'part' ? '⚠' : '✗');
-    var link = (cls !== 'full' && L.n !== CFG.lesson) ? '<a class="ws-open" href="' + L.href + '">Open lesson</a>' : '';
+    var link = '';
     rows += '<div class="ws-row ws-' + cls + '"><span class="ws-icon">' + icon + '</span><span class="ws-title">' + L.title + '</span><span class="ws-count">' + st.done + ' / ' + st.total + '</span>' + link + '</div>';
   });
   host.querySelector('.ws-rows').innerHTML = rows;
@@ -1898,7 +1909,7 @@ function studentFileName(suffix){
 function lessonSectionHtml(L){
   var st = lessonState(L);
   var h = '<h2>' + esc(L.title) + '</h2>';
-  if (!st.found) return h + '<p class="missing">Lesson not found on this device. Attach this lesson&rsquo;s own PDF to the same submission.</p>';
+  if (!st.found) return h + '<p class="missing">Not found on this device.</p>';
   var lastTab = '';
   st.fields.forEach(function(f){
     if (f.tab !== lastTab) { h += '<h3>' + esc(f.tab) + '</h3>'; lastTab = f.tab; }
@@ -1933,7 +1944,7 @@ function openPrint(title, heading, body){
 function downloadLesson(){
   gatherAnswers();
   var L = CFG.lessons.filter(function(x){ return x.n === CFG.lesson; })[0];
-  openPrint(studentFileName('M4W' + CFG.week + '_L' + CFG.lesson), 'Week ' + CFG.week + ' Work · ' + L.title, lessonSectionHtml(L));
+  openPrint(studentFileName('M4W' + CFG.week + '_L' + CFG.lesson), 'Week ' + CFG.week + ' · ' + L.title, lessonSectionHtml(L));
 }
 function downloadWeek(){
   gatherAnswers();
@@ -1948,7 +1959,7 @@ function downloadWeek(){
     body += '<h2>' + esc(el.getAttribute('data-label') || el.id) + '</h2>' + (v && v.trim() ? '<div class="a">' + esc(v.trim()) + '</div>' : '<div class="a missing">(no answer saved)</div>');
     printed[el.dataset.shared] = 1;
   });
-  openPrint(studentFileName('M4W' + CFG.week), 'Week ' + CFG.week + ' Work', body);
+  openPrint(studentFileName('M4W' + CFG.week), 'Week ' + CFG.week, body);
 }
 
 /* ───── CONFETTI ───── */

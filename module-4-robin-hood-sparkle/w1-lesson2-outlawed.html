@@ -1126,7 +1126,7 @@ In Sherwood, in Sherwood, about the break of day.</div>
 <!-- ════════════ TAB 2: READ ════════════ -->
 <div class="tab-panel" id="tab-reading" data-gather-title="Read">
   <div class="activity chalk read-first bl-pur">
-    <div class="activity-head"><div class="activity-num" style="background:#67308F;">1</div><div><div class="activity-title">🔤 Words: Wrongdoing and the Forest</div><div class="activity-sub">Four more of this week&rsquo;s words. Learn them before you read.</div></div></div>
+    <div class="activity-head"><div class="activity-num" style="background:#67308F;">1</div><div><div class="activity-title">🔤 Words: Wrongdoing and the Forest</div><div class="activity-sub">Four words to learn before you read.</div></div></div>
     <div class="activity-body">
       <div class="lovelore" id="loreWords">
         <div class="ll-head">
@@ -1316,7 +1316,7 @@ In Sherwood, in Sherwood, about the break of day.</div>
         <div class="tap-box-label" style="margin-top:16px;">Your whole cloth, both ways</div>
         <div class="tap-strip eyes-strip" id="eyesStrip"></div>
         <div class="tap-print-row"><button type="button" class="gathered-btn gathered-btn-pdf" id="eyesPrint">🖨️ Print or save both views</button></div>
-        <details class="tap-log-wrap"><summary>📜 Your scenes in words (goes into your Week 1 PDF)</summary>
+        <details class="tap-log-wrap"><summary>📜 Your scenes in words (goes into your PDF)</summary>
           <textarea class="journal-box" id="eyes-log" data-label="Two Pairs of Eyes: my three scenes" readonly></textarea>
         </details>
       </div>
@@ -1347,7 +1347,7 @@ In Sherwood, in Sherwood, about the break of day.</div>
 
 
   <div class="activity bl-org">
-    <div class="activity-head"><div class="activity-num" style="background:#F78F1E;">B</div><div><div class="activity-title">🔍 Mini-Research: Is There a Historical Robin Hood?</div><div class="activity-sub">Step 1 of 2: find two reliable sources</div></div></div>
+    <div class="activity-head"><div class="activity-num" style="background:#F78F1E;">B</div><div><div class="activity-title">🔍 Mini-Research: Is There a Historical Robin Hood?</div><div class="activity-sub">Find two reliable sources</div></div></div>
     <div class="activity-body">
       <p>Green&rsquo;s Robin is a character in a book. The legend is older, and people still argue about whether a real outlaw stood behind the name. Your question:</p>
       <div class="socratic-box">
@@ -1369,7 +1369,7 @@ In Sherwood, in Sherwood, about the break of day.</div>
   </div>
 
   <div class="gathered-card">
-    <div class="gathered-header"><div class="gathered-header-icon">📋</div><div><div class="gathered-header-label">Week 1 &middot; 2 of 4</div><div class="gathered-header-title">Your Work So Far</div></div></div>
+    <div class="gathered-header"><div class="gathered-header-icon">📋</div><div><div class="gathered-header-label">Your work</div><div class="gathered-header-title">Your Work So Far</div></div></div>
     <div class="gathered-body">
       <div class="name-row"><label for="studentName">Your first and last name</label><input id="studentName" type="text" autocomplete="name" placeholder="First Last"></div>
       <textarea class="gathered-output" id="gatheredOutput" readonly></textarea>
@@ -1389,9 +1389,6 @@ In Sherwood, in Sherwood, about the break of day.</div>
         <div class="check-item" data-ck="l2b" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I answered the three chapter questions and my Reader / Writer / Mimic responses.</div></div>
         <div class="check-item" data-ck="l2e" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I stitched all three scenes in Two Pairs of Eyes, both ways.</div></div>
         <div class="check-item" data-ck="l2d" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I found two reliable sources and took notes on each.</div></div>
-      </div>
-      <div class="tab-next-wrap" style="padding-bottom:0;">
-        <a class="next-lesson" href="w1-lesson3-writers-bench.html">Next: The Writer&rsquo;s Bench →</a>
       </div>
     </div>
   </div>
@@ -2004,7 +2001,7 @@ function studentFileName(suffix){
 function lessonSectionHtml(L){
   var st = lessonState(L);
   var h = '<h2>' + esc(L.title) + '</h2>';
-  if (!st.found) return h + '<p class="missing">Lesson not found on this device. Attach this lesson&rsquo;s own PDF to the same submission.</p>';
+  if (!st.found) return h + '<p class="missing">Not found on this device.</p>';
   var lastTab = '';
   st.fields.forEach(function(f){
     if (f.tab !== lastTab) { h += '<h3>' + esc(f.tab) + '</h3>'; lastTab = f.tab; }
@@ -2039,7 +2036,7 @@ function openPrint(title, heading, body){
 function downloadLesson(){
   gatherAnswers();
   var L = CFG.lessons.filter(function(x){ return x.n === CFG.lesson; })[0];
-  openPrint(studentFileName('M4W' + CFG.week + '_L' + CFG.lesson), 'Week ' + CFG.week + ' Work · ' + L.title, lessonSectionHtml(L));
+  openPrint(studentFileName('M4W' + CFG.week + '_L' + CFG.lesson), L.title, lessonSectionHtml(L));
 }
 function downloadWeek(){
   gatherAnswers();
@@ -2054,7 +2051,7 @@ function downloadWeek(){
     body += '<h2>' + esc(el.getAttribute('data-label') || el.id) + '</h2>' + (v && v.trim() ? '<div class="a">' + esc(v.trim()) + '</div>' : '<div class="a missing">(no answer saved)</div>');
     printed[el.dataset.shared] = 1;
   });
-  openPrint(studentFileName('M4W' + CFG.week), 'Week ' + CFG.week + ' Work', body);
+  openPrint(studentFileName('M4W' + CFG.week), 'Week ' + CFG.week, body);
 }
 
 /* ───── CONFETTI ───── */
