@@ -8,8 +8,17 @@
 #        <module folder>/take-into-vr/thumbs/...jpg                                           small picture of each card (preview)
 #        <module folder>/take-into-vr/index.json                                               what the Course Optimizer reads
 #
-# Pictures come out of the lesson page's own asset block, so a card can never show a picture
-# the lesson does not use. Every word on a card must already be in the lesson page (verbatim gate).
+# Pictures come out of the lesson page's own asset block, or, on a page that shows image files,
+# from the files the page itself names, so a card can never show a picture the lesson does not use.
+# Every word on a card must already be in the lesson page (verbatim gate).
+#
+# Optional in packs.json, for courses that are not built as Week N / Lesson N:
+#   "look":   {"accent", "paper", "ink", "muted", "font"}   the course's own colours and type
+#   lesson:   "heading" ("Module 10"), "folder" ("Module 10 - <title>")
+#   activity: "folder"  a folder name when the activity name has characters a folder cannot
+#             "source"  a saved copy of another item of the same module (for pictures and words
+#                       that are in that item and not on the lesson page); checked the same way
+#   card:     "artist"  shown before the caption; "caption" may be a list of pieces
 # Each card is checked in the browser before it is written: pictures loaded, nothing off the card,
 # no text on top of a picture or of other text.
 import asyncio, datetime, html, json, pathlib, re, shutil, sys
@@ -18,10 +27,12 @@ from playwright.async_api import async_playwright
 
 GOLD, CREAM, INK, MUTED, NAVY = "#C9A04A", "#F7EFD9", "#2B2117", "#6b5a3a", "#18213D"
 
-CSS = """
+LOOK = dict(GOLD=GOLD, CREAM=CREAM, INK=INK, MUTED=MUTED, NAVY=NAVY, FONT="Georgia, 'Times New Roman', serif")
+
+CSS_T = """
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: #fff; }
-body { font-family: Georgia, 'Times New Roman', serif; color: %(INK)s; }
+body { font-family: %(FONT)s; color: %(INK)s; }
 .card { position: relative; overflow: hidden; background: %(CREAM)s; border-left: 36px solid %(GOLD)s;
   display: flex; flex-direction: column; padding: 56px 80px 40px 64px; page-break-after: always; break-after: page; }
 .card.land { width: 1600px; height: 1000px; }
@@ -45,7 +56,17 @@ body { font-family: Georgia, 'Times New Roman', serif; color: %(INK)s; }
 .sign { justify-content: center; }
 .sign .title { font-size: 150px; line-height: 1.05; }
 .sign .kicker { margin-top: 0; margin-bottom: 26px; }
-""" % dict(GOLD=GOLD, CREAM=CREAM, INK=INK, MUTED=MUTED, NAVY=NAVY)
+"""
+CSS = CSS_T % LOOK
+
+
+def set_look(look):
+    global CSS
+    d = dict(LOOK)
+    for k, v in dict(accent="GOLD", paper="CREAM", ink="INK", muted="MUTED", font="FONT").items():
+        if look.get(k):
+            d[v] = look[k]
+    CSS = CSS_T % d
 
 # Runs inside the page: returns a list of problems for every .card on it.
 GATE_JS = r"""
@@ -101,7 +122,13 @@ class Lesson:
         raw = path.read_text(encoding="utf-8")
         m = re.search(r'<script type="application/json" id="[\w-]*assets">(.*?)</script>', raw, re.S)
         if not m:
-            raise SystemExit(f"{path.name}: no asset block, cannot build cards from it")
+            # a page that shows image files: a picture is named by its file, which the page must use
+            self.assets, self.img, self.files = {}, None, set()
+            for u in re.findall(r'<img\b[^>]*?\bsrc=["\']([^"\']+)["\']', raw, re.I):
+                self.files.add(u.split("?")[0].split("#")[0].rsplit("/", 1)[-1])
+            self.text = norm(re.sub(r"<[^>]+>", " ", raw)) + " " + norm(raw)
+            self._data = {}
+            return
         self.assets = json.loads(m.group(1))
         self.img = self.assets.get("img", {})
         text = raw[: m.start()] + re.sub(r'data:image/[\w+]+;base64,[A-Za-z0-9+/=]+', "", m.group(1)) + raw[m.end():]
@@ -112,6 +139,17 @@ class Lesson:
         return norm(s) in self.text
 
     def src(self, key):
+        if self.img is None:
+            if key not in self.files:
+                raise SystemExit(f"{self.path.name}: the page does not show a picture named {key}")
+            if key not in self._data:
+                import base64
+                f = getattr(self, "imgdir", self.path.parent) / key
+                if not f.is_file():
+                    raise SystemExit(f"{self.path.name}: picture file missing: {key}")
+                kind = {"jpg": "jpeg", "jpeg": "jpeg", "png": "png", "webp": "webp", "gif": "gif"}[key.rsplit(".", 1)[-1].lower()]
+                self._data[key] = f"data:image/{kind};base64," + base64.b64encode(f.read_bytes()).decode("ascii")
+            return self._data[key]
         if key not in self.img:
             raise SystemExit(f"{self.path.name}: no picture named {key}")
         return self.img[key]["src"]
@@ -132,8 +170,9 @@ def card_html(L, card, kicker, foot, name):
         parts = [f'<div class="plate"><img class="pic{fig}" src="{L.src(card["img"])}" alt=""></div>',
                  f'<div class="kicker t">{esc(kicker)}</div>',
                  f'<div class="label t">{esc(card["label"])}</div>']
-        if card.get("caption"):
-            parts.append(f'<div class="caption t">{esc(card["caption"])}</div>')
+        cap = caption_of(card)
+        if cap:
+            parts.append(f'<div class="caption t">{esc(cap)}</div>')
         if card.get("credit"):
             parts.append(f'<div class="credit t">{esc(card["credit"])}</div>')
         parts.append(f'<div class="foot t">{esc(foot)}</div>')
@@ -148,6 +187,16 @@ def card_html(L, card, kicker, foot, name):
         return (f'<div class="card sign land" data-name="{esc(name)}"><div class="kicker t">{esc(kicker)}</div>'
                 f'<div class="title t">{esc(card["label"])}</div><div class="foot t" style="position:absolute;left:64px;bottom:40px;">{esc(foot)}</div></div>'), "land"
     raise SystemExit(f"unknown card type {t}")
+
+
+def pieces(card, field):
+    v = card.get(field)
+    return [] if not v else v if isinstance(v, list) else [v]
+
+
+def caption_of(card):
+    cap = " ".join(pieces(card, "caption"))
+    return ", ".join(x for x in (card.get("artist"), cap) if x)
 
 
 def page(body):
@@ -165,6 +214,7 @@ async def main():
     mod = pathlib.Path(args[0]).resolve()
     out = mod / "take-into-vr"
     spec = json.loads((out / "packs.json").read_text(encoding="utf-8"))
+    set_look(spec.get("look") or {})
     problems, plan = [], []
 
     # 1. plan every card and run the verbatim gate before anything is rendered
@@ -172,19 +222,33 @@ async def main():
         L = Lesson(mod / les["page"])
         if not L.has(les["title"]):
             problems.append(f'{les["page"]}: lesson title not on the page: {les["title"]}')
-        lfolder = f'Week {les["week"]}/Lesson {les["lesson"]} - {safe_name(les["title"])}'
-        foot = f'{spec["module"]} · Week {les["week"]} · Lesson {les["lesson"]}'
+        if les.get("folder"):
+            lfolder = "/".join(safe_name(x) for x in les["folder"].split("/"))
+            foot = f'{spec["module"]} · {les.get("heading") or les["title"]}'
+        else:
+            lfolder = f'Week {les["week"]}/Lesson {les["lesson"]} - {safe_name(les["title"])}'
+            foot = f'{spec["module"]} · Week {les["week"]} · Lesson {les["lesson"]}'
         cards = []
         for act in les["activities"]:
+            # an activity may draw on another item of the same module, saved beside packs.json
+            A = L
+            if act.get("source"):
+                A = Lesson(mod / act["source"]); A.imgdir = (mod / les["page"]).parent
+                if A.img is not None:
+                    raise SystemExit(f'{act["source"]}: a source must show image files')
+            where = act.get("source") or les["page"]
             for s in act.get("verify", [act["name"]]):
-                if not L.has(s):
-                    problems.append(f'{les["page"]}: activity name not on the page: {s}')
-            afolder = safe_name(act["name"])
+                if not A.has(s):
+                    problems.append(f'{where}: activity name not on the page: {s}')
+            afolder = safe_name(act.get("folder") or act["name"])
             moments = [c for c in act["cards"] if c["type"] == "moment"]
             for n, c in enumerate(act["cards"], 1):
-                for field in ("label", "caption", "text", "credit"):
-                    if c.get(field) and not L.has(c[field]):
-                        problems.append(f'{les["page"]} / {act["name"]}: words not on the lesson page: {c[field]!r}')
+                for field in ("label", "artist", "caption", "text", "credit"):
+                    for words in pieces(c, field):
+                        if not A.has(words):
+                            problems.append(f'{where} / {act["name"]}: words not on the page: {words!r}')
+                if A.img is None and c["type"] == "picture" and c["img"] not in A.files:
+                    problems.append(f'{where} / {act["name"]}: the page does not show {c["img"]}')
                 if c["type"] == "moment":
                     c["n"] = moments.index(c) + 1
                     kicker = f'Moment {c["n"]} of {len(moments)}'
@@ -197,7 +261,7 @@ async def main():
                     stem = lab
                 fname = f'{n:02d} - {stem}.pdf'
                 cards.append(dict(card=c, kicker=kicker, activity=act["name"], rel=f'{lfolder}/{afolder}/{fname}',
-                                  label=c.get("label") or c.get("text")))
+                                  label=c.get("label") or c.get("text"), L=A))
         plan.append(dict(les=les, L=L, folder=lfolder, foot=foot, cards=cards))
     seen = set()
     for p in plan:
@@ -209,7 +273,8 @@ async def main():
         print("GATE FAILED before rendering:"); [print("  -", x) for x in problems]; raise SystemExit(1)
 
     # 2. render
-    for d in list(out.glob("Week *")) + [out / "thumbs"]:
+    tops = {out / p["folder"].split("/")[0] for p in plan}
+    for d in set(out.glob("Week *")) | tops | {out / "thumbs"}:
         if d.exists():
             shutil.rmtree(d)
     index = dict(version=1, module=spec["module"], made=datetime.date.today().isoformat(), lessons=[])
@@ -219,7 +284,7 @@ async def main():
         for p in plan:
             files, bodies, orients = [], [], set()
             for c in p["cards"]:
-                body, orient = card_html(p["L"], c["card"], c["kicker"], p["foot"], c["rel"])
+                body, orient = card_html(c["L"], c["card"], c["kicker"], p["foot"], c["rel"])
                 await pg.set_content(page(body)); await pg.wait_for_timeout(60)
                 bad = await pg.evaluate(GATE_JS)
                 if bad:
@@ -240,13 +305,16 @@ async def main():
                 files.append(dict(path=c["rel"], thumb=trel, activity=c["activity"], label=c["label"], bytes=dest.stat().st_size))
                 bodies.append((body, orient)); orients.add(orient)
             # combined: landscape pages; a portrait card is laid on its own portrait page via a named @page
-            comb = f'Lesson {p["les"]["lesson"]} - all cards.pdf'
+            comb = f'{safe_name(p["les"]["heading"]) if p["les"].get("heading") else "Lesson " + str(p["les"]["lesson"])} - all cards.pdf'
             extra = "<style>@page { size: 1600px 1000px; margin: 0; } @page port { size: 1000px 1600px; margin: 0; } .card.port { page: port; }</style>"
             await pg.set_content(page(extra + "".join(x[0] for x in bodies))); await pg.wait_for_timeout(120)
             cdest = out / p["folder"] / comb
             await pg.pdf(path=str(cdest), prefer_css_page_size=True, print_background=True)
-            index["lessons"].append(dict(page=p["les"]["page"], week=p["les"]["week"], lesson=p["les"]["lesson"], title=p["les"]["title"],
-                                         folder=p["folder"], combined=dict(path=f'{p["folder"]}/{comb}', bytes=cdest.stat().st_size), files=files))
+            row = dict(page=p["les"]["page"], week=p["les"].get("week"), lesson=p["les"].get("lesson"), title=p["les"]["title"],
+                       folder=p["folder"], combined=dict(path=f'{p["folder"]}/{comb}', bytes=cdest.stat().st_size), files=files)
+            if p["les"].get("heading"):
+                row = dict(page=row["page"], heading=p["les"]["heading"], title=row["title"], folder=row["folder"], combined=row["combined"], files=files)
+            index["lessons"].append(row)
         await b.close()
     if problems:
         print("GATE FAILED while rendering:"); [print("  -", x) for x in problems]; raise SystemExit(1)
