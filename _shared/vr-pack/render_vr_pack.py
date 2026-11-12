@@ -5,6 +5,7 @@
 # Reads  <module folder>/take-into-vr/packs.json   (which pictures, which words, per lesson and activity)
 # Writes <module folder>/take-into-vr/Week N/Lesson N - <title>/<activity>/NN - <label>.pdf   one card per PDF
 #        <module folder>/take-into-vr/Week N/Lesson N - <title>/Lesson N - all cards.pdf      every card of the lesson
+#        <module folder>/take-into-vr/thumbs/...jpg                                           small picture of each card (preview)
 #        <module folder>/take-into-vr/index.json                                               what the Course Optimizer reads
 #
 # Pictures come out of the lesson page's own asset block, so a card can never show a picture
@@ -208,8 +209,9 @@ async def main():
         print("GATE FAILED before rendering:"); [print("  -", x) for x in problems]; raise SystemExit(1)
 
     # 2. render
-    for d in out.glob("Week *"):
-        shutil.rmtree(d)
+    for d in list(out.glob("Week *")) + [out / "thumbs"]:
+        if d.exists():
+            shutil.rmtree(d)
     index = dict(version=1, module=spec["module"], made=datetime.date.today().isoformat(), lessons=[])
     async with async_playwright() as pw:
         b = await pw.chromium.launch()
@@ -227,7 +229,15 @@ async def main():
                              margin=dict(top="0", bottom="0", left="0", right="0"), page_ranges="1")
                 if shots:
                     await pg.locator(".card").screenshot(path=str(shots / (c["rel"].replace("/", " __ ")[:-4] + ".png")))
-                files.append(dict(path=c["rel"], activity=c["activity"], label=c["label"], bytes=dest.stat().st_size))
+                # small picture of the card for the Course Optimizer's preview step
+                import io
+                from PIL import Image
+                im = Image.open(io.BytesIO(await pg.locator(".card").screenshot(type="jpeg", quality=90))).convert("RGB")
+                im.thumbnail((480, 480))
+                trel = "thumbs/" + c["rel"][:-4] + ".jpg"
+                (out / trel).parent.mkdir(parents=True, exist_ok=True)
+                im.save(out / trel, "JPEG", quality=78, optimize=True)
+                files.append(dict(path=c["rel"], thumb=trel, activity=c["activity"], label=c["label"], bytes=dest.stat().st_size))
                 bodies.append((body, orient)); orients.add(orient)
             # combined: landscape pages; a portrait card is laid on its own portrait page via a named @page
             comb = f'Lesson {p["les"]["lesson"]} - all cards.pdf'
