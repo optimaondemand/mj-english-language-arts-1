@@ -1,0 +1,320 @@
+{
+ "module": "Robin Hood",
+ "note": "Week 1 only. Pictures used inside lesson activities; header art and teacher portraits are left out.",
+ "lessons": [
+  {
+   "page": "w1-lesson1-greenwood.html",
+   "week": 1,
+   "lesson": 1,
+   "title": "A Hero Is Born in the Greenwood",
+   "activities": [
+    {
+     "name": "Find Robin's England",
+     "cards": [
+      {
+       "type": "picture",
+       "img": "map_hemi",
+       "label": "World view",
+       "credit": "drawn for this lesson from Natural Earth map data, public domain"
+      },
+      {
+       "type": "picture",
+       "img": "map_england",
+       "label": "England about 1300",
+       "credit": "William R. Shepherd, Historical Atlas (1911), public domain"
+      },
+      {
+       "type": "picture",
+       "img": "map_notts",
+       "label": "Nottinghamshire",
+       "credit": "John Speed, The Countie of Nottingham (1610), public domain, Bibliothèque nationale de France"
+      }
+     ]
+    },
+    {
+     "name": "Where Are We?",
+     "cards": [
+      {
+       "type": "picture",
+       "img": "ctx_modern",
+       "label": "Picture A",
+       "caption": "A modern city street, New York, 2015",
+       "credit": "Midtown, New York: Rob Bye (2015), CC0"
+      },
+      {
+       "type": "picture",
+       "img": "ctx_roman",
+       "label": "Picture B",
+       "caption": "The forum of Pompeii, an ancient Roman city",
+       "credit": "Forum of Pompeii: Jebulon (2015), CC0"
+      },
+      {
+       "type": "picture",
+       "img": "ctx_asia",
+       "label": "Picture C",
+       "caption": "A village in Japan, print by Hiroshige, about 1833",
+       "credit": "Kambara, Night Snow: Utagawa Hiroshige (c. 1833), public domain"
+      },
+      {
+       "type": "picture",
+       "img": "ctx_pioneer",
+       "label": "Picture D",
+       "caption": "A pioneer sod schoolhouse, Oklahoma, about 1895",
+       "credit": "Sod schoolhouse, Oklahoma Territory (c. 1895), U.S. National Archives, public domain"
+      },
+      {
+       "type": "picture",
+       "img": "ctx_forest",
+       "label": "Picture E",
+       "caption": "A medieval forest hunt, from the Book of the Hunt, about 1407",
+       "credit": "Forest hunt: Gaston Phébus, Livre de la chasse (c. 1407), public domain"
+      }
+     ]
+    },
+    {
+     "name": "Cast of Characters and Stitch the Tapestry",
+     "verify": [
+      "Cast of Characters",
+      "Stitch the Tapestry"
+     ],
+     "cards": [
+      {
+       "type": "picture",
+       "img": "fig_much",
+       "label": "an old man kneeling"
+      },
+      {
+       "type": "picture",
+       "img": "fig_sheriff",
+       "label": "a man pointing with a staff"
+      },
+      {
+       "type": "picture",
+       "img": "fig_prince",
+       "label": "a young man in a crown"
+      },
+      {
+       "type": "picture",
+       "img": "fig_soldiers",
+       "label": "two soldiers"
+      },
+      {
+       "type": "picture",
+       "img": "fig_archer",
+       "label": "an archer behind a tree"
+      },
+      {
+       "type": "picture",
+       "img": "fig_will",
+       "label": "a man carrying a sack"
+      },
+      {
+       "type": "picture",
+       "img": "fig_boy",
+       "label": "a boy kneeling"
+      },
+      {
+       "type": "picture",
+       "img": "fig_villagers",
+       "label": "three villagers"
+      },
+      {
+       "type": "picture",
+       "img": "fig_monk",
+       "label": "a monk"
+      },
+      {
+       "type": "picture",
+       "img": "fig_lady",
+       "label": "a lady"
+      },
+      {
+       "type": "picture",
+       "img": "fig_cottage",
+       "label": "a burning cottage"
+      },
+      {
+       "type": "picture",
+       "img": "fig_tree",
+       "label": "an oak tree"
+      },
+      {
+       "type": "picture",
+       "img": "fig_stag",
+       "label": "a stag"
+      },
+      {
+       "type": "picture",
+       "img": "fig_horse",
+       "label": "a horse"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson2-outlawed.html",
+   "week": 1,
+   "lesson": 2,
+   "title": "Outlawed on a False Charge",
+   "activities": [
+    {
+     "name": "Two Pairs of Eyes",
+     "cards": [
+      {
+       "type": "picture",
+       "img": "fig_robert",
+       "label": "Earl Robert"
+      },
+      {
+       "type": "picture",
+       "img": "fig_lady",
+       "label": "Lady Marian"
+      },
+      {
+       "type": "picture",
+       "img": "fig_worman",
+       "label": "Worman the steward"
+      },
+      {
+       "type": "picture",
+       "img": "fig_palmer1",
+       "label": "A palmer"
+      },
+      {
+       "type": "picture",
+       "img": "fig_palmer2",
+       "label": "A palmer"
+      },
+      {
+       "type": "picture",
+       "img": "fig_foresters",
+       "label": "The foresters"
+      },
+      {
+       "type": "picture",
+       "img": "fig_will",
+       "label": "The forester in scarlet"
+      },
+      {
+       "type": "picture",
+       "img": "fig_boy",
+       "label": "Young Much"
+      },
+      {
+       "type": "picture",
+       "img": "fig_guy",
+       "label": "Sir Guy of Gisborne"
+      },
+      {
+       "type": "picture",
+       "img": "fig_soldiers",
+       "label": "Sir Guy’s men"
+      },
+      {
+       "type": "picture",
+       "img": "fig_monk",
+       "label": "The Abbot"
+      },
+      {
+       "type": "picture",
+       "img": "fig_table",
+       "label": "The feast table"
+      },
+      {
+       "type": "picture",
+       "img": "fig_prince",
+       "label": "Prince John"
+      },
+      {
+       "type": "picture",
+       "img": "fig_sheriff",
+       "label": "the Sheriff"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson4-hero-or-outlaw.html",
+   "week": 1,
+   "lesson": 4,
+   "title": "Hero or Outlaw?",
+   "activities": [
+    {
+     "name": "Weigh the Evidence",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "HERO"
+      },
+      {
+       "type": "sign",
+       "label": "OUTLAW"
+      },
+      {
+       "type": "sign",
+       "label": "THE LAW ACTS UNJUSTLY"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_guy",
+        "fig_robert"
+       ],
+       "text": "Robert is declared an outlaw and his lands are forfeit"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_archer",
+        "fig_much"
+       ],
+       "text": "The Good Spirit of Sherwood saves Much"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_worman",
+        "fig_prince"
+       ],
+       "text": "Worman betrays his master, and Prince John takes the lands"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_robert",
+        "fig_villagers"
+       ],
+       "text": "Robert sells his lands to help the poor"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_sheriff",
+        "fig_stag"
+       ],
+       "text": "Tales say Robin Hood kills the king’s deer and robs on the highway"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_much",
+        "fig_soldiers"
+       ],
+       "text": "Much is to be punished for killing a deer to feed his children"
+      },
+      {
+       "type": "moment",
+       "imgs": [
+        "fig_lady",
+        "fig_tree"
+       ],
+       "text": "Born in the greenwood, Robin is charged to “bring help to the down-trodden”"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
