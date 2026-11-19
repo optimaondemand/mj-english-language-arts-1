@@ -1,0 +1,1468 @@
+{
+ "module": "The Bronze Bow",
+ "note": "Weeks 1-5. Signs (the places an activity sorts into), numbered moments (the lines students handle) and the pictures the lessons show inside an activity. Header art, the book cover, Professor Lovelore and the scholar portraits are left out. Jesus is never pictured. Nothing about a death is on a card.",
+ "look": {
+  "accent": "#B5742A",
+  "paper": "#FBF8F1",
+  "ink": "#1E3246",
+  "muted": "#7A8690"
+ },
+ "lessons": [
+  {
+   "page": "w1-lesson1-the-mountain.html",
+   "title": "The Mountain and the Village",
+   "week": 1,
+   "lesson": 1,
+   "activities": [
+    {
+     "name": "The Mountain Path",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "The summit"
+      },
+      {
+       "type": "sign",
+       "label": "The pass"
+      },
+      {
+       "type": "sign",
+       "label": "The cave fire"
+      },
+      {
+       "type": "sign",
+       "label": "The grandmother’s house, Ketzah"
+      },
+      {
+       "type": "sign",
+       "label": "The synagogue"
+      },
+      {
+       "type": "sign",
+       "label": "The cliff path, at night"
+      },
+      {
+       "type": "moment",
+       "text": "Joel and Thacia share their lunch with Daniel; far below, a line of legionaries flashes on the road.",
+       "short": "Joel and Thacia share"
+      },
+      {
+       "type": "moment",
+       "text": "Rosh’s band stops a caravan from Damascus and takes one slave.",
+       "short": "Roshs band stops a"
+      },
+      {
+       "type": "moment",
+       "text": "All night Daniel files the iron bands off the giant’s wrists; when they fall, the man kneels at Daniel’s feet.",
+       "short": "All night Daniel files"
+      },
+      {
+       "type": "moment",
+       "text": "Leah sits at the loom with fear in her blue eyes; at last she knows her brother.",
+       "short": "Leah sits at the"
+      },
+      {
+       "type": "moment",
+       "text": "The man from Nazareth reads of “release to the captives,” and Daniel’s spirit leaps, then falls.",
+       "short": "The man from Nazareth"
+      },
+      {
+       "type": "moment",
+       "text": "A dark shape comes down the trail to meet Daniel: “Ho, Samson! I’ve come back.”",
+       "short": "A dark shape comes"
+      },
+      {
+       "type": "picture",
+       "img": "fig_path_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "fig_path_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_path_rosh",
+       "label": "Rosh"
+      },
+      {
+       "type": "picture",
+       "img": "fig_path_leah",
+       "label": "Leah"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson2-the-vow.html",
+   "title": "The Vow and the Bow",
+   "week": 1,
+   "lesson": 2,
+   "activities": [
+    {
+     "name": "The Vow Scroll",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "The vow at eight"
+      },
+      {
+       "type": "sign",
+       "label": "The vow of three"
+      },
+      {
+       "type": "sign",
+       "label": "Daniel"
+      },
+      {
+       "type": "sign",
+       "label": "Joel"
+      },
+      {
+       "type": "sign",
+       "label": "Thacia"
+      },
+      {
+       "type": "moment",
+       "text": "No one in the cave knew all of his story.",
+       "short": "No one in the"
+      },
+      {
+       "type": "moment",
+       "text": "“I vowed I would pay them back with my whole life.”",
+       "short": "I vowed I would"
+      },
+      {
+       "type": "moment",
+       "text": "Made in the passage, hands laid one on another",
+       "short": "Made in the passage"
+      },
+      {
+       "type": "moment",
+       "text": "Its watchword comes from the Maccabees",
+       "short": "Its watchword comes from"
+      },
+      {
+       "type": "moment",
+       "text": "“For God’s Victory!”",
+       "short": "For Gods Victory"
+      },
+      {
+       "type": "moment",
+       "text": "“It couldn’t really be bronze,” … “The strongest man could not bend a bow of bronze.”",
+       "short": "It couldnt really be"
+      },
+      {
+       "type": "moment",
+       "text": "“Perhaps just the tips were metal…”",
+       "short": "Perhaps just the tips"
+      },
+      {
+       "type": "moment",
+       "text": "“I think David meant a bow that a man couldn’t bend…”",
+       "short": "I think David meant"
+      },
+      {
+       "type": "picture",
+       "img": "fig_scroll_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "fig_scroll_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_scroll_daniel",
+       "label": "Daniel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson3-writers-bench.html",
+   "title": "The Writer's Bench",
+   "week": 1,
+   "lesson": 3,
+   "activities": [
+    {
+     "name": "Match All Ten Words",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "impulse"
+      },
+      {
+       "type": "sign",
+       "label": "wary"
+      },
+      {
+       "type": "sign",
+       "label": "deliverance"
+      },
+      {
+       "type": "sign",
+       "label": "defiance"
+      },
+      {
+       "type": "sign",
+       "label": "patriot"
+      },
+      {
+       "type": "sign",
+       "label": "rash"
+      },
+      {
+       "type": "sign",
+       "label": "captivity"
+      },
+      {
+       "type": "sign",
+       "label": "judgment"
+      },
+      {
+       "type": "sign",
+       "label": "gratitude"
+      },
+      {
+       "type": "sign",
+       "label": "reproach"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson4-three-voices.html",
+   "title": "Three Voices",
+   "week": 1,
+   "lesson": 4,
+   "activities": [
+    {
+     "name": "Three Voices at the Door",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Rosh"
+      },
+      {
+       "type": "sign",
+       "label": "Hezron"
+      },
+      {
+       "type": "sign",
+       "label": "The teacher"
+      },
+      {
+       "type": "moment",
+       "text": "Any man who hates the Romans is welcome here.",
+       "short": "Any man who hates"
+      },
+      {
+       "type": "moment",
+       "text": "He is a Zealot. He can give a scrap of metal for the cause.",
+       "short": "He is a Zealot"
+      },
+      {
+       "type": "moment",
+       "text": "We have need of patriotism like yours. But we have need also of patience.",
+       "short": "We have need of"
+      },
+      {
+       "type": "moment",
+       "text": "It is to the Law that our loyalty must be devoted.",
+       "short": "It is to the"
+      },
+      {
+       "type": "moment",
+       "text": "I say to you, the time is fulfilled, and the kingdom of God is at hand. Repent, and believe.",
+       "short": "I say to you"
+      },
+      {
+       "type": "moment",
+       "text": "But you must be kind to each other, and love each other.",
+       "short": "But you must be"
+      },
+      {
+       "type": "picture",
+       "img": "door_rosh",
+       "label": "Rosh"
+      },
+      {
+       "type": "picture",
+       "img": "door_hezron",
+       "label": "Hezron"
+      },
+      {
+       "type": "picture",
+       "img": "door_daniel",
+       "label": "Daniel"
+      },
+      {
+       "type": "picture",
+       "img": "door_simon",
+       "label": "Simon"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson1-the-soft-streak.html",
+   "title": "The Soft Streak",
+   "week": 2,
+   "lesson": 1,
+   "activities": [
+    {
+     "name": "The Anvil",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Hardens"
+      },
+      {
+       "type": "sign",
+       "label": "Softens"
+      },
+      {
+       "type": "moment",
+       "text": "He goes back, carries the old man into the shade of a rock, and waits until he wakes. (Ch. 9)",
+       "short": "He goes back carries"
+      },
+      {
+       "type": "moment",
+       "text": "He hands the old man one of the daggers: “You may need it.” (Ch. 9)",
+       "short": "He hands the old"
+      },
+      {
+       "type": "moment",
+       "text": "He takes Rosh’s hand again and returns his iron clasp. (Ch. 9)",
+       "short": "He takes Roshs hand"
+      },
+      {
+       "type": "moment",
+       "text": "He strikes the metal “blow after powerful blow, beating out his weakness.” (Ch. 9)",
+       "short": "He strikes the metal"
+      },
+      {
+       "type": "moment",
+       "text": "He refuses to tie Leah up, as a neighbor advises. (Ch. 11)",
+       "short": "He refuses to tie"
+      },
+      {
+       "type": "moment",
+       "text": "He leaves the mountain to keep Leah, though it feels like a trap. (Ch. 11)",
+       "short": "He leaves the mountain"
+      },
+      {
+       "type": "moment",
+       "text": "He makes the soldier wait while he sands “an imaginary flaw.” (Ch. 11)",
+       "short": "He makes the soldier"
+      },
+      {
+       "type": "moment",
+       "text": "He walks Nathan home in the dark, then asks him to join the band. (Ch. 12)",
+       "short": "He walks Nathan home"
+      },
+      {
+       "type": "picture",
+       "img": "fig_forge_rosh",
+       "label": "the outlaw chief"
+      },
+      {
+       "type": "picture",
+       "img": "fig_forge_simon",
+       "label": "the smith"
+      },
+      {
+       "type": "picture",
+       "img": "fig_forge_leah",
+       "label": "the girl in the garden"
+      },
+      {
+       "type": "picture",
+       "img": "fig_forge_nathan",
+       "label": "the village youth"
+      },
+      {
+       "type": "picture",
+       "img": "fig_forge_neighbor",
+       "label": "the old neighbor"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson2-leahs-thread.html",
+   "title": "Leah's Thread",
+   "week": 2,
+   "lesson": 2,
+   "activities": [
+    {
+     "name": "The Loom",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Daniel’s fight"
+      },
+      {
+       "type": "sign",
+       "label": "Where the threads cross"
+      },
+      {
+       "type": "sign",
+       "label": "Leah’s story"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel sends Joel to win over a young weaver who might join the band",
+       "short": "Daniel sends Joel to"
+      },
+      {
+       "type": "moment",
+       "text": "Rosh tells Daniel to keep an eye on Joel: “I’m going to need him soon.”",
+       "short": "Rosh tells Daniel to"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel hammers a scrap of bronze into a tiny bow, to remind him of his purpose",
+       "short": "Daniel hammers a scrap"
+      },
+      {
+       "type": "moment",
+       "text": "Thacia visits Leah in the garden and leaves her a green embroidered girdle",
+       "short": "Thacia visits Leah in"
+      },
+      {
+       "type": "moment",
+       "text": "Leah laughs for the first time and starts cutting the blue cloth for a dress",
+       "short": "Leah laughs for the"
+      },
+      {
+       "type": "moment",
+       "text": "Thacia brings a small gift every visit: a lily bulb, perfume, scarlet thread, a mirror",
+       "short": "Thacia brings a small"
+      },
+      {
+       "type": "moment",
+       "text": "Leah begs again and again for the story of the little girl who was sick",
+       "short": "Leah begs again and"
+      },
+      {
+       "type": "moment",
+       "text": "Leah says the soldier who rides past is “homesick”",
+       "short": "Leah says the soldier"
+      },
+      {
+       "type": "moment",
+       "text": "Thacia, in Joel’s clothes, spends the day with Leah while Joel runs Rosh’s errand",
+       "short": "Thacia in Joels clothes"
+      },
+      {
+       "type": "picture",
+       "img": "fig_loom_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_loom_leah",
+       "label": "Leah"
+      },
+      {
+       "type": "picture",
+       "img": "fig_loom_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "fig_loom_seller",
+       "label": "The cloth seller"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson3-writers-bench.html",
+   "title": "The Writer's Bench",
+   "week": 2,
+   "lesson": 3,
+   "activities": [
+    {
+     "name": "Match All Ten Words",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "miser"
+      },
+      {
+       "type": "sign",
+       "label": "derisive"
+      },
+      {
+       "type": "sign",
+       "label": "conscience"
+      },
+      {
+       "type": "sign",
+       "label": "resentment"
+      },
+      {
+       "type": "sign",
+       "label": "accountable"
+      },
+      {
+       "type": "sign",
+       "label": "recompense"
+      },
+      {
+       "type": "sign",
+       "label": "rebellion"
+      },
+      {
+       "type": "sign",
+       "label": "misgiving"
+      },
+      {
+       "type": "sign",
+       "label": "intrigue"
+      },
+      {
+       "type": "sign",
+       "label": "ambition"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson4-who-is-on-watch.html",
+   "title": "Who Is on Watch",
+   "week": 2,
+   "lesson": 4,
+   "activities": [
+    {
+     "name": "The Watchtower",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "The soldier at the door"
+      },
+      {
+       "type": "sign",
+       "label": "Leah’s word"
+      },
+      {
+       "type": "sign",
+       "label": "Thacia at the harbor"
+      },
+      {
+       "type": "sign",
+       "label": "Joel’s errand"
+      },
+      {
+       "type": "moment",
+       "text": "“No question now, the house was being watched.”",
+       "short": "No question now the"
+      },
+      {
+       "type": "moment",
+       "text": "“Homesick! That stiff-necked son of a camel!”",
+       "short": "Homesick That stiffnecked son"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel thinks she is worried about the Law against wearing a brother’s clothes. (Ch. 16)",
+       "short": "Daniel thinks she is"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel tells Thacia, “I don’t think it’s dangerous.” (Ch. 16)",
+       "short": "Daniel tells Thacia I"
+      },
+      {
+       "type": "picture",
+       "img": "fig_soldier",
+       "label": "The soldier at the door"
+      },
+      {
+       "type": "picture",
+       "img": "fig_leah",
+       "label": "Leah’s word"
+      },
+      {
+       "type": "picture",
+       "img": "fig_thacia",
+       "label": "Thacia at the harbor"
+      },
+      {
+       "type": "picture",
+       "img": "fig_joel",
+       "label": "Joel’s errand"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson1-not-one-of-your-men.html",
+   "title": "Not One of Your Men",
+   "week": 3,
+   "lesson": 1,
+   "activities": [
+    {
+     "name": "The Road to Arbela",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Stone I"
+      },
+      {
+       "type": "sign",
+       "label": "Stone II"
+      },
+      {
+       "type": "sign",
+       "label": "Stone III"
+      },
+      {
+       "type": "sign",
+       "label": "Stone IV"
+      },
+      {
+       "type": "sign",
+       "label": "Stone V"
+      },
+      {
+       "type": "sign",
+       "label": "Stone VI"
+      },
+      {
+       "type": "sign",
+       "label": "Stone VII"
+      },
+      {
+       "type": "moment",
+       "text": "Five of the richest houses in the city are robbed in one night, and the village starts to argue about Rosh.",
+       "short": "Five of the richest"
+      },
+      {
+       "type": "moment",
+       "text": "Thacia brings the news: the soldiers have taken Joel.",
+       "short": "Thacia brings the news"
+      },
+      {
+       "type": "moment",
+       "text": "Rosh says, “It’s not my affair,” and Daniel says, “I am not one of your men. Not any longer.”",
+       "short": "Rosh says Its not"
+      },
+      {
+       "type": "moment",
+       "text": "The boys choose Daniel as their leader and promise, “For God’s Victory.”",
+       "short": "The boys choose Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel tells Joel to go and study in Jerusalem.",
+       "short": "Daniel tells Joel to"
+      },
+      {
+       "type": "picture",
+       "img": "fig_rosh",
+       "label": "Rosh"
+      },
+      {
+       "type": "picture",
+       "img": "fig_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_joel",
+       "label": "Joel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson2-stronger-than-hate.html",
+   "title": "Stronger Than Hate",
+   "week": 3,
+   "lesson": 2,
+   "activities": [
+    {
+     "name": "The Lamp in the Upper Room",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Near the lamp"
+      },
+      {
+       "type": "sign",
+       "label": "Out in the dark"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel climbs the stairs and pours out his guilt over Samson.",
+       "short": "Daniel climbs the stairs"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel cries, “I made a vow before God!”",
+       "short": "Daniel cries I made"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel tells Thacia hers is the one face he will always remember, then says there is no room for anyone else.",
+       "short": "Daniel tells Thacia hers"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel sends the pomegranate spinning and shouts at Leah.",
+       "short": "Daniel sends the pomegranate"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel does all the housework and pleads with Leah very gently.",
+       "short": "Daniel does all the"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel flings himself away from Simon into the darkness.",
+       "short": "Daniel flings himself away"
+      },
+      {
+       "type": "picture",
+       "img": "fig_lamp_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_lamp_simon",
+       "label": "Simon"
+      },
+      {
+       "type": "picture",
+       "img": "fig_lamp_leah",
+       "label": "Leah"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson3-writers-bench.html",
+   "title": "The Writer's Bench",
+   "week": 3,
+   "lesson": 3,
+   "activities": [
+    {
+     "name": "Match All Ten Words",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "reprisal"
+      },
+      {
+       "type": "sign",
+       "label": "indignant"
+      },
+      {
+       "type": "sign",
+       "label": "distraught"
+      },
+      {
+       "type": "sign",
+       "label": "incredulous"
+      },
+      {
+       "type": "sign",
+       "label": "foreboding"
+      },
+      {
+       "type": "sign",
+       "label": "heedless"
+      },
+      {
+       "type": "sign",
+       "label": "loathing"
+      },
+      {
+       "type": "sign",
+       "label": "baffled"
+      },
+      {
+       "type": "sign",
+       "label": "aloof"
+      },
+      {
+       "type": "sign",
+       "label": "dignity"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson4-what-daniel-could-not-see.html",
+   "title": "What Daniel Could Not See",
+   "week": 3,
+   "lesson": 4,
+   "activities": [
+    {
+     "name": "What Daniel Could Not See",
+     "cards": [
+      {
+       "type": "moment",
+       "text": "“Rosh will have planned for this. He will know what to do.”",
+       "short": "Rosh will have planned"
+      },
+      {
+       "type": "moment",
+       "text": "Someone is behind him. Has he led the band into “some other trap”?",
+       "short": "Someone is behind him"
+      },
+      {
+       "type": "moment",
+       "text": "If he cannot stay, he will “go to the mountain and join Rosh.”",
+       "short": "If he cannot stay"
+      },
+      {
+       "type": "moment",
+       "text": "“What neighbor could have brought such a gift?”",
+       "short": "What neighbor could have"
+      },
+      {
+       "type": "moment",
+       "text": "“Let him be king! … Down with Rome!” His heart leaps.",
+       "short": "Let him be king"
+      },
+      {
+       "type": "picture",
+       "img": "mos_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "mos_leah",
+       "label": "Leah"
+      },
+      {
+       "type": "picture",
+       "img": "mos_crowdman",
+       "label": "A man from the crowd"
+      }
+     ]
+    },
+    {
+     "name": "The Journey Map",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "hatred"
+      },
+      {
+       "type": "sign",
+       "label": "love"
+      },
+      {
+       "type": "sign",
+       "label": "both pulling"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel breaks with Rosh to save Joel (Ch. 18)",
+       "short": "Daniel breaks with Rosh"
+      },
+      {
+       "type": "moment",
+       "text": "In the upper room Daniel hears “The only thing stronger than hate is love,” and answers, “I made a vow before God!” (Ch. 21)",
+       "short": "In the upper room"
+      },
+      {
+       "type": "moment",
+       "text": "The fruit basket: Daniel shouts at Leah, then walks all night and feels shame (Ch. 22)",
+       "short": "The fruit basket Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel turns from Simon with nothing left but his hatred and his vow (Ch. 23)",
+       "short": "Daniel turns from Simon"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson1-the-shut-door.html",
+   "title": "The Shut Door",
+   "week": 4,
+   "lesson": 1,
+   "activities": [
+    {
+     "name": "Who Comes to the Door?",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Let in"
+      },
+      {
+       "type": "sign",
+       "label": "Kept out"
+      },
+      {
+       "type": "sign",
+       "label": "Sent out"
+      },
+      {
+       "type": "moment",
+       "text": "Spring flowers, washing in a wave of color up to the door",
+       "short": "Spring flowers washing in a"
+      },
+      {
+       "type": "moment",
+       "text": "The little goat, when it can no longer stand",
+       "short": "The little goat when it"
+      },
+      {
+       "type": "moment",
+       "text": "The physician, “loath at first to come”",
+       "short": "The physician loath at first"
+      },
+      {
+       "type": "moment",
+       "text": "A customer at the shop",
+       "short": "A customer at the shop"
+      },
+      {
+       "type": "moment",
+       "text": "Joktan, with a message scratched on broken pottery",
+       "short": "Joktan with a message scratched"
+      },
+      {
+       "type": "moment",
+       "text": "The soldier who asks for one moment with Leah",
+       "short": "The soldier who asks for"
+      },
+      {
+       "type": "picture",
+       "img": "fig_physician",
+       "label": "the physician"
+      },
+      {
+       "type": "picture",
+       "img": "fig_joktan",
+       "label": "Joktan"
+      },
+      {
+       "type": "picture",
+       "img": "fig_marcus",
+       "label": "the soldier"
+      },
+      {
+       "type": "picture",
+       "img": "fig_daniel",
+       "label": "Daniel"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson2-the-bow-bends.html",
+   "title": "The Bow Bends",
+   "week": 4,
+   "lesson": 2,
+   "activities": [
+    {
+     "name": "The Net: What Comes Back",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Jesus to Daniel"
+      },
+      {
+       "type": "sign",
+       "label": "Thacia in the passage"
+      },
+      {
+       "type": "sign",
+       "label": "Simon after the crowd"
+      },
+      {
+       "type": "sign",
+       "label": "Rosh"
+      },
+      {
+       "type": "sign",
+       "label": "Daniel at the forge"
+      },
+      {
+       "type": "moment",
+       "text": "“Can you repay love with vengeance?”",
+       "short": "Can you repay love with"
+      },
+      {
+       "type": "moment",
+       "text": "“Was it possible that only love could bend the bow of bronze?”",
+       "short": "Was it possible that only"
+      },
+      {
+       "type": "moment",
+       "text": "“We have to choose, not knowing.”",
+       "short": "We have to choose not"
+      },
+      {
+       "type": "moment",
+       "text": "“…a peace he had never imagined.”",
+       "short": "a peace he had never"
+      },
+      {
+       "type": "moment",
+       "text": "Leah: “I know how she felt … Jairus’ daughter.”",
+       "short": "Leah I know how she"
+      },
+      {
+       "type": "picture",
+       "img": "fig_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_simon",
+       "label": "Simon"
+      },
+      {
+       "type": "picture",
+       "img": "fig_leah",
+       "label": "Leah"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson3-writers-bench.html",
+   "title": "The Writer's Bench",
+   "week": 4,
+   "lesson": 3,
+   "activities": [
+    {
+     "name": "Match All Ten Words",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "indifferent"
+      },
+      {
+       "type": "sign",
+       "label": "duped"
+      },
+      {
+       "type": "sign",
+       "label": "dismay"
+      },
+      {
+       "type": "sign",
+       "label": "bewildered"
+      },
+      {
+       "type": "sign",
+       "label": "dread"
+      },
+      {
+       "type": "sign",
+       "label": "luminous"
+      },
+      {
+       "type": "sign",
+       "label": "longing"
+      },
+      {
+       "type": "sign",
+       "label": "rejected"
+      },
+      {
+       "type": "sign",
+       "label": "liberating"
+      },
+      {
+       "type": "sign",
+       "label": "haltingly"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson4-the-open-door.html",
+   "title": "The Open Door",
+   "week": 4,
+   "lesson": 4,
+   "activities": [
+    {
+     "name": "Potsherds: What the Whole Book Says",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Topic"
+      },
+      {
+       "type": "sign",
+       "label": "Plot"
+      },
+      {
+       "type": "sign",
+       "label": "Theme"
+      },
+      {
+       "type": "moment",
+       "text": "“I vowed I would pay them back with my whole life.”",
+       "short": "I vowed I would pay"
+      },
+      {
+       "type": "moment",
+       "text": "“For each one of you is precious in His sight.”",
+       "short": "For each one of you"
+      },
+      {
+       "type": "moment",
+       "text": "“I am not one of your men. Not any longer.”",
+       "short": "I am not one of"
+      },
+      {
+       "type": "moment",
+       "text": "“The only thing stronger than hate is love.”",
+       "short": "The only thing stronger than"
+      },
+      {
+       "type": "moment",
+       "text": "“There was nothing left to him but his hatred and his vow.”",
+       "short": "There was nothing left to"
+      },
+      {
+       "type": "moment",
+       "text": "“Will you come in to our house?”",
+       "short": "Will you come in to"
+      }
+     ]
+    },
+    {
+     "name": "The Journey Map: the bronze bow, finished",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Rosh"
+      },
+      {
+       "type": "sign",
+       "label": "Hezron"
+      },
+      {
+       "type": "sign",
+       "label": "the teacher"
+      },
+      {
+       "type": "sign",
+       "label": "his own"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel turns the soldier away at the door.",
+       "short": "Daniel turns the soldier away"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel stops fighting against the teacher: “We have to choose, not knowing.”",
+       "short": "Daniel stops fighting against the"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson1-the-whole-journey.html",
+   "title": "The Whole Journey",
+   "week": 5,
+   "lesson": 1,
+   "activities": [
+    {
+     "name": "The Scroll",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "hatred"
+      },
+      {
+       "type": "sign",
+       "label": "love"
+      },
+      {
+       "type": "sign",
+       "label": "torn between"
+      },
+      {
+       "type": "moment",
+       "text": "After the robbery, Daniel carries the old man into the shade and gives back one of his daggers.",
+       "short": "After the robbery Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel leaves the mountain and brings Leah to Simon’s house in the village.",
+       "short": "Daniel leaves the mountain"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel tells Rosh, “I am not one of your men. Not any longer.”",
+       "short": "Daniel tells Rosh I"
+      },
+      {
+       "type": "moment",
+       "text": "Alone at night, Jesus tells Daniel that hate, not men, is the enemy.",
+       "short": "Alone at night Jesus"
+      },
+      {
+       "type": "moment",
+       "text": "After Simon’s words, Daniel is left with nothing “but his hatred and his vow.”",
+       "short": "After Simons words Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel crosses the road and asks Marcus, “Will you come in to our house?”",
+       "short": "Daniel crosses the road"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel swears his vow on the mountain the day he meets Joel and Thacia.",
+       "short": "Daniel swears his vow"
+      },
+      {
+       "type": "moment",
+       "text": "Jesus asks Daniel to fight for him to the end.",
+       "short": "Jesus asks Daniel to"
+      },
+      {
+       "type": "picture",
+       "img": "fig_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "fig_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "fig_simon",
+       "label": "Simon"
+      },
+      {
+       "type": "picture",
+       "img": "fig_leah",
+       "label": "Leah"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson2-three-persuaders.html",
+   "title": "Three Persuaders",
+   "week": 5,
+   "lesson": 2,
+   "activities": [
+    {
+     "name": "The Debate Bench",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "Logos"
+      },
+      {
+       "type": "sign",
+       "label": "Ethos"
+      },
+      {
+       "type": "sign",
+       "label": "Pathos"
+      },
+      {
+       "type": "moment",
+       "text": "rows of crosses, and burning villages, and heavier taxes",
+       "short": "rows of crosses and"
+      },
+      {
+       "type": "moment",
+       "text": "another cohort, a legion, countless legions.",
+       "short": "another cohort a legion"
+      },
+      {
+       "type": "moment",
+       "text": "It will take men and arms and food. And they have to be paid for with money.",
+       "short": "It will take men"
+      },
+      {
+       "type": "moment",
+       "text": "because they say that someday you will drive the Romans out of Israel.",
+       "short": "because they say that"
+      },
+      {
+       "type": "moment",
+       "text": "like a lion! He has no fear at all",
+       "short": "like a lion He"
+      },
+      {
+       "type": "moment",
+       "text": "I must believe my own eyes. I have seen it happen, over and over.",
+       "short": "I must believe my"
+      },
+      {
+       "type": "moment",
+       "text": "not even a sparrow falls to the ground without our Father seeing.",
+       "short": "not even a sparrow"
+      },
+      {
+       "type": "moment",
+       "text": "can you repay such love with hate?",
+       "short": "can you repay such"
+      },
+      {
+       "type": "picture",
+       "img": "fig_hezron",
+       "label": "the scribe"
+      },
+      {
+       "type": "picture",
+       "img": "fig_rosh",
+       "label": "the outlaw leader"
+      },
+      {
+       "type": "picture",
+       "img": "fig_kemuel",
+       "label": "the proud city youth"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson3-writers-bench.html",
+   "title": "The Writer's Bench",
+   "week": 5,
+   "lesson": 3,
+   "activities": [
+    {
+     "name": "Match All Eight Words",
+     "cards": [
+      {
+       "type": "sign",
+       "label": "purpose"
+      },
+      {
+       "type": "sign",
+       "label": "burden"
+      },
+      {
+       "type": "sign",
+       "label": "despair"
+      },
+      {
+       "type": "sign",
+       "label": "regret"
+      },
+      {
+       "type": "sign",
+       "label": "defy"
+      },
+      {
+       "type": "sign",
+       "label": "guilt"
+      },
+      {
+       "type": "sign",
+       "label": "torment"
+      },
+      {
+       "type": "sign",
+       "label": "remorse"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson4-journeys-end.html",
+   "title": "Journey's End",
+   "week": 5,
+   "lesson": 4,
+   "activities": [
+    {
+     "name": "The Mountain Path",
+     "cards": [
+      {
+       "type": "moment",
+       "text": "After the robbery, Daniel carries the old man into the shade and gives back one of his daggers.",
+       "short": "After the robbery Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel leaves the mountain and brings Leah to Simon’s house in the village.",
+       "short": "Daniel leaves the mountain"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel tells Rosh, “I am not one of your men. Not any longer.”",
+       "short": "Daniel tells Rosh I"
+      },
+      {
+       "type": "moment",
+       "text": "Alone at night, Jesus tells Daniel that hate, not men, is the enemy.",
+       "short": "Alone at night Jesus"
+      },
+      {
+       "type": "moment",
+       "text": "After Simon’s words, Daniel is left with nothing “but his hatred and his vow.”",
+       "short": "After Simons words Daniel"
+      },
+      {
+       "type": "moment",
+       "text": "Daniel crosses the road and asks Marcus, “Will you come in to our house?”",
+       "short": "Daniel crosses the road"
+      },
+      {
+       "type": "picture",
+       "img": "f_thacia",
+       "label": "Thacia"
+      },
+      {
+       "type": "picture",
+       "img": "f_joel",
+       "label": "Joel"
+      },
+      {
+       "type": "picture",
+       "img": "f_rosh",
+       "label": "Rosh"
+      },
+      {
+       "type": "picture",
+       "img": "f_simon",
+       "label": "Simon"
+      },
+      {
+       "type": "picture",
+       "img": "f_leah",
+       "label": "Leah"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2073 @@
+{
+ "version": 1,
+ "module": "The Bronze Bow",
+ "made": "2026-11-19",
+ "lessons": [
+  {
+   "page": "w1-lesson1-the-mountain.html",
+   "week": 1,
+   "lesson": 1,
+   "title": "The Mountain and the Village",
+   "folder": "Week 1/Lesson 1 - The Mountain and the Village",
+   "combined": {
+    "path": "Week 1/Lesson 1 - The Mountain and the Village/Lesson 1 - all cards.pdf",
+    "bytes": 171757
+   },
+   "files": [
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/01 - Sign - The summit.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/01 - Sign - The summit.jpg",
+     "activity": "The Mountain Path",
+     "label": "The summit",
+     "bytes": 17732
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/02 - Sign - The pass.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/02 - Sign - The pass.jpg",
+     "activity": "The Mountain Path",
+     "label": "The pass",
+     "bytes": 17244
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/03 - Sign - The cave fire.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/03 - Sign - The cave fire.jpg",
+     "activity": "The Mountain Path",
+     "label": "The cave fire",
+     "bytes": 17984
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/04 - Sign - The grandmother's house, Ketzah.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/04 - Sign - The grandmother's house, Ketzah.jpg",
+     "activity": "The Mountain Path",
+     "label": "The grandmother’s house, Ketzah",
+     "bytes": 19600
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/05 - Sign - The synagogue.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/05 - Sign - The synagogue.jpg",
+     "activity": "The Mountain Path",
+     "label": "The synagogue",
+     "bytes": 18162
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/06 - Sign - The cliff path, at night.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/06 - Sign - The cliff path, at night.jpg",
+     "activity": "The Mountain Path",
+     "label": "The cliff path, at night",
+     "bytes": 19157
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/07 - Moment 1 - Joel and Thacia share.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/07 - Moment 1 - Joel and Thacia share.jpg",
+     "activity": "The Mountain Path",
+     "label": "Joel and Thacia share their lunch with Daniel; far below, a line of legionaries flashes on the road.",
+     "bytes": 19831
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/08 - Moment 2 - Roshs band stops a.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/08 - Moment 2 - Roshs band stops a.jpg",
+     "activity": "The Mountain Path",
+     "label": "Rosh’s band stops a caravan from Damascus and takes one slave.",
+     "bytes": 20450
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/09 - Moment 3 - All night Daniel files.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/09 - Moment 3 - All night Daniel files.jpg",
+     "activity": "The Mountain Path",
+     "label": "All night Daniel files the iron bands off the giant’s wrists; when they fall, the man kneels at Daniel’s feet.",
+     "bytes": 20815
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/10 - Moment 4 - Leah sits at the.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/10 - Moment 4 - Leah sits at the.jpg",
+     "activity": "The Mountain Path",
+     "label": "Leah sits at the loom with fear in her blue eyes; at last she knows her brother.",
+     "bytes": 19114
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/11 - Moment 5 - The man from Nazareth.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/11 - Moment 5 - The man from Nazareth.jpg",
+     "activity": "The Mountain Path",
+     "label": "The man from Nazareth reads of “release to the captives,” and Daniel’s spirit leaps, then falls.",
+     "bytes": 20318
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/12 - Moment 6 - A dark shape comes.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/12 - Moment 6 - A dark shape comes.jpg",
+     "activity": "The Mountain Path",
+     "label": "A dark shape comes down the trail to meet Daniel: “Ho, Samson! I’ve come back.”",
+     "bytes": 21511
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/13 - Joel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/13 - Joel.jpg",
+     "activity": "The Mountain Path",
+     "label": "Joel",
+     "bytes": 44204
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/14 - Thacia.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/14 - Thacia.jpg",
+     "activity": "The Mountain Path",
+     "label": "Thacia",
+     "bytes": 44754
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/15 - Rosh.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/15 - Rosh.jpg",
+     "activity": "The Mountain Path",
+     "label": "Rosh",
+     "bytes": 46187
+    },
+    {
+     "path": "Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/16 - Leah.pdf",
+     "thumb": "thumbs/Week 1/Lesson 1 - The Mountain and the Village/The Mountain Path/16 - Leah.jpg",
+     "activity": "The Mountain Path",
+     "label": "Leah",
+     "bytes": 67986
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson2-the-vow.html",
+   "week": 1,
+   "lesson": 2,
+   "title": "The Vow and the Bow",
+   "folder": "Week 1/Lesson 2 - The Vow and the Bow",
+   "combined": {
+    "path": "Week 1/Lesson 2 - The Vow and the Bow/Lesson 2 - all cards.pdf",
+    "bytes": 171980
+   },
+   "files": [
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/01 - Sign - The vow at eight.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/01 - Sign - The vow at eight.jpg",
+     "activity": "The Vow Scroll",
+     "label": "The vow at eight",
+     "bytes": 17870
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/02 - Sign - The vow of three.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/02 - Sign - The vow of three.jpg",
+     "activity": "The Vow Scroll",
+     "label": "The vow of three",
+     "bytes": 16955
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/03 - Sign - Daniel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/03 - Sign - Daniel.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Daniel",
+     "bytes": 17321
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/04 - Sign - Joel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/04 - Sign - Joel.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Joel",
+     "bytes": 16598
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/05 - Sign - Thacia.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/05 - Sign - Thacia.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Thacia",
+     "bytes": 17130
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/06 - Moment 1 - No one in the.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/06 - Moment 1 - No one in the.jpg",
+     "activity": "The Vow Scroll",
+     "label": "No one in the cave knew all of his story.",
+     "bytes": 18326
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/07 - Moment 2 - I vowed I would.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/07 - Moment 2 - I vowed I would.jpg",
+     "activity": "The Vow Scroll",
+     "label": "“I vowed I would pay them back with my whole life.”",
+     "bytes": 20984
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/08 - Moment 3 - Made in the passage.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/08 - Moment 3 - Made in the passage.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Made in the passage, hands laid one on another",
+     "bytes": 18874
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/09 - Moment 4 - Its watchword comes from.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/09 - Moment 4 - Its watchword comes from.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Its watchword comes from the Maccabees",
+     "bytes": 18868
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/10 - Moment 5 - For Gods Victory.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/10 - Moment 5 - For Gods Victory.jpg",
+     "activity": "The Vow Scroll",
+     "label": "“For God’s Victory!”",
+     "bytes": 19274
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/11 - Moment 6 - It couldnt really be.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/11 - Moment 6 - It couldnt really be.jpg",
+     "activity": "The Vow Scroll",
+     "label": "“It couldn’t really be bronze,” … “The strongest man could not bend a bow of bronze.”",
+     "bytes": 21382
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/12 - Moment 7 - Perhaps just the tips.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/12 - Moment 7 - Perhaps just the tips.jpg",
+     "activity": "The Vow Scroll",
+     "label": "“Perhaps just the tips were metal…”",
+     "bytes": 19653
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/13 - Moment 8 - I think David meant.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/13 - Moment 8 - I think David meant.jpg",
+     "activity": "The Vow Scroll",
+     "label": "“I think David meant a bow that a man couldn’t bend…”",
+     "bytes": 20485
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/14 - Joel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/14 - Joel.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Joel",
+     "bytes": 66622
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/15 - Thacia.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/15 - Thacia.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Thacia",
+     "bytes": 55133
+    },
+    {
+     "path": "Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/16 - Daniel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 2 - The Vow and the Bow/The Vow Scroll/16 - Daniel.jpg",
+     "activity": "The Vow Scroll",
+     "label": "Daniel",
+     "bytes": 64110
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson3-writers-bench.html",
+   "week": 1,
+   "lesson": 3,
+   "title": "The Writer's Bench",
+   "folder": "Week 1/Lesson 3 - The Writer's Bench",
+   "combined": {
+    "path": "Week 1/Lesson 3 - The Writer's Bench/Lesson 3 - all cards.pdf",
+    "bytes": 29107
+   },
+   "files": [
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - impulse.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - impulse.jpg",
+     "activity": "Match All Ten Words",
+     "label": "impulse",
+     "bytes": 19061
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - wary.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - wary.jpg",
+     "activity": "Match All Ten Words",
+     "label": "wary",
+     "bytes": 18224
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - deliverance.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - deliverance.jpg",
+     "activity": "Match All Ten Words",
+     "label": "deliverance",
+     "bytes": 19203
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - defiance.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - defiance.jpg",
+     "activity": "Match All Ten Words",
+     "label": "defiance",
+     "bytes": 19033
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - patriot.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - patriot.jpg",
+     "activity": "Match All Ten Words",
+     "label": "patriot",
+     "bytes": 18673
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - rash.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - rash.jpg",
+     "activity": "Match All Ten Words",
+     "label": "rash",
+     "bytes": 17804
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - captivity.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - captivity.jpg",
+     "activity": "Match All Ten Words",
+     "label": "captivity",
+     "bytes": 19677
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - judgment.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - judgment.jpg",
+     "activity": "Match All Ten Words",
+     "label": "judgment",
+     "bytes": 19650
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - gratitude.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - gratitude.jpg",
+     "activity": "Match All Ten Words",
+     "label": "gratitude",
+     "bytes": 19529
+    },
+    {
+     "path": "Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - reproach.pdf",
+     "thumb": "thumbs/Week 1/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - reproach.jpg",
+     "activity": "Match All Ten Words",
+     "label": "reproach",
+     "bytes": 18505
+    }
+   ]
+  },
+  {
+   "page": "w1-lesson4-three-voices.html",
+   "week": 1,
+   "lesson": 4,
+   "title": "Three Voices",
+   "folder": "Week 1/Lesson 4 - Three Voices",
+   "combined": {
+    "path": "Week 1/Lesson 4 - Three Voices/Lesson 4 - all cards.pdf",
+    "bytes": 242860
+   },
+   "files": [
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/01 - Sign - Rosh.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/01 - Sign - Rosh.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Rosh",
+     "bytes": 16968
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/02 - Sign - Hezron.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/02 - Sign - Hezron.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Hezron",
+     "bytes": 16969
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/03 - Sign - The teacher.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/03 - Sign - The teacher.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "The teacher",
+     "bytes": 17935
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/04 - Moment 1 - Any man who hates.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/04 - Moment 1 - Any man who hates.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Any man who hates the Romans is welcome here.",
+     "bytes": 18790
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/05 - Moment 2 - He is a Zealot.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/05 - Moment 2 - He is a Zealot.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "He is a Zealot. He can give a scrap of metal for the cause.",
+     "bytes": 20508
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/06 - Moment 3 - We have need of.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/06 - Moment 3 - We have need of.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "We have need of patriotism like yours. But we have need also of patience.",
+     "bytes": 20267
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/07 - Moment 4 - It is to the.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/07 - Moment 4 - It is to the.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "It is to the Law that our loyalty must be devoted.",
+     "bytes": 19417
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/08 - Moment 5 - I say to you.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/08 - Moment 5 - I say to you.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "I say to you, the time is fulfilled, and the kingdom of God is at hand. Repent, and believe.",
+     "bytes": 21911
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/09 - Moment 6 - But you must be.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/09 - Moment 6 - But you must be.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "But you must be kind to each other, and love each other.",
+     "bytes": 19609
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/10 - Rosh.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/10 - Rosh.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Rosh",
+     "bytes": 62225
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/11 - Hezron.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/11 - Hezron.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Hezron",
+     "bytes": 48233
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/12 - Daniel.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/12 - Daniel.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Daniel",
+     "bytes": 122437
+    },
+    {
+     "path": "Week 1/Lesson 4 - Three Voices/Three Voices at the Door/13 - Simon.pdf",
+     "thumb": "thumbs/Week 1/Lesson 4 - Three Voices/Three Voices at the Door/13 - Simon.jpg",
+     "activity": "Three Voices at the Door",
+     "label": "Simon",
+     "bytes": 46324
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson1-the-soft-streak.html",
+   "week": 2,
+   "lesson": 1,
+   "title": "The Soft Streak",
+   "folder": "Week 2/Lesson 1 - The Soft Streak",
+   "combined": {
+    "path": "Week 2/Lesson 1 - The Soft Streak/Lesson 1 - all cards.pdf",
+    "bytes": 236921
+   },
+   "files": [
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/01 - Sign - Hardens.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/01 - Sign - Hardens.jpg",
+     "activity": "The Anvil",
+     "label": "Hardens",
+     "bytes": 16477
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/02 - Sign - Softens.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/02 - Sign - Softens.jpg",
+     "activity": "The Anvil",
+     "label": "Softens",
+     "bytes": 16590
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/03 - Moment 1 - He goes back carries.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/03 - Moment 1 - He goes back carries.jpg",
+     "activity": "The Anvil",
+     "label": "He goes back, carries the old man into the shade of a rock, and waits until he wakes. (Ch. 9)",
+     "bytes": 21194
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/04 - Moment 2 - He hands the old.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/04 - Moment 2 - He hands the old.jpg",
+     "activity": "The Anvil",
+     "label": "He hands the old man one of the daggers: “You may need it.” (Ch. 9)",
+     "bytes": 21732
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/05 - Moment 3 - He takes Roshs hand.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/05 - Moment 3 - He takes Roshs hand.jpg",
+     "activity": "The Anvil",
+     "label": "He takes Rosh’s hand again and returns his iron clasp. (Ch. 9)",
+     "bytes": 21310
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/06 - Moment 4 - He strikes the metal.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/06 - Moment 4 - He strikes the metal.jpg",
+     "activity": "The Anvil",
+     "label": "He strikes the metal “blow after powerful blow, beating out his weakness.” (Ch. 9)",
+     "bytes": 21651
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/07 - Moment 5 - He refuses to tie.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/07 - Moment 5 - He refuses to tie.jpg",
+     "activity": "The Anvil",
+     "label": "He refuses to tie Leah up, as a neighbor advises. (Ch. 11)",
+     "bytes": 20963
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/08 - Moment 6 - He leaves the mountain.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/08 - Moment 6 - He leaves the mountain.jpg",
+     "activity": "The Anvil",
+     "label": "He leaves the mountain to keep Leah, though it feels like a trap. (Ch. 11)",
+     "bytes": 20848
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/09 - Moment 7 - He makes the soldier.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/09 - Moment 7 - He makes the soldier.jpg",
+     "activity": "The Anvil",
+     "label": "He makes the soldier wait while he sands “an imaginary flaw.” (Ch. 11)",
+     "bytes": 20795
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/10 - Moment 8 - He walks Nathan home.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/10 - Moment 8 - He walks Nathan home.jpg",
+     "activity": "The Anvil",
+     "label": "He walks Nathan home in the dark, then asks him to join the band. (Ch. 12)",
+     "bytes": 19655
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/11 - The outlaw chief.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/11 - The outlaw chief.jpg",
+     "activity": "The Anvil",
+     "label": "the outlaw chief",
+     "bytes": 45944
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/12 - The smith.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/12 - The smith.jpg",
+     "activity": "The Anvil",
+     "label": "the smith",
+     "bytes": 44187
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/13 - The girl in the garden.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/13 - The girl in the garden.jpg",
+     "activity": "The Anvil",
+     "label": "the girl in the garden",
+     "bytes": 73560
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/14 - The village youth.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/14 - The village youth.jpg",
+     "activity": "The Anvil",
+     "label": "the village youth",
+     "bytes": 49871
+    },
+    {
+     "path": "Week 2/Lesson 1 - The Soft Streak/The Anvil/15 - The old neighbor.pdf",
+     "thumb": "thumbs/Week 2/Lesson 1 - The Soft Streak/The Anvil/15 - The old neighbor.jpg",
+     "activity": "The Anvil",
+     "label": "the old neighbor",
+     "bytes": 75309
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson2-leahs-thread.html",
+   "week": 2,
+   "lesson": 2,
+   "title": "Leah's Thread",
+   "folder": "Week 2/Lesson 2 - Leah's Thread",
+   "combined": {
+    "path": "Week 2/Lesson 2 - Leah's Thread/Lesson 2 - all cards.pdf",
+    "bytes": 222393
+   },
+   "files": [
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/01 - Sign - Daniel's fight.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/01 - Sign - Daniel's fight.jpg",
+     "activity": "The Loom",
+     "label": "Daniel’s fight",
+     "bytes": 17379
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/02 - Sign - Where the threads cross.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/02 - Sign - Where the threads cross.jpg",
+     "activity": "The Loom",
+     "label": "Where the threads cross",
+     "bytes": 16275
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/03 - Sign - Leah's story.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/03 - Sign - Leah's story.jpg",
+     "activity": "The Loom",
+     "label": "Leah’s story",
+     "bytes": 16218
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/04 - Moment 1 - Daniel sends Joel to.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/04 - Moment 1 - Daniel sends Joel to.jpg",
+     "activity": "The Loom",
+     "label": "Daniel sends Joel to win over a young weaver who might join the band",
+     "bytes": 20590
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/05 - Moment 2 - Rosh tells Daniel to.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/05 - Moment 2 - Rosh tells Daniel to.jpg",
+     "activity": "The Loom",
+     "label": "Rosh tells Daniel to keep an eye on Joel: “I’m going to need him soon.”",
+     "bytes": 20866
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/06 - Moment 3 - Daniel hammers a scrap.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/06 - Moment 3 - Daniel hammers a scrap.jpg",
+     "activity": "The Loom",
+     "label": "Daniel hammers a scrap of bronze into a tiny bow, to remind him of his purpose",
+     "bytes": 20625
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/07 - Moment 4 - Thacia visits Leah in.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/07 - Moment 4 - Thacia visits Leah in.jpg",
+     "activity": "The Loom",
+     "label": "Thacia visits Leah in the garden and leaves her a green embroidered girdle",
+     "bytes": 19283
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/08 - Moment 5 - Leah laughs for the.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/08 - Moment 5 - Leah laughs for the.jpg",
+     "activity": "The Loom",
+     "label": "Leah laughs for the first time and starts cutting the blue cloth for a dress",
+     "bytes": 19804
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/09 - Moment 6 - Thacia brings a small.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/09 - Moment 6 - Thacia brings a small.jpg",
+     "activity": "The Loom",
+     "label": "Thacia brings a small gift every visit: a lily bulb, perfume, scarlet thread, a mirror",
+     "bytes": 21084
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/10 - Moment 7 - Leah begs again and.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/10 - Moment 7 - Leah begs again and.jpg",
+     "activity": "The Loom",
+     "label": "Leah begs again and again for the story of the little girl who was sick",
+     "bytes": 19173
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/11 - Moment 8 - Leah says the soldier.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/11 - Moment 8 - Leah says the soldier.jpg",
+     "activity": "The Loom",
+     "label": "Leah says the soldier who rides past is “homesick”",
+     "bytes": 19564
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/12 - Moment 9 - Thacia in Joels clothes.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/12 - Moment 9 - Thacia in Joels clothes.jpg",
+     "activity": "The Loom",
+     "label": "Thacia, in Joel’s clothes, spends the day with Leah while Joel runs Rosh’s errand",
+     "bytes": 19636
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/13 - Thacia.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/13 - Thacia.jpg",
+     "activity": "The Loom",
+     "label": "Thacia",
+     "bytes": 52570
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/14 - Leah.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/14 - Leah.jpg",
+     "activity": "The Loom",
+     "label": "Leah",
+     "bytes": 79566
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/15 - Joel.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/15 - Joel.jpg",
+     "activity": "The Loom",
+     "label": "Joel",
+     "bytes": 47329
+    },
+    {
+     "path": "Week 2/Lesson 2 - Leah's Thread/The Loom/16 - The cloth seller.pdf",
+     "thumb": "thumbs/Week 2/Lesson 2 - Leah's Thread/The Loom/16 - The cloth seller.jpg",
+     "activity": "The Loom",
+     "label": "The cloth seller",
+     "bytes": 69864
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson3-writers-bench.html",
+   "week": 2,
+   "lesson": 3,
+   "title": "The Writer's Bench",
+   "folder": "Week 2/Lesson 3 - The Writer's Bench",
+   "combined": {
+    "path": "Week 2/Lesson 3 - The Writer's Bench/Lesson 3 - all cards.pdf",
+    "bytes": 28530
+   },
+   "files": [
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - miser.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - miser.jpg",
+     "activity": "Match All Ten Words",
+     "label": "miser",
+     "bytes": 18156
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - derisive.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - derisive.jpg",
+     "activity": "Match All Ten Words",
+     "label": "derisive",
+     "bytes": 18356
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - conscience.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - conscience.jpg",
+     "activity": "Match All Ten Words",
+     "label": "conscience",
+     "bytes": 17980
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - resentment.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - resentment.jpg",
+     "activity": "Match All Ten Words",
+     "label": "resentment",
+     "bytes": 18115
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - accountable.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - accountable.jpg",
+     "activity": "Match All Ten Words",
+     "label": "accountable",
+     "bytes": 19306
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - recompense.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - recompense.jpg",
+     "activity": "Match All Ten Words",
+     "label": "recompense",
+     "bytes": 18604
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - rebellion.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - rebellion.jpg",
+     "activity": "Match All Ten Words",
+     "label": "rebellion",
+     "bytes": 18220
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - misgiving.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - misgiving.jpg",
+     "activity": "Match All Ten Words",
+     "label": "misgiving",
+     "bytes": 18940
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - intrigue.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - intrigue.jpg",
+     "activity": "Match All Ten Words",
+     "label": "intrigue",
+     "bytes": 18773
+    },
+    {
+     "path": "Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - ambition.pdf",
+     "thumb": "thumbs/Week 2/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - ambition.jpg",
+     "activity": "Match All Ten Words",
+     "label": "ambition",
+     "bytes": 19185
+    }
+   ]
+  },
+  {
+   "page": "w2-lesson4-who-is-on-watch.html",
+   "week": 2,
+   "lesson": 4,
+   "title": "Who Is on Watch",
+   "folder": "Week 2/Lesson 4 - Who Is on Watch",
+   "combined": {
+    "path": "Week 2/Lesson 4 - Who Is on Watch/Lesson 4 - all cards.pdf",
+    "bytes": 161140
+   },
+   "files": [
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/01 - Sign - The soldier at the door.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/01 - Sign - The soldier at the door.jpg",
+     "activity": "The Watchtower",
+     "label": "The soldier at the door",
+     "bytes": 17294
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/02 - Sign - Leah's word.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/02 - Sign - Leah's word.jpg",
+     "activity": "The Watchtower",
+     "label": "Leah’s word",
+     "bytes": 16827
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/03 - Sign - Thacia at the harbor.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/03 - Sign - Thacia at the harbor.jpg",
+     "activity": "The Watchtower",
+     "label": "Thacia at the harbor",
+     "bytes": 17352
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/04 - Sign - Joel's errand.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/04 - Sign - Joel's errand.jpg",
+     "activity": "The Watchtower",
+     "label": "Joel’s errand",
+     "bytes": 17339
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/05 - Moment 1 - No question now the.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/05 - Moment 1 - No question now the.jpg",
+     "activity": "The Watchtower",
+     "label": "“No question now, the house was being watched.”",
+     "bytes": 19560
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/06 - Moment 2 - Homesick That stiffnecked son.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/06 - Moment 2 - Homesick That stiffnecked son.jpg",
+     "activity": "The Watchtower",
+     "label": "“Homesick! That stiff-necked son of a camel!”",
+     "bytes": 19124
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/07 - Moment 3 - Daniel thinks she is.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/07 - Moment 3 - Daniel thinks she is.jpg",
+     "activity": "The Watchtower",
+     "label": "Daniel thinks she is worried about the Law against wearing a brother’s clothes. (Ch. 16)",
+     "bytes": 20698
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/08 - Moment 4 - Daniel tells Thacia I.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/08 - Moment 4 - Daniel tells Thacia I.jpg",
+     "activity": "The Watchtower",
+     "label": "Daniel tells Thacia, “I don’t think it’s dangerous.” (Ch. 16)",
+     "bytes": 20674
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/09 - The soldier at the door.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/09 - The soldier at the door.jpg",
+     "activity": "The Watchtower",
+     "label": "The soldier at the door",
+     "bytes": 43018
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/10 - Leah's word.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/10 - Leah's word.jpg",
+     "activity": "The Watchtower",
+     "label": "Leah’s word",
+     "bytes": 59907
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/11 - Thacia at the harbor.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/11 - Thacia at the harbor.jpg",
+     "activity": "The Watchtower",
+     "label": "Thacia at the harbor",
+     "bytes": 38491
+    },
+    {
+     "path": "Week 2/Lesson 4 - Who Is on Watch/The Watchtower/12 - Joel's errand.pdf",
+     "thumb": "thumbs/Week 2/Lesson 4 - Who Is on Watch/The Watchtower/12 - Joel's errand.jpg",
+     "activity": "The Watchtower",
+     "label": "Joel’s errand",
+     "bytes": 57375
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson1-not-one-of-your-men.html",
+   "week": 3,
+   "lesson": 1,
+   "title": "Not One of Your Men",
+   "folder": "Week 3/Lesson 1 - Not One of Your Men",
+   "combined": {
+    "path": "Week 3/Lesson 1 - Not One of Your Men/Lesson 1 - all cards.pdf",
+    "bytes": 104801
+   },
+   "files": [
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/01 - Sign - Stone I.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/01 - Sign - Stone I.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone I",
+     "bytes": 16764
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/02 - Sign - Stone II.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/02 - Sign - Stone II.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone II",
+     "bytes": 16766
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/03 - Sign - Stone III.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/03 - Sign - Stone III.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone III",
+     "bytes": 16766
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/04 - Sign - Stone IV.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/04 - Sign - Stone IV.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone IV",
+     "bytes": 17050
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/05 - Sign - Stone V.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/05 - Sign - Stone V.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone V",
+     "bytes": 16836
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/06 - Sign - Stone VI.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/06 - Sign - Stone VI.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone VI",
+     "bytes": 17051
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/07 - Sign - Stone VII.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/07 - Sign - Stone VII.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Stone VII",
+     "bytes": 17052
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/08 - Moment 1 - Five of the richest.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/08 - Moment 1 - Five of the richest.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Five of the richest houses in the city are robbed in one night, and the village starts to argue about Rosh.",
+     "bytes": 20600
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/09 - Moment 2 - Thacia brings the news.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/09 - Moment 2 - Thacia brings the news.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Thacia brings the news: the soldiers have taken Joel.",
+     "bytes": 19687
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/10 - Moment 3 - Rosh says Its not.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/10 - Moment 3 - Rosh says Its not.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Rosh says, “It’s not my affair,” and Daniel says, “I am not one of your men. Not any longer.”",
+     "bytes": 21305
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/11 - Moment 4 - The boys choose Daniel.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/11 - Moment 4 - The boys choose Daniel.jpg",
+     "activity": "The Road to Arbela",
+     "label": "The boys choose Daniel as their leader and promise, “For God’s Victory.”",
+     "bytes": 21473
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/12 - Moment 5 - Daniel tells Joel to.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/12 - Moment 5 - Daniel tells Joel to.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Daniel tells Joel to go and study in Jerusalem.",
+     "bytes": 19945
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/13 - Rosh.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/13 - Rosh.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Rosh",
+     "bytes": 39849
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/14 - Thacia.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/14 - Thacia.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Thacia",
+     "bytes": 38963
+    },
+    {
+     "path": "Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/15 - Joel.pdf",
+     "thumb": "thumbs/Week 3/Lesson 1 - Not One of Your Men/The Road to Arbela/15 - Joel.jpg",
+     "activity": "The Road to Arbela",
+     "label": "Joel",
+     "bytes": 40296
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson2-stronger-than-hate.html",
+   "week": 3,
+   "lesson": 2,
+   "title": "Stronger Than Hate",
+   "folder": "Week 3/Lesson 2 - Stronger Than Hate",
+   "combined": {
+    "path": "Week 3/Lesson 2 - Stronger Than Hate/Lesson 2 - all cards.pdf",
+    "bytes": 97266
+   },
+   "files": [
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/01 - Sign - Near the lamp.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/01 - Sign - Near the lamp.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Near the lamp",
+     "bytes": 19004
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/02 - Sign - Out in the dark.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/02 - Sign - Out in the dark.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Out in the dark",
+     "bytes": 18933
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/03 - Moment 1 - Daniel climbs the stairs.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/03 - Moment 1 - Daniel climbs the stairs.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel climbs the stairs and pours out his guilt over Samson.",
+     "bytes": 21159
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/04 - Moment 2 - Daniel cries I made.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/04 - Moment 2 - Daniel cries I made.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel cries, “I made a vow before God!”",
+     "bytes": 20742
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/05 - Moment 3 - Daniel tells Thacia hers.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/05 - Moment 3 - Daniel tells Thacia hers.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel tells Thacia hers is the one face he will always remember, then says there is no room for anyone else.",
+     "bytes": 19532
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/06 - Moment 4 - Daniel sends the pomegranate.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/06 - Moment 4 - Daniel sends the pomegranate.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel sends the pomegranate spinning and shouts at Leah.",
+     "bytes": 19880
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/07 - Moment 5 - Daniel does all the.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/07 - Moment 5 - Daniel does all the.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel does all the housework and pleads with Leah very gently.",
+     "bytes": 20280
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/08 - Moment 6 - Daniel flings himself away.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/08 - Moment 6 - Daniel flings himself away.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Daniel flings himself away from Simon into the darkness.",
+     "bytes": 19983
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/09 - Thacia.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/09 - Thacia.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Thacia",
+     "bytes": 39277
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/10 - Simon.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/10 - Simon.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Simon",
+     "bytes": 40578
+    },
+    {
+     "path": "Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/11 - Leah.pdf",
+     "thumb": "thumbs/Week 3/Lesson 2 - Stronger Than Hate/The Lamp in the Upper Room/11 - Leah.jpg",
+     "activity": "The Lamp in the Upper Room",
+     "label": "Leah",
+     "bytes": 39302
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson3-writers-bench.html",
+   "week": 3,
+   "lesson": 3,
+   "title": "The Writer's Bench",
+   "folder": "Week 3/Lesson 3 - The Writer's Bench",
+   "combined": {
+    "path": "Week 3/Lesson 3 - The Writer's Bench/Lesson 3 - all cards.pdf",
+    "bytes": 28228
+   },
+   "files": [
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - reprisal.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - reprisal.jpg",
+     "activity": "Match All Ten Words",
+     "label": "reprisal",
+     "bytes": 18438
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - indignant.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - indignant.jpg",
+     "activity": "Match All Ten Words",
+     "label": "indignant",
+     "bytes": 18945
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - distraught.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - distraught.jpg",
+     "activity": "Match All Ten Words",
+     "label": "distraught",
+     "bytes": 19327
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - incredulous.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - incredulous.jpg",
+     "activity": "Match All Ten Words",
+     "label": "incredulous",
+     "bytes": 18660
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - foreboding.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - foreboding.jpg",
+     "activity": "Match All Ten Words",
+     "label": "foreboding",
+     "bytes": 18968
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - heedless.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - heedless.jpg",
+     "activity": "Match All Ten Words",
+     "label": "heedless",
+     "bytes": 17761
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - loathing.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - loathing.jpg",
+     "activity": "Match All Ten Words",
+     "label": "loathing",
+     "bytes": 18753
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - baffled.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - baffled.jpg",
+     "activity": "Match All Ten Words",
+     "label": "baffled",
+     "bytes": 18862
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - aloof.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - aloof.jpg",
+     "activity": "Match All Ten Words",
+     "label": "aloof",
+     "bytes": 18128
+    },
+    {
+     "path": "Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - dignity.pdf",
+     "thumb": "thumbs/Week 3/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - dignity.jpg",
+     "activity": "Match All Ten Words",
+     "label": "dignity",
+     "bytes": 18946
+    }
+   ]
+  },
+  {
+   "page": "w3-lesson4-what-daniel-could-not-see.html",
+   "week": 3,
+   "lesson": 4,
+   "title": "What Daniel Could Not See",
+   "folder": "Week 3/Lesson 4 - What Daniel Could Not See",
+   "combined": {
+    "path": "Week 3/Lesson 4 - What Daniel Could Not See/Lesson 4 - all cards.pdf",
+    "bytes": 222930
+   },
+   "files": [
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/01 - Moment 1 - Rosh will have planned.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/01 - Moment 1 - Rosh will have planned.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "“Rosh will have planned for this. He will know what to do.”",
+     "bytes": 19955
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/02 - Moment 2 - Someone is behind him.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/02 - Moment 2 - Someone is behind him.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "Someone is behind him. Has he led the band into “some other trap”?",
+     "bytes": 20611
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/03 - Moment 3 - If he cannot stay.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/03 - Moment 3 - If he cannot stay.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "If he cannot stay, he will “go to the mountain and join Rosh.”",
+     "bytes": 21424
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/04 - Moment 4 - What neighbor could have.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/04 - Moment 4 - What neighbor could have.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "“What neighbor could have brought such a gift?”",
+     "bytes": 20411
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/05 - Moment 5 - Let him be king.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/05 - Moment 5 - Let him be king.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "“Let him be king! … Down with Rome!” His heart leaps.",
+     "bytes": 20763
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/06 - Joel.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/06 - Joel.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "Joel",
+     "bytes": 67957
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/07 - Leah.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/07 - Leah.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "Leah",
+     "bytes": 77612
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/08 - A man from the crowd.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/What Daniel Could Not See/08 - A man from the crowd.jpg",
+     "activity": "What Daniel Could Not See",
+     "label": "A man from the crowd",
+     "bytes": 94535
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/01 - Sign - hatred.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/01 - Sign - hatred.jpg",
+     "activity": "The Journey Map",
+     "label": "hatred",
+     "bytes": 18690
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/02 - Sign - love.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/02 - Sign - love.jpg",
+     "activity": "The Journey Map",
+     "label": "love",
+     "bytes": 18119
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/03 - Sign - both pulling.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/03 - Sign - both pulling.jpg",
+     "activity": "The Journey Map",
+     "label": "both pulling",
+     "bytes": 19958
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/04 - Moment 1 - Daniel breaks with Rosh.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/04 - Moment 1 - Daniel breaks with Rosh.jpg",
+     "activity": "The Journey Map",
+     "label": "Daniel breaks with Rosh to save Joel (Ch. 18)",
+     "bytes": 19674
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/05 - Moment 2 - In the upper room.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/05 - Moment 2 - In the upper room.jpg",
+     "activity": "The Journey Map",
+     "label": "In the upper room Daniel hears “The only thing stronger than hate is love,” and answers, “I made a vow before God!” (Ch. 21)",
+     "bytes": 22993
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/06 - Moment 3 - The fruit basket Daniel.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/06 - Moment 3 - The fruit basket Daniel.jpg",
+     "activity": "The Journey Map",
+     "label": "The fruit basket: Daniel shouts at Leah, then walks all night and feels shame (Ch. 22)",
+     "bytes": 20759
+    },
+    {
+     "path": "Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/07 - Moment 4 - Daniel turns from Simon.pdf",
+     "thumb": "thumbs/Week 3/Lesson 4 - What Daniel Could Not See/The Journey Map/07 - Moment 4 - Daniel turns from Simon.jpg",
+     "activity": "The Journey Map",
+     "label": "Daniel turns from Simon with nothing left but his hatred and his vow (Ch. 23)",
+     "bytes": 21130
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson1-the-shut-door.html",
+   "week": 4,
+   "lesson": 1,
+   "title": "The Shut Door",
+   "folder": "Week 4/Lesson 1 - The Shut Door",
+   "combined": {
+    "path": "Week 4/Lesson 1 - The Shut Door/Lesson 1 - all cards.pdf",
+    "bytes": 146256
+   },
+   "files": [
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/01 - Sign - Let in.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/01 - Sign - Let in.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Let in",
+     "bytes": 17336
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/02 - Sign - Kept out.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/02 - Sign - Kept out.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Kept out",
+     "bytes": 18239
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/03 - Sign - Sent out.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/03 - Sign - Sent out.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Sent out",
+     "bytes": 17470
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/04 - Moment 1 - Spring flowers washing in a.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/04 - Moment 1 - Spring flowers washing in a.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Spring flowers, washing in a wave of color up to the door",
+     "bytes": 20035
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/05 - Moment 2 - The little goat when it.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/05 - Moment 2 - The little goat when it.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "The little goat, when it can no longer stand",
+     "bytes": 18509
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/06 - Moment 3 - The physician loath at first.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/06 - Moment 3 - The physician loath at first.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "The physician, “loath at first to come”",
+     "bytes": 19823
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/07 - Moment 4 - A customer at the shop.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/07 - Moment 4 - A customer at the shop.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "A customer at the shop",
+     "bytes": 18361
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/08 - Moment 5 - Joktan with a message scratched.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/08 - Moment 5 - Joktan with a message scratched.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Joktan, with a message scratched on broken pottery",
+     "bytes": 20397
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/09 - Moment 6 - The soldier who asks for.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/09 - Moment 6 - The soldier who asks for.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "The soldier who asks for one moment with Leah",
+     "bytes": 18058
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/10 - The physician.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/10 - The physician.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "the physician",
+     "bytes": 42819
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/11 - Joktan.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/11 - Joktan.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Joktan",
+     "bytes": 55640
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/12 - The soldier.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/12 - The soldier.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "the soldier",
+     "bytes": 41426
+    },
+    {
+     "path": "Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/13 - Daniel.pdf",
+     "thumb": "thumbs/Week 4/Lesson 1 - The Shut Door/Who Comes to the Door/13 - Daniel.jpg",
+     "activity": "Who Comes to the Door?",
+     "label": "Daniel",
+     "bytes": 45076
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson2-the-bow-bends.html",
+   "week": 4,
+   "lesson": 2,
+   "title": "The Bow Bends",
+   "folder": "Week 4/Lesson 2 - The Bow Bends",
+   "combined": {
+    "path": "Week 4/Lesson 2 - The Bow Bends/Lesson 2 - all cards.pdf",
+    "bytes": 146450
+   },
+   "files": [
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/01 - Sign - Jesus to Daniel.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/01 - Sign - Jesus to Daniel.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Jesus to Daniel",
+     "bytes": 19230
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/02 - Sign - Thacia in the passage.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/02 - Sign - Thacia in the passage.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Thacia in the passage",
+     "bytes": 19257
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/03 - Sign - Simon after the crowd.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/03 - Sign - Simon after the crowd.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Simon after the crowd",
+     "bytes": 19553
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/04 - Sign - Rosh.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/04 - Sign - Rosh.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Rosh",
+     "bytes": 17459
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/05 - Sign - Daniel at the forge.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/05 - Sign - Daniel at the forge.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Daniel at the forge",
+     "bytes": 19358
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/06 - Moment 1 - Can you repay love with.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/06 - Moment 1 - Can you repay love with.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "“Can you repay love with vengeance?”",
+     "bytes": 20572
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/07 - Moment 2 - Was it possible that only.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/07 - Moment 2 - Was it possible that only.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "“Was it possible that only love could bend the bow of bronze?”",
+     "bytes": 20585
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/08 - Moment 3 - We have to choose not.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/08 - Moment 3 - We have to choose not.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "“We have to choose, not knowing.”",
+     "bytes": 18971
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/09 - Moment 4 - a peace he had never.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/09 - Moment 4 - a peace he had never.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "“…a peace he had never imagined.”",
+     "bytes": 19660
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/10 - Moment 5 - Leah I know how she.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/10 - Moment 5 - Leah I know how she.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Leah: “I know how she felt … Jairus’ daughter.”",
+     "bytes": 20019
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/11 - Thacia.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/11 - Thacia.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Thacia",
+     "bytes": 45039
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/12 - Simon.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/12 - Simon.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Simon",
+     "bytes": 42307
+    },
+    {
+     "path": "Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/13 - Leah.pdf",
+     "thumb": "thumbs/Week 4/Lesson 2 - The Bow Bends/The Net What Comes Back/13 - Leah.jpg",
+     "activity": "The Net: What Comes Back",
+     "label": "Leah",
+     "bytes": 78718
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson3-writers-bench.html",
+   "week": 4,
+   "lesson": 3,
+   "title": "The Writer's Bench",
+   "folder": "Week 4/Lesson 3 - The Writer's Bench",
+   "combined": {
+    "path": "Week 4/Lesson 3 - The Writer's Bench/Lesson 3 - all cards.pdf",
+    "bytes": 29196
+   },
+   "files": [
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - indifferent.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/01 - Sign - indifferent.jpg",
+     "activity": "Match All Ten Words",
+     "label": "indifferent",
+     "bytes": 18566
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - duped.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/02 - Sign - duped.jpg",
+     "activity": "Match All Ten Words",
+     "label": "duped",
+     "bytes": 18576
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - dismay.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/03 - Sign - dismay.jpg",
+     "activity": "Match All Ten Words",
+     "label": "dismay",
+     "bytes": 19407
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - bewildered.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/04 - Sign - bewildered.jpg",
+     "activity": "Match All Ten Words",
+     "label": "bewildered",
+     "bytes": 18601
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - dread.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/05 - Sign - dread.jpg",
+     "activity": "Match All Ten Words",
+     "label": "dread",
+     "bytes": 18219
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - luminous.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/06 - Sign - luminous.jpg",
+     "activity": "Match All Ten Words",
+     "label": "luminous",
+     "bytes": 18702
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - longing.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/07 - Sign - longing.jpg",
+     "activity": "Match All Ten Words",
+     "label": "longing",
+     "bytes": 18335
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - rejected.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/08 - Sign - rejected.jpg",
+     "activity": "Match All Ten Words",
+     "label": "rejected",
+     "bytes": 18595
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - liberating.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/09 - Sign - liberating.jpg",
+     "activity": "Match All Ten Words",
+     "label": "liberating",
+     "bytes": 19364
+    },
+    {
+     "path": "Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - haltingly.pdf",
+     "thumb": "thumbs/Week 4/Lesson 3 - The Writer's Bench/Match All Ten Words/10 - Sign - haltingly.jpg",
+     "activity": "Match All Ten Words",
+     "label": "haltingly",
+     "bytes": 19429
+    }
+   ]
+  },
+  {
+   "page": "w4-lesson4-the-open-door.html",
+   "week": 4,
+   "lesson": 4,
+   "title": "The Open Door",
+   "folder": "Week 4/Lesson 4 - The Open Door",
+   "combined": {
+    "path": "Week 4/Lesson 4 - The Open Door/Lesson 4 - all cards.pdf",
+    "bytes": 37754
+   },
+   "files": [
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/01 - Sign - Topic.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/01 - Sign - Topic.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "Topic",
+     "bytes": 18133
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/02 - Sign - Plot.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/02 - Sign - Plot.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "Plot",
+     "bytes": 17570
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/03 - Sign - Theme.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/03 - Sign - Theme.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "Theme",
+     "bytes": 17641
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/04 - Moment 1 - I vowed I would pay.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/04 - Moment 1 - I vowed I would pay.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“I vowed I would pay them back with my whole life.”",
+     "bytes": 20868
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/05 - Moment 2 - For each one of you.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/05 - Moment 2 - For each one of you.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“For each one of you is precious in His sight.”",
+     "bytes": 19851
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/06 - Moment 3 - I am not one of.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/06 - Moment 3 - I am not one of.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“I am not one of your men. Not any longer.”",
+     "bytes": 19674
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/07 - Moment 4 - The only thing stronger than.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/07 - Moment 4 - The only thing stronger than.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“The only thing stronger than hate is love.”",
+     "bytes": 18366
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/08 - Moment 5 - There was nothing left to.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/08 - Moment 5 - There was nothing left to.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“There was nothing left to him but his hatred and his vow.”",
+     "bytes": 20257
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/09 - Moment 6 - Will you come in to.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/Potsherds What the Whole Book Says/09 - Moment 6 - Will you come in to.jpg",
+     "activity": "Potsherds: What the Whole Book Says",
+     "label": "“Will you come in to our house?”",
+     "bytes": 18586
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/01 - Sign - Rosh.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/01 - Sign - Rosh.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "Rosh",
+     "bytes": 19085
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/02 - Sign - Hezron.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/02 - Sign - Hezron.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "Hezron",
+     "bytes": 19085
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/03 - Sign - the teacher.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/03 - Sign - the teacher.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "the teacher",
+     "bytes": 20080
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/04 - Sign - his own.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/04 - Sign - his own.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "his own",
+     "bytes": 19350
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/05 - Moment 1 - Daniel turns the soldier away.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/05 - Moment 1 - Daniel turns the soldier away.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "Daniel turns the soldier away at the door.",
+     "bytes": 18349
+    },
+    {
+     "path": "Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/06 - Moment 2 - Daniel stops fighting against the.pdf",
+     "thumb": "thumbs/Week 4/Lesson 4 - The Open Door/The Journey Map the bronze bow, finished/06 - Moment 2 - Daniel stops fighting against the.jpg",
+     "activity": "The Journey Map: the bronze bow, finished",
+     "label": "Daniel stops fighting against the teacher: “We have to choose, not knowing.”",
+     "bytes": 19524
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson1-the-whole-journey.html",
+   "week": 5,
+   "lesson": 1,
+   "title": "The Whole Journey",
+   "folder": "Week 5/Lesson 1 - The Whole Journey",
+   "combined": {
+    "path": "Week 5/Lesson 1 - The Whole Journey/Lesson 1 - all cards.pdf",
+    "bytes": 145090
+   },
+   "files": [
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/01 - Sign - hatred.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/01 - Sign - hatred.jpg",
+     "activity": "The Scroll",
+     "label": "hatred",
+     "bytes": 17037
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/02 - Sign - love.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/02 - Sign - love.jpg",
+     "activity": "The Scroll",
+     "label": "love",
+     "bytes": 16480
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/03 - Sign - torn between.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/03 - Sign - torn between.jpg",
+     "activity": "The Scroll",
+     "label": "torn between",
+     "bytes": 16571
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/04 - Moment 1 - After the robbery Daniel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/04 - Moment 1 - After the robbery Daniel.jpg",
+     "activity": "The Scroll",
+     "label": "After the robbery, Daniel carries the old man into the shade and gives back one of his daggers.",
+     "bytes": 21036
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/05 - Moment 2 - Daniel leaves the mountain.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/05 - Moment 2 - Daniel leaves the mountain.jpg",
+     "activity": "The Scroll",
+     "label": "Daniel leaves the mountain and brings Leah to Simon’s house in the village.",
+     "bytes": 20845
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/06 - Moment 3 - Daniel tells Rosh I.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/06 - Moment 3 - Daniel tells Rosh I.jpg",
+     "activity": "The Scroll",
+     "label": "Daniel tells Rosh, “I am not one of your men. Not any longer.”",
+     "bytes": 21226
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/07 - Moment 4 - Alone at night Jesus.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/07 - Moment 4 - Alone at night Jesus.jpg",
+     "activity": "The Scroll",
+     "label": "Alone at night, Jesus tells Daniel that hate, not men, is the enemy.",
+     "bytes": 20305
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/08 - Moment 5 - After Simons words Daniel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/08 - Moment 5 - After Simons words Daniel.jpg",
+     "activity": "The Scroll",
+     "label": "After Simon’s words, Daniel is left with nothing “but his hatred and his vow.”",
+     "bytes": 21689
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/09 - Moment 6 - Daniel crosses the road.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/09 - Moment 6 - Daniel crosses the road.jpg",
+     "activity": "The Scroll",
+     "label": "Daniel crosses the road and asks Marcus, “Will you come in to our house?”",
+     "bytes": 20754
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/10 - Moment 7 - Daniel swears his vow.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/10 - Moment 7 - Daniel swears his vow.jpg",
+     "activity": "The Scroll",
+     "label": "Daniel swears his vow on the mountain the day he meets Joel and Thacia.",
+     "bytes": 20271
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/11 - Moment 8 - Jesus asks Daniel to.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/11 - Moment 8 - Jesus asks Daniel to.jpg",
+     "activity": "The Scroll",
+     "label": "Jesus asks Daniel to fight for him to the end.",
+     "bytes": 19790
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/12 - Thacia.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/12 - Thacia.jpg",
+     "activity": "The Scroll",
+     "label": "Thacia",
+     "bytes": 41743
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/13 - Joel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/13 - Joel.jpg",
+     "activity": "The Scroll",
+     "label": "Joel",
+     "bytes": 42446
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/14 - Simon.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/14 - Simon.jpg",
+     "activity": "The Scroll",
+     "label": "Simon",
+     "bytes": 43331
+    },
+    {
+     "path": "Week 5/Lesson 1 - The Whole Journey/The Scroll/15 - Leah.pdf",
+     "thumb": "thumbs/Week 5/Lesson 1 - The Whole Journey/The Scroll/15 - Leah.jpg",
+     "activity": "The Scroll",
+     "label": "Leah",
+     "bytes": 49239
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson2-three-persuaders.html",
+   "week": 5,
+   "lesson": 2,
+   "title": "Three Persuaders",
+   "folder": "Week 5/Lesson 2 - Three Persuaders",
+   "combined": {
+    "path": "Week 5/Lesson 2 - Three Persuaders/Lesson 2 - all cards.pdf",
+    "bytes": 112401
+   },
+   "files": [
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/01 - Sign - Logos.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/01 - Sign - Logos.jpg",
+     "activity": "The Debate Bench",
+     "label": "Logos",
+     "bytes": 16488
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/02 - Sign - Ethos.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/02 - Sign - Ethos.jpg",
+     "activity": "The Debate Bench",
+     "label": "Ethos",
+     "bytes": 16194
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/03 - Sign - Pathos.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/03 - Sign - Pathos.jpg",
+     "activity": "The Debate Bench",
+     "label": "Pathos",
+     "bytes": 16890
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/04 - Moment 1 - rows of crosses and.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/04 - Moment 1 - rows of crosses and.jpg",
+     "activity": "The Debate Bench",
+     "label": "rows of crosses, and burning villages, and heavier taxes",
+     "bytes": 20556
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/05 - Moment 2 - another cohort a legion.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/05 - Moment 2 - another cohort a legion.jpg",
+     "activity": "The Debate Bench",
+     "label": "another cohort, a legion, countless legions.",
+     "bytes": 18565
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/06 - Moment 3 - It will take men.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/06 - Moment 3 - It will take men.jpg",
+     "activity": "The Debate Bench",
+     "label": "It will take men and arms and food. And they have to be paid for with money.",
+     "bytes": 20900
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/07 - Moment 4 - because they say that.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/07 - Moment 4 - because they say that.jpg",
+     "activity": "The Debate Bench",
+     "label": "because they say that someday you will drive the Romans out of Israel.",
+     "bytes": 20963
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/08 - Moment 5 - like a lion He.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/08 - Moment 5 - like a lion He.jpg",
+     "activity": "The Debate Bench",
+     "label": "like a lion! He has no fear at all",
+     "bytes": 17988
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/09 - Moment 6 - I must believe my.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/09 - Moment 6 - I must believe my.jpg",
+     "activity": "The Debate Bench",
+     "label": "I must believe my own eyes. I have seen it happen, over and over.",
+     "bytes": 20664
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/10 - Moment 7 - not even a sparrow.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/10 - Moment 7 - not even a sparrow.jpg",
+     "activity": "The Debate Bench",
+     "label": "not even a sparrow falls to the ground without our Father seeing.",
+     "bytes": 19718
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/11 - Moment 8 - can you repay such.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/11 - Moment 8 - can you repay such.jpg",
+     "activity": "The Debate Bench",
+     "label": "can you repay such love with hate?",
+     "bytes": 19291
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/12 - The scribe.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/12 - The scribe.jpg",
+     "activity": "The Debate Bench",
+     "label": "the scribe",
+     "bytes": 45463
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/13 - The outlaw leader.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/13 - The outlaw leader.jpg",
+     "activity": "The Debate Bench",
+     "label": "the outlaw leader",
+     "bytes": 44000
+    },
+    {
+     "path": "Week 5/Lesson 2 - Three Persuaders/The Debate Bench/14 - The proud city youth.pdf",
+     "thumb": "thumbs/Week 5/Lesson 2 - Three Persuaders/The Debate Bench/14 - The proud city youth.jpg",
+     "activity": "The Debate Bench",
+     "label": "the proud city youth",
+     "bytes": 41287
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson3-writers-bench.html",
+   "week": 5,
+   "lesson": 3,
+   "title": "The Writer's Bench",
+   "folder": "Week 5/Lesson 3 - The Writer's Bench",
+   "combined": {
+    "path": "Week 5/Lesson 3 - The Writer's Bench/Lesson 3 - all cards.pdf",
+    "bytes": 27464
+   },
+   "files": [
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/01 - Sign - purpose.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/01 - Sign - purpose.jpg",
+     "activity": "Match All Eight Words",
+     "label": "purpose",
+     "bytes": 18653
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/02 - Sign - burden.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/02 - Sign - burden.jpg",
+     "activity": "Match All Eight Words",
+     "label": "burden",
+     "bytes": 18995
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/03 - Sign - despair.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/03 - Sign - despair.jpg",
+     "activity": "Match All Eight Words",
+     "label": "despair",
+     "bytes": 19341
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/04 - Sign - regret.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/04 - Sign - regret.jpg",
+     "activity": "Match All Eight Words",
+     "label": "regret",
+     "bytes": 18567
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/05 - Sign - defy.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/05 - Sign - defy.jpg",
+     "activity": "Match All Eight Words",
+     "label": "defy",
+     "bytes": 18968
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/06 - Sign - guilt.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/06 - Sign - guilt.jpg",
+     "activity": "Match All Eight Words",
+     "label": "guilt",
+     "bytes": 19381
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/07 - Sign - torment.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/07 - Sign - torment.jpg",
+     "activity": "Match All Eight Words",
+     "label": "torment",
+     "bytes": 18560
+    },
+    {
+     "path": "Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/08 - Sign - remorse.pdf",
+     "thumb": "thumbs/Week 5/Lesson 3 - The Writer's Bench/Match All Eight Words/08 - Sign - remorse.jpg",
+     "activity": "Match All Eight Words",
+     "label": "remorse",
+     "bytes": 18347
+    }
+   ]
+  },
+  {
+   "page": "w5-lesson4-journeys-end.html",
+   "week": 5,
+   "lesson": 4,
+   "title": "Journey's End",
+   "folder": "Week 5/Lesson 4 - Journey's End",
+   "combined": {
+    "path": "Week 5/Lesson 4 - Journey's End/Lesson 4 - all cards.pdf",
+    "bytes": 167879
+   },
+   "files": [
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/01 - Moment 1 - After the robbery Daniel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/01 - Moment 1 - After the robbery Daniel.jpg",
+     "activity": "The Mountain Path",
+     "label": "After the robbery, Daniel carries the old man into the shade and gives back one of his daggers.",
+     "bytes": 21177
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/02 - Moment 2 - Daniel leaves the mountain.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/02 - Moment 2 - Daniel leaves the mountain.jpg",
+     "activity": "The Mountain Path",
+     "label": "Daniel leaves the mountain and brings Leah to Simon’s house in the village.",
+     "bytes": 20795
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/03 - Moment 3 - Daniel tells Rosh I.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/03 - Moment 3 - Daniel tells Rosh I.jpg",
+     "activity": "The Mountain Path",
+     "label": "Daniel tells Rosh, “I am not one of your men. Not any longer.”",
+     "bytes": 21165
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/04 - Moment 4 - Alone at night Jesus.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/04 - Moment 4 - Alone at night Jesus.jpg",
+     "activity": "The Mountain Path",
+     "label": "Alone at night, Jesus tells Daniel that hate, not men, is the enemy.",
+     "bytes": 19988
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/05 - Moment 5 - After Simons words Daniel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/05 - Moment 5 - After Simons words Daniel.jpg",
+     "activity": "The Mountain Path",
+     "label": "After Simon’s words, Daniel is left with nothing “but his hatred and his vow.”",
+     "bytes": 21616
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/06 - Moment 6 - Daniel crosses the road.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/06 - Moment 6 - Daniel crosses the road.jpg",
+     "activity": "The Mountain Path",
+     "label": "Daniel crosses the road and asks Marcus, “Will you come in to our house?”",
+     "bytes": 20323
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/07 - Thacia.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/07 - Thacia.jpg",
+     "activity": "The Mountain Path",
+     "label": "Thacia",
+     "bytes": 42602
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/08 - Joel.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/08 - Joel.jpg",
+     "activity": "The Mountain Path",
+     "label": "Joel",
+     "bytes": 43283
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/09 - Rosh.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/09 - Rosh.jpg",
+     "activity": "The Mountain Path",
+     "label": "Rosh",
+     "bytes": 43547
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/10 - Simon.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/10 - Simon.jpg",
+     "activity": "The Mountain Path",
+     "label": "Simon",
+     "bytes": 44587
+    },
+    {
+     "path": "Week 5/Lesson 4 - Journey's End/The Mountain Path/11 - Leah.pdf",
+     "thumb": "thumbs/Week 5/Lesson 4 - Journey's End/The Mountain Path/11 - Leah.jpg",
+     "activity": "The Mountain Path",
+     "label": "Leah",
+     "bytes": 50103
+    }
+   ]
+  }
+ ]
+}

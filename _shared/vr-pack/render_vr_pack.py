@@ -178,10 +178,11 @@ def card_html(L, card, kicker, foot, name):
         parts.append(f'<div class="foot t">{esc(foot)}</div>')
         return f'<div class="card picture {orient}" data-name="{esc(name)}">{"".join(parts)}</div>', orient
     if t == "moment":
-        figs = "".join(f'<img src="{L.src(k)}" alt="">' for k in card["imgs"])
+        figs = "".join(f'<img src="{L.src(k)}" alt="">' for k in card.get("imgs", []))
+        figs = f'<div class="figs">{figs}</div>' if figs else ""   # a moment with no figures: the words take the full width
         return (f'<div class="card moment land" data-name="{esc(name)}"><div class="row"><div class="words">'
                 f'<div class="num t">{card["n"]}</div><div class="kicker t">{esc(kicker)}</div>'
-                f'<div class="text t">{esc(card["text"])}</div></div><div class="figs">{figs}</div></div>'
+                f'<div class="text t">{esc(card["text"])}</div></div>{figs}</div>'
                 f'<div class="foot t">{esc(foot)}</div></div>'), "land"
     if t == "sign":
         return (f'<div class="card sign land" data-name="{esc(name)}"><div class="kicker t">{esc(kicker)}</div>'
