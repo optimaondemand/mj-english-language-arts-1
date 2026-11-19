@@ -509,6 +509,13 @@ table.tbl td strong { color: var(--ink); }
     #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
     #ora-status { font-size: 12px; color: #666; }
     .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+    /* Full screen button: fills the screen in place, no new tab */
+    #optima-read-aloud .ora-controls #fs-btn { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #optima-read-aloud .ora-controls #fs-btn:hover { background: #F4F6FA; border-color: #55C8E8; }
+    #optima-read-aloud .ora-controls #fs-btn[hidden] { display: none; }
+    #fs-btn svg { display: block; }
+    html:fullscreen { overflow-y: auto; }
+    html:-webkit-full-screen { overflow-y: auto; }
 </style>
 <style>
 /* Week-level additions: status line, word count, name field, PDF buttons */
@@ -1215,6 +1222,7 @@ body.greenwood .tiw-num { background: #2F5D34; }
             </select>
         </label>
         <span id="ora-status" role="status" aria-live="polite"></span>
+        <button id="fs-btn" type="button" aria-pressed="false" hidden><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="fs-l">Full screen</span></button>
     </div>
 </div>
 <div class="progress-wrap">
@@ -1721,8 +1729,8 @@ body.greenwood .tiw-num { background: #2F5D34; }
       <div class="tiw-step">
         <div class="tiw-main">
           <div class="name-row"><label for="studentName">Your first and last name</label><input id="studentName" type="text" autocomplete="name" placeholder="First Last"></div>
-          <div class="tiw-text">Everything you typed comes together in one PDF.</div>
-          <button class="gathered-btn gathered-btn-week tiw-main-btn" onclick="downloadWeek()">📄 Download your PDF</button>
+          <div class="tiw-text">Everything you typed in this lesson goes into one PDF. Upload it to this assignment.</div>
+          <button class="gathered-btn gathered-btn-week tiw-main-btn" onclick="downloadLesson()">📄 Download your PDF</button>
           <div class="gathered-copied" id="gatheredCopied">✅ Copied.</div>
           <details class="tiw-more">
             <summary>Other ways to save</summary>
@@ -1746,7 +1754,7 @@ body.greenwood .tiw-num { background: #2F5D34; }
         <div class="check-item" data-ck="l4e" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">My thesis names Robin Hood and uses &ldquo;because&rdquo; or &ldquo;although.&rdquo; Each body paragraph has an arguable claim, a named scene with its chapter, and a short explanation note.</div></div>
         <div class="check-item" data-ck="l4f" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">My Concession names the strongest objection and says how my conclusion will answer it.</div></div>
         <div class="check-item" data-ck="l4g" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I used at least two appositives, set off with commas, and my before-and-after shows a fix.</div></div>
-        <div class="check-item" data-ck="l4h" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I downloaded my PDF.</div></div>
+        <div class="check-item" data-ck="l4h" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I downloaded my PDF and uploaded it to this assignment.</div></div>
       </div>
     </div>
   </div>
@@ -1927,6 +1935,31 @@ body.greenwood .tiw-num { background: #2F5D34; }
     window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
 })();
 </script>
+<script>
+/* Full screen: the lesson fills the screen where it is. Hidden where the page cannot do it
+   (iPhone Safari, or a frame without allowfullscreen). */
+(function () {
+    "use strict";
+    var b = document.getElementById("fs-btn"); if (!b) return;
+    var d = document, de = d.documentElement;
+    var req = de.requestFullscreen || de.webkitRequestFullscreen, ext = d.exitFullscreen || d.webkitExitFullscreen;
+    if (!(d.fullscreenEnabled || d.webkitFullscreenEnabled) || !req || !ext) { b.hidden = true; return; }
+    function cur() { return d.fullscreenElement || d.webkitFullscreenElement || null; }
+    function paint() {
+        var on = !!cur();
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.querySelector(".fs-l").textContent = on ? "Exit full screen" : "Full screen";
+        de.classList.toggle("fs-on", on);
+    }
+    b.addEventListener("click", function () {
+        var r = cur() ? ext.call(d) : req.call(de);
+        if (r && r.then) r.then(paint, paint);
+    });
+    d.addEventListener("fullscreenchange", paint); d.addEventListener("webkitfullscreenchange", paint);
+    b.hidden = false; paint();
+})();
+</script>
+
 <script>
 /* Optima ELA 6 · Module 4 integrated weeks (engine from the Module 3 pilot) · shared lesson engines.
    Page config comes from \x3cscript type="application/json" id="page-config">:

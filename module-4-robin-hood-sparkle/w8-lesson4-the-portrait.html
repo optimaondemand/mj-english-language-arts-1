@@ -509,6 +509,13 @@ table.tbl td strong { color: var(--ink); }
     #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
     #ora-status { font-size: 12px; color: #666; }
     .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+    /* Full screen button: fills the screen in place, no new tab */
+    #optima-read-aloud .ora-controls #fs-btn { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #optima-read-aloud .ora-controls #fs-btn:hover { background: #F4F6FA; border-color: #55C8E8; }
+    #optima-read-aloud .ora-controls #fs-btn[hidden] { display: none; }
+    #fs-btn svg { display: block; }
+    html:fullscreen { overflow-y: auto; }
+    html:-webkit-full-screen { overflow-y: auto; }
 </style>
 <style>
 /* Week-level additions: status line, word count, name field, PDF buttons */
@@ -1324,6 +1331,7 @@ body.greenwood .also-num { background: #2F5D34; }
             </select>
         </label>
         <span id="ora-status" role="status" aria-live="polite"></span>
+        <button id="fs-btn" type="button" aria-pressed="false" hidden><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="fs-l">Full screen</span></button>
     </div>
 </div>
 <div class="progress-wrap">
@@ -1371,7 +1379,7 @@ body.greenwood .also-num { background: #2F5D34; }
       <div class="intro-card-body">
         <div class="obj-line"><span class="obj-icon">📖</span><span><strong>Reading:</strong> I will seat seven moments from the whole book on the hero bench or the outlaw bench, answer the other side, write my verdict, and finish my Hero or Outlaw chart.</span></div>
         <div class="obj-line"><span class="obj-icon">✏️</span><span><strong>Grammar:</strong> I will combine short sentences and vary how my sentences begin in my own Quick Write.</span></div>
-        <div class="obj-line"><span class="obj-icon">📝</span><span><strong>Writing:</strong> I will revise Quick Write 8, check my final essay, and download my Week 8 PDF.</span></div>
+        <div class="obj-line"><span class="obj-icon">📝</span><span><strong>Writing:</strong> I will revise Quick Write 8, check my final essay, and download my PDF.</span></div>
       </div>
     </div>
   </div>
@@ -1640,7 +1648,7 @@ body.greenwood .also-num { background: #2F5D34; }
           <li data-c="answer">You answered the other side.</li>
           <li data-c="verdict">You wrote your verdict.</li>
         </ul>
-        <details class="tap-log-wrap"><summary>📜 Your court in words (goes into your Week 8 PDF)</summary>
+        <details class="tap-log-wrap"><summary>📜 Your court in words (goes into your PDF)</summary>
           <textarea class="journal-box" id="fc-log" data-label="The Forest Court: my seven moments and star witnesses" readonly></textarea>
         </details>
         <div class="img-credit">Figures: AI-generated portraits in the style of a black-ink woodcut.</div>
@@ -1713,7 +1721,7 @@ body.greenwood .also-num { background: #2F5D34; }
   </div>
 
   <div class="tab-next-wrap">
-    <p class="tab-transition-voice">Finish the week&rsquo;s writing, check your essay, then download one PDF.</p>
+    <p class="tab-transition-voice">Finish the week&rsquo;s writing, check your essay, then download your PDF.</p>
     <button class="tab-next-btn" onclick="switchTab('submit')">Continue to ✍️ Writer&rsquo;s Desk →</button>
   </div>
 </div>
@@ -1928,14 +1936,13 @@ body.greenwood .also-num { background: #2F5D34; }
       <div class="tiw-step">
         <div class="tiw-main">
           <div class="tiw-title">Download your PDF</div>
-          <div class="tiw-text">Everything you typed comes together in one PDF.</div>
+          <div class="tiw-text">Everything you typed in this lesson goes into one PDF. Upload it to this assignment.</div>
           <div class="name-row"><label for="studentName">Your first and last name</label><input id="studentName" type="text" autocomplete="name" placeholder="First Last"></div>
-          <button class="gathered-btn gathered-btn-week tiw-main-btn" onclick="downloadWeek()">📄 Download your PDF</button>
+          <button class="gathered-btn gathered-btn-week tiw-main-btn" onclick="downloadLesson()">📄 Download your PDF</button>
           <div class="gathered-copied" id="gatheredCopied">✅ Copied.</div>
           <details class="tiw-more">
             <summary>Other ways to save</summary>
             <div class="gathered-actions">
-              <button class="gathered-btn gathered-btn-pdf" onclick="downloadLesson()">📄 This lesson only</button>
               <button class="gathered-btn gathered-btn-copy" onclick="copyGathered()">📋 Copy as text</button>
             </div>
             <textarea class="gathered-output" id="gatheredOutput" readonly style="margin-top:12px;"></textarea>
@@ -1953,6 +1960,7 @@ body.greenwood .also-num { background: #2F5D34; }
         <div class="check-item" data-ck="l4c" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">The Hero and Outlaw columns each have a new entry from the last chapters, and my final lean and my best concession are written.</div></div>
         <div class="check-item" data-ck="l4d" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">My Quick Write is 150 to 200 words. It says what I believed when I started the book, what I believe now, a scene from the book, the lesson, or the discussion that changed my mind (with its chapter), and one open question.</div></div>
         <div class="check-item" data-ck="l4e" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I joined a choppy pair or changed a repeated opening, I checked its and it&rsquo;s and their and there, and my before-and-after sentence shows the change.</div></div>
+        <div class="check-item" data-ck="l4up" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I downloaded my PDF and uploaded it to this assignment.</div></div>
       </div>
     </div>
   </div>
@@ -2133,6 +2141,31 @@ body.greenwood .also-num { background: #2F5D34; }
     window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
 })();
 </script>
+<script>
+/* Full screen: the lesson fills the screen where it is. Hidden where the page cannot do it
+   (iPhone Safari, or a frame without allowfullscreen). */
+(function () {
+    "use strict";
+    var b = document.getElementById("fs-btn"); if (!b) return;
+    var d = document, de = d.documentElement;
+    var req = de.requestFullscreen || de.webkitRequestFullscreen, ext = d.exitFullscreen || d.webkitExitFullscreen;
+    if (!(d.fullscreenEnabled || d.webkitFullscreenEnabled) || !req || !ext) { b.hidden = true; return; }
+    function cur() { return d.fullscreenElement || d.webkitFullscreenElement || null; }
+    function paint() {
+        var on = !!cur();
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.querySelector(".fs-l").textContent = on ? "Exit full screen" : "Full screen";
+        de.classList.toggle("fs-on", on);
+    }
+    b.addEventListener("click", function () {
+        var r = cur() ? ext.call(d) : req.call(de);
+        if (r && r.then) r.then(paint, paint);
+    });
+    d.addEventListener("fullscreenchange", paint); d.addEventListener("webkitfullscreenchange", paint);
+    b.hidden = false; paint();
+})();
+</script>
+
 <script>
 /* Optima ELA 6 · Module 4 integrated weeks (engine from the Module 3 pilot) · shared lesson engines.
    Page config comes from \x3cscript type="application/json" id="page-config">:

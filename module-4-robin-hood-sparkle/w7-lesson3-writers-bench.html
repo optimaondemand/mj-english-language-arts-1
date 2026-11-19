@@ -509,6 +509,13 @@ table.tbl td strong { color: var(--ink); }
     #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
     #ora-status { font-size: 12px; color: #666; }
     .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+    /* Full screen button: fills the screen in place, no new tab */
+    #optima-read-aloud .ora-controls #fs-btn { margin-left: auto; display: inline-flex; align-items: center; gap: 7px; background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #optima-read-aloud .ora-controls #fs-btn:hover { background: #F4F6FA; border-color: #55C8E8; }
+    #optima-read-aloud .ora-controls #fs-btn[hidden] { display: none; }
+    #fs-btn svg { display: block; }
+    html:fullscreen { overflow-y: auto; }
+    html:-webkit-full-screen { overflow-y: auto; }
 </style>
 <style>
 /* Week-level additions: status line, word count, name field, PDF buttons */
@@ -957,6 +964,7 @@ body:not(.x) .writers-room .activity-num { background: #8E1E1E !important; }
             </select>
         </label>
         <span id="ora-status" role="status" aria-live="polite"></span>
+        <button id="fs-btn" type="button" aria-pressed="false" hidden><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true" focusable="false"><path d="M1 5V1h4M9 1h4v4M13 9v4H9M5 13H1V9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="fs-l">Full screen</span></button>
     </div>
 </div>
 <div class="progress-wrap">
@@ -1516,6 +1524,7 @@ body:not(.x) .writers-room .activity-num { background: #8E1E1E !important; }
         <div class="check-item" data-ck="l3w2" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I took a quotation apart, found the signal verbs and citations, and sorted all six quotations.</div></div>
         <div class="check-item" data-ck="l3w3" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I matched all ten words and rewrote one sentence three ways.</div></div>
         <div class="check-item" data-ck="l3w4" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I built my thesis, three evidence cards, concession and answer, and conclusion line, and started my Draft1 file in Word.</div></div>
+        <div class="check-item" data-ck="l3up" onclick="toggleCheck(this,true)"><div class="check-box"></div><div class="check-text">I downloaded my PDF and uploaded it to this assignment.</div></div>
       </div>
     </div>
   </div>
@@ -1696,6 +1705,31 @@ body:not(.x) .writers-room .activity-num { background: #8E1E1E !important; }
     window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
 })();
 </script>
+<script>
+/* Full screen: the lesson fills the screen where it is. Hidden where the page cannot do it
+   (iPhone Safari, or a frame without allowfullscreen). */
+(function () {
+    "use strict";
+    var b = document.getElementById("fs-btn"); if (!b) return;
+    var d = document, de = d.documentElement;
+    var req = de.requestFullscreen || de.webkitRequestFullscreen, ext = d.exitFullscreen || d.webkitExitFullscreen;
+    if (!(d.fullscreenEnabled || d.webkitFullscreenEnabled) || !req || !ext) { b.hidden = true; return; }
+    function cur() { return d.fullscreenElement || d.webkitFullscreenElement || null; }
+    function paint() {
+        var on = !!cur();
+        b.setAttribute("aria-pressed", on ? "true" : "false");
+        b.querySelector(".fs-l").textContent = on ? "Exit full screen" : "Full screen";
+        de.classList.toggle("fs-on", on);
+    }
+    b.addEventListener("click", function () {
+        var r = cur() ? ext.call(d) : req.call(de);
+        if (r && r.then) r.then(paint, paint);
+    });
+    d.addEventListener("fullscreenchange", paint); d.addEventListener("webkitfullscreenchange", paint);
+    b.hidden = false; paint();
+})();
+</script>
+
 <script>
 /* Optima ELA 6 · Module 4 integrated weeks (engine from the Module 3 pilot) · shared lesson engines.
    Page config comes from \x3cscript type="application/json" id="page-config">:
